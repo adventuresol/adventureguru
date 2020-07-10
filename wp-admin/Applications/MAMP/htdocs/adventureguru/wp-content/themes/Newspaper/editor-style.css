@@ -1671,8 +1671,8 @@ blockquote.pull-right:after {
 }
 @font-face {
   font-family: 'newspaper';
-  src: url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper.eot?16');
-  src: url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper.eot?16#iefix') format('embedded-opentype'), url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper.woff?16') format('woff'), url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper.ttf?16') format('truetype'), url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper.svg?16#newspaper') format('svg');
+  src: url('https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper.eot?16');
+  src: url('https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper.eot?16#iefix') format('embedded-opentype'), url('https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper.woff?16') format('woff'), url('https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper.ttf?16') format('truetype'), url('https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper.svg?16#newspaper') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -2643,8 +2643,8 @@ blockquote.pull-right:after {
 }
 @font-face {
   font-family: 'newspaper-icons';
-  src: url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper-icons.eot?1');
-  src: url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper-icons.eot?1#iefix') format('embedded-opentype'), url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper-icons.woff?1') format('woff'), url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper-icons.ttf?1') format('truetype'), url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper-icons.svg?1#newspaper-icons') format('svg');
+  src: url('https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper-icons.eot?1');
+  src: url('https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper-icons.eot?1#iefix') format('embedded-opentype'), url('https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper-icons.woff?1') format('woff'), url('https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper-icons.ttf?1') format('truetype'), url('https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper-icons.svg?1#newspaper-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -2807,7 +2807,7 @@ html .mceContentBody {
   max-width: 696px;
   margin-left: 24px;
   margin-right: 24px;
-  background: #ffffff url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/editor-style/grid-sidebar-desktop.gif') repeat-y left top;
+  background: #ffffff url('https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/editor-style/grid-sidebar-desktop.gif') repeat-y left top;
   font-family: Verdana, Geneva, sans-serif;
   position: relative;
   /* responsive Landscape tablet */
@@ -2836,7 +2836,7 @@ html .mceContentBody .td-scroll-effect {
 /* max width  - full content */
 html .mceContentBody-max-width-big {
   max-width: 1068px;
-  background: #ffffff url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/editor-style/grid-no-sidebar-desktop.gif') repeat-y left top;
+  background: #ffffff url('https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/editor-style/grid-no-sidebar-desktop.gif') repeat-y left top;
   /* responsive Landscape tablet */
 }
 html .mceContentBody-max-width-big:after {
