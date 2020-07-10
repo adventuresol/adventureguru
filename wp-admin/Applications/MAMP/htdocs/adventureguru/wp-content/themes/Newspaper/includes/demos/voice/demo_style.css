@@ -19,7 +19,7 @@ voice report demo
   border-bottom: none;
 }
 .td-voice .td-header-style-9 .td-logo-wrap-full {
-  background-image: url("/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/voice/images/header-bg.jpg");
+  background-image: url("http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/voice/images/header-bg.jpg");
   background-position: center;
   background-color: #000;
   min-height: 200px;

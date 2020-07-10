@@ -7086,8 +7086,8 @@ p.has-drop-cap:not([class*="has-text-color"]):not(:focus):first-letter {
 }
 @font-face {
   font-family: 'newspaper';
-  src: url('/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper.eot?16');
-  src: url('/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper.eot?16#iefix') format('embedded-opentype'), url('/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper.woff?16') format('woff'), url('/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper.ttf?16') format('truetype'), url('/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper.svg?16#newspaper') format('svg');
+  src: url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper.eot?16');
+  src: url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper.eot?16#iefix') format('embedded-opentype'), url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper.woff?16') format('woff'), url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper.ttf?16') format('truetype'), url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper.svg?16#newspaper') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -8058,8 +8058,8 @@ p.has-drop-cap:not([class*="has-text-color"]):not(:focus):first-letter {
 }
 @font-face {
   font-family: 'newspaper-icons';
-  src: url('/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper-icons.eot?1');
-  src: url('/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper-icons.eot?1#iefix') format('embedded-opentype'), url('/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper-icons.woff?1') format('woff'), url('/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper-icons.ttf?1') format('truetype'), url('/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper-icons.svg?1#newspaper-icons') format('svg');
+  src: url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper-icons.eot?1');
+  src: url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper-icons.eot?1#iefix') format('embedded-opentype'), url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper-icons.woff?1') format('woff'), url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper-icons.ttf?1') format('truetype'), url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/icons/newspaper-icons.svg?1#newspaper-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -8490,7 +8490,7 @@ p.has-drop-cap:not([class*="has-text-color"]):not(:focus):first-letter {
       main sprite file
   */
   .td-sp {
-    background-image: url('/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/sprite/elements@2x.png') !important;
+    background-image: url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/sprite/elements@2x.png') !important;
     background-size: 90px 2100px !important;
   }
 }
@@ -8498,7 +8498,7 @@ p.has-drop-cap:not([class*="has-text-color"]):not(:focus):first-letter {
     sprite
 */
 .td-sp {
-  background-image: url('/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/sprite/elements.png');
+  background-image: url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/images/sprite/elements.png');
   background-repeat: no-repeat;
   display: block;
 }
@@ -8826,7 +8826,7 @@ p.has-drop-cap:not([class*="has-text-color"]):not(:focus):first-letter {
 }
 .td-live-theme-demos .td-popup {
   position: relative;
-  background-image: url('/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/demos_popup/demos-popup.png?v=7');
+  background-image: url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/demos_popup/demos-popup.png?v=7');
   background-repeat: no-repeat;
   display: block;
   margin-top: 3px;
@@ -8865,7 +8865,7 @@ p.has-drop-cap:not([class*="has-text-color"]):not(:focus):first-letter {
 .td-live-theme-demos .td-popup-nomad span,
 .td-live-theme-demos .td-popup-decor span,
 .td-live-theme-demos .td-popup-racing span {
-  background: url('/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/demos_popup/new-badge.png');
+  background: url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/demos_popup/new-badge.png');
 }
 .td-live-theme-demos .td-popup-animals {
   background-position: 0 0;

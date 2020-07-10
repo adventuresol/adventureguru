@@ -54,8 +54,8 @@
 }
 @font-face {
   font-family: 'craft-ideas';
-  src: url('/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/craft_ideas/font/craft_ideas.eot?1');
-  src: url('/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/craft_ideas/font/craft_ideas.eot?1#iefix') format('embedded-opentype'), url('/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/craft_ideas/font/craft_ideas.woff?1') format('woff'), url('/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/craft_ideas/font/craft_ideas.ttf?1') format('truetype'), url('/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/craft_ideas/font/craft_ideas.svg?1#craft-ideas') format('svg');
+  src: url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/craft_ideas/font/craft_ideas.eot?1');
+  src: url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/craft_ideas/font/craft_ideas.eot?1#iefix') format('embedded-opentype'), url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/craft_ideas/font/craft_ideas.woff?1') format('woff'), url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/craft_ideas/font/craft_ideas.ttf?1') format('truetype'), url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/craft_ideas/font/craft_ideas.svg?1#craft-ideas') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -137,7 +137,7 @@
 .td-craft-ideas .td-read-more a,
 .td-craft-ideas .more-link-wrap a {
   background-color: transparent !important;
-  background-image: url("/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/craft_ideas/images/read-more-bg.png");
+  background-image: url("http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/craft_ideas/images/read-more-bg.png");
   background-size: 100%;
   background-repeat: no-repeat;
   display: inline;
@@ -159,7 +159,7 @@
 }
 .td-craft-ideas .td_ajax_load_more {
   background-color: transparent !important;
-  background-image: url("/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/craft_ideas/images/header-bg.png");
+  background-image: url("http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/craft_ideas/images/header-bg.png");
   background-size: 100%;
   background-repeat: no-repeat;
   border: none;
@@ -172,7 +172,7 @@
   opacity: 1;
 }
 .td-craft-ideas .td_block_template_6 .td-block-title {
-  background-image: url("/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/craft_ideas/images/header-bg.png");
+  background-image: url("http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/craft_ideas/images/header-bg.png");
 }
 .td-craft-ideas .td_block_template_6 .td-block-title > * {
   color: #fff;

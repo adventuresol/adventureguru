@@ -25,8 +25,8 @@ Fast News Demo
   font-family: 'td-fast';
   font-weight: normal;
   font-style: normal;
-  src: url('/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/fast/font/td-fast.eot?1');
-  src: url('/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/fast/font/td-fast.eot?1#iefix') format('embedded-opentype'), url('/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/fast/font/td-fast.ttf?1') format('truetype'), url('/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/fast/font/td-fast.woff?1') format('woff'), url('/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/fast/font/td-fast.svg?1#td-fast') format('svg');
+  src: url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/fast/font/td-fast.eot?1');
+  src: url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/fast/font/td-fast.eot?1#iefix') format('embedded-opentype'), url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/fast/font/td-fast.ttf?1') format('truetype'), url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/fast/font/td-fast.woff?1') format('woff'), url('http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/fast/font/td-fast.svg?1#td-fast') format('svg');
 }
 .td-fast-news .tdc-font-fast {
   display: inline-block;

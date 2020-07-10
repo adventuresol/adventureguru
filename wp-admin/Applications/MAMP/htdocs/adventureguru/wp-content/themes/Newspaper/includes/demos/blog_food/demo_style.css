@@ -51,7 +51,7 @@ Food Blog Demo
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  background-image: url("/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/blog_food/assets/menu-line.png");
+  background-image: url("http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/blog_food/assets/menu-line.png");
 }
 @media (max-width: 767px) {
   .td-blog-food .td-header-style-10 .td-header-main-menu:after {
@@ -81,7 +81,7 @@ Food Blog Demo
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  background-image: url("/https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/blog_food/assets/menu-line.png");
+  background-image: url("http://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/blog_food/assets/menu-line.png");
 }
 @media (max-width: 767px) {
   .td-blog-food .td-recipe-time:after {
