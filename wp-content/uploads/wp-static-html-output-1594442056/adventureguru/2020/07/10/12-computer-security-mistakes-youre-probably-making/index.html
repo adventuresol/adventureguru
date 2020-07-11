@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html lang="en-US"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>12 Computer Security Mistakes You’re Probably Making – adventure guru</title><meta property="og:image" content="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/9.jpg"><link rel="dns-prefetch" href="//fonts.googleapis.com"><link rel="dns-prefetch" href="//s.w.org"><link rel="stylesheet" id="wp-block-library-css" href="https://adventuresol.github.io/adventureguru/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all"><link rel="stylesheet" id="td-plugin-multi-purpose-css" href="https://adventuresol.github.io/adventureguru/wp-content/plugins/td-composer/td-multi-purpose/style.css" type="text/css" media="all"><link rel="stylesheet" id="typicons-css" href="https://adventuresol.github.io/adventureguru/wp-content/plugins/td-composer/assets/fonts/typicons/typicons.css" type="text/css" media="all"><link rel="stylesheet" id="font_awesome-css" href="https://adventuresol.github.io/adventureguru/wp-content/plugins/td-composer/assets/fonts/font-awesome/font-awesome.css" type="text/css" media="all"><link rel="stylesheet" id="open_iconic-css" href="https://adventuresol.github.io/adventureguru/wp-content/plugins/td-composer/assets/fonts/open-iconic/open-iconic.css" type="text/css" media="all"><link rel="stylesheet" id="google-fonts-style-css" href="http://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C300%7CRoboto%3A300%2C400%2C400italic%2C500%2C500italic%2C700%2C900&ver=9.7.1" type="text/css" media="all"><link rel="stylesheet" id="td-theme-css" href="https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/style.css" type="text/css" media="all"><style id="td-theme-inline-css" type="text/css">
+    
+        @media (max-width: 767px) {
+            .td-header-desktop-wrap {
+                display: none;
+            }
+        }
+        @media (min-width: 767px) {
+            .td-header-mobile-wrap {
+                display: none;
+            }
+        }
+    
+	
+</style><link rel="stylesheet" id="td-legacy-framework-front-style-css" href="https://adventuresol.github.io/adventureguru/wp-content/plugins/td-composer/legacy/Newspaper/assets/css/td_legacy_main.css" type="text/css" media="all"><link rel="stylesheet" id="td-theme-demo-style-css" href="https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/technology/demo_style.css" type="text/css" media="all"><link rel="stylesheet" id="tdb_front_style-css" href="https://adventuresol.github.io/adventureguru/wp-content/plugins/td-cloud-library/assets/css/tdb_less_front.css" type="text/css" media="all"><script type="text/javascript" src="https://adventuresol.github.io/adventureguru/wp-includes/js/jquery/jquery.js"></script><script type="text/javascript" src="https://adventuresol.github.io/adventureguru/wp-includes/js/jquery/jquery-migrate.min.js"></script><script>
+        window.tdb_globals = {"wpRestNonce":"5fc87bf494","wpRestUrl":"https:\/\/adventuresol.github.io\/adventureguru\/wp-json\/","permalinkStructure":"\/%year%\/%monthnum%\/%day%\/%postname%\/","isAjax":false,"isAdminBarShowing":false,"autoloadScrollPercent":50,"origPostEditUrl":null};
+    </script><script>
+				window.tdwGlobal = {"adminUrl":"https:\/\/adventuresol.github.io\/adventureguru\/wp-admin\/","wpRestNonce":"5fc87bf494","wpRestUrl":"https:\/\/adventuresol.github.io\/adventureguru\/wp-json\/","permalinkStructure":"\/%year%\/%monthnum%\/%day%\/%postname%\/"};
+			</script><script>
+    
+    
+
+	    var tdBlocksArray = []; //here we store all the items for the current page
+
+	    //td_block class - each ajax block uses a object of this class for requests
+	    function tdBlock() {
+		    this.id = '';
+		    this.block_type = 1; //block type id (1-234 etc)
+		    this.atts = '';
+		    this.td_column_number = '';
+		    this.td_current_page = 1; //
+		    this.post_count = 0; //from wp
+		    this.found_posts = 0; //from wp
+		    this.max_num_pages = 0; //from wp
+		    this.td_filter_value = ''; //current live filter value
+		    this.is_ajax_running = false;
+		    this.td_user_action = ''; // load more or infinite loader (used by the animation)
+		    this.header_color = '';
+		    this.ajax_pagination_infinite_stop = ''; //show load more at page x
+	    }
+
+
+        // td_js_generator - mini detector
+        (function(){
+            var htmlTag = document.getElementsByTagName("html")[0];
+
+	        if ( navigator.userAgent.indexOf("MSIE 10.0") > -1 ) {
+                htmlTag.className += ' ie10';
+            }
+
+            if ( !!navigator.userAgent.match(/Trident.*rv\:11\./) ) {
+                htmlTag.className += ' ie11';
+            }
+
+	        if ( navigator.userAgent.indexOf("Edge") > -1 ) {
+                htmlTag.className += ' ieEdge';
+            }
+
+            if ( /(iPad|iPhone|iPod)/g.test(navigator.userAgent) ) {
+                htmlTag.className += ' td-md-is-ios';
+            }
+
+            var user_agent = navigator.userAgent.toLowerCase();
+            if ( user_agent.indexOf("android") > -1 ) {
+                htmlTag.className += ' td-md-is-android';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Mac OS X')  ) {
+                htmlTag.className += ' td-md-is-os-x';
+            }
+
+            if ( /chrom(e|ium)/.test(navigator.userAgent.toLowerCase()) ) {
+               htmlTag.className += ' td-md-is-chrome';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Firefox') ) {
+                htmlTag.className += ' td-md-is-firefox';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Safari') && -1 === navigator.userAgent.indexOf('Chrome') ) {
+                htmlTag.className += ' td-md-is-safari';
+            }
+
+            if( -1 !== navigator.userAgent.indexOf('IEMobile') ){
+                htmlTag.className += ' td-md-is-iemobile';
+            }
+
+        })();
+
+
+
+
+        var tdLocalCache = {};
+
+        ( function () {
+            "use strict";
+
+            tdLocalCache = {
+                data: {},
+                remove: function (resource_id) {
+                    delete tdLocalCache.data[resource_id];
+                },
+                exist: function (resource_id) {
+                    return tdLocalCache.data.hasOwnProperty(resource_id) && tdLocalCache.data[resource_id] !== null;
+                },
+                get: function (resource_id) {
+                    return tdLocalCache.data[resource_id];
+                },
+                set: function (resource_id, cachedData) {
+                    tdLocalCache.remove(resource_id);
+                    tdLocalCache.data[resource_id] = cachedData;
+                }
+            };
+        })();
+
+    
+    
+var td_viewport_interval_list=[{"limitBottom":767,"sidebarWidth":228},{"limitBottom":1018,"sidebarWidth":300},{"limitBottom":1140,"sidebarWidth":324}];
+var td_animation_stack_effect="type0";
+var tds_animation_stack=true;
+var td_animation_stack_specific_selectors=".entry-thumb, img";
+var td_animation_stack_general_selectors=".td-animation-stack img, .td-animation-stack .entry-thumb, .post img";
+var tdc_is_installed="yes";
+var td_ajax_url="https:\/\/adventuresol.github.io\/adventureguru\/wp-admin\/admin-ajax.php?td_theme_name=Newspaper&v=9.7.1";
+var td_get_template_directory_uri="https:\/\/adventuresol.github.io\/adventureguru\/wp-content\/themes\/Newspaper";
+var tds_snap_menu="smart_snap_always";
+var tds_logo_on_sticky="";
+var tds_header_style="tdm_header_style_2";
+var td_please_wait="Please wait...";
+var td_email_user_pass_incorrect="User or password incorrect!";
+var td_email_user_incorrect="Email or username incorrect!";
+var td_email_incorrect="Email incorrect!";
+var tds_more_articles_on_post_enable="";
+var tds_more_articles_on_post_time_to_wait="";
+var tds_more_articles_on_post_pages_distance_from_top=0;
+var tds_theme_color_site_wide="#22a0d6";
+var tds_smart_sidebar="";
+var tdThemeName="Newspaper";
+var td_magnific_popup_translation_tPrev="Previous (Left arrow key)";
+var td_magnific_popup_translation_tNext="Next (Right arrow key)";
+var td_magnific_popup_translation_tCounter="%curr% of %total%";
+var td_magnific_popup_translation_ajax_tError="The content from %url% could not be loaded.";
+var td_magnific_popup_translation_image_tError="The image #%curr% could not be loaded.";
+var tdDateNamesI18n={"month_names":["January","February","March","April","May","June","July","August","September","October","November","December"],"month_names_short":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"day_names":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"day_names_short":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]};
+var td_ad_background_click_link="";
+var td_ad_background_click_target="";
+</script><style>
+    
+.td-header-wrap .black-menu .sf-menu > .current-menu-item > a,
+    .td-header-wrap .black-menu .sf-menu > .current-menu-ancestor > a,
+    .td-header-wrap .black-menu .sf-menu > .current-category-ancestor > a,
+    .td-header-wrap .black-menu .sf-menu > li > a:hover,
+    .td-header-wrap .black-menu .sf-menu > .sfHover > a,
+    .td-header-style-12 .td-header-menu-wrap-full,
+    .sf-menu > .current-menu-item > a:after,
+    .sf-menu > .current-menu-ancestor > a:after,
+    .sf-menu > .current-category-ancestor > a:after,
+    .sf-menu > li:hover > a:after,
+    .sf-menu > .sfHover > a:after,
+    .td-header-style-12 .td-affix,
+    .header-search-wrap .td-drop-down-search:after,
+    .header-search-wrap .td-drop-down-search .btn:hover,
+    input[type=submit]:hover,
+    .td-read-more a,
+    .td-post-category:hover,
+    .td-grid-style-1.td-hover-1 .td-big-grid-post:hover .td-post-category,
+    .td-grid-style-5.td-hover-1 .td-big-grid-post:hover .td-post-category,
+    .td_top_authors .td-active .td-author-post-count,
+    .td_top_authors .td-active .td-author-comments-count,
+    .td_top_authors .td_mod_wrap:hover .td-author-post-count,
+    .td_top_authors .td_mod_wrap:hover .td-author-comments-count,
+    .td-404-sub-sub-title a:hover,
+    .td-search-form-widget .wpb_button:hover,
+    .td-rating-bar-wrap div,
+    .td_category_template_3 .td-current-sub-category,
+    .dropcap,
+    .td_wrapper_video_playlist .td_video_controls_playlist_wrapper,
+    .wpb_default,
+    .wpb_default:hover,
+    .td-left-smart-list:hover,
+    .td-right-smart-list:hover,
+    .woocommerce-checkout .woocommerce input.button:hover,
+    .woocommerce-page .woocommerce a.button:hover,
+    .woocommerce-account div.woocommerce .button:hover,
+    #bbpress-forums button:hover,
+    .bbp_widget_login .button:hover,
+    .td-footer-wrapper .td-post-category,
+    .td-footer-wrapper .widget_product_search input[type="submit"]:hover,
+    .woocommerce .product a.button:hover,
+    .woocommerce .product #respond input#submit:hover,
+    .woocommerce .checkout input#place_order:hover,
+    .woocommerce .woocommerce.widget .button:hover,
+    .single-product .product .summary .cart .button:hover,
+    .woocommerce-cart .woocommerce table.cart .button:hover,
+    .woocommerce-cart .woocommerce .shipping-calculator-form .button:hover,
+    .td-next-prev-wrap a:hover,
+    .td-load-more-wrap a:hover,
+    .td-post-small-box a:hover,
+    .page-nav .current,
+    .page-nav:first-child > div,
+    .td_category_template_8 .td-category-header .td-category a.td-current-sub-category,
+    .td_category_template_4 .td-category-siblings .td-category a:hover,
+    #bbpress-forums .bbp-pagination .current,
+    #bbpress-forums #bbp-single-user-details #bbp-user-navigation li.current a,
+    .td-theme-slider:hover .slide-meta-cat a,
+    a.vc_btn-black:hover,
+    .td-trending-now-wrapper:hover .td-trending-now-title,
+    .td-scroll-up,
+    .td-smart-list-button:hover,
+    .td-weather-information:before,
+    .td-weather-week:before,
+    .td_block_exchange .td-exchange-header:before,
+    .td_block_big_grid_9.td-grid-style-1 .td-post-category,
+    .td_block_big_grid_9.td-grid-style-5 .td-post-category,
+    .td-grid-style-6.td-hover-1 .td-module-thumb:after,
+    .td-pulldown-syle-2 .td-subcat-dropdown ul:after,
+    .td_block_template_9 .td-block-title:after,
+    .td_block_template_15 .td-block-title:before,
+    div.wpforms-container .wpforms-form div.wpforms-submit-container button[type=submit] {
+        background-color: #22a0d6;
+    }
+
+    .td_block_template_4 .td-related-title .td-cur-simple-item:before {
+        border-color: #22a0d6 transparent transparent transparent !important;
+    }
+
+    .woocommerce .woocommerce-message .button:hover,
+    .woocommerce .woocommerce-error .button:hover,
+    .woocommerce .woocommerce-info .button:hover {
+        background-color: #22a0d6 !important;
+    }
+    
+    
+    .td_block_template_4 .td-related-title .td-cur-simple-item,
+    .td_block_template_3 .td-related-title .td-cur-simple-item,
+    .td_block_template_9 .td-related-title:after {
+        background-color: #22a0d6;
+    }
+
+    .woocommerce .product .onsale,
+    .woocommerce.widget .ui-slider .ui-slider-handle {
+        background: none #22a0d6;
+    }
+
+    .woocommerce.widget.widget_layered_nav_filters ul li a {
+        background: none repeat scroll 0 0 #22a0d6 !important;
+    }
+
+    a,
+    cite a:hover,
+    .td_mega_menu_sub_cats .cur-sub-cat,
+    .td-mega-span h3 a:hover,
+    .td_mod_mega_menu:hover .entry-title a,
+    .header-search-wrap .result-msg a:hover,
+    .td-header-top-menu .td-drop-down-search .td_module_wrap:hover .entry-title a,
+    .td-header-top-menu .td-icon-search:hover,
+    .td-header-wrap .result-msg a:hover,
+    .top-header-menu li a:hover,
+    .top-header-menu .current-menu-item > a,
+    .top-header-menu .current-menu-ancestor > a,
+    .top-header-menu .current-category-ancestor > a,
+    .td-social-icon-wrap > a:hover,
+    .td-header-sp-top-widget .td-social-icon-wrap a:hover,
+    .td-page-content blockquote p,
+    .td-post-content blockquote p,
+    .mce-content-body blockquote p,
+    .comment-content blockquote p,
+    .wpb_text_column blockquote p,
+    .td_block_text_with_title blockquote p,
+    .td_module_wrap:hover .entry-title a,
+    .td-subcat-filter .td-subcat-list a:hover,
+    .td-subcat-filter .td-subcat-dropdown a:hover,
+    .td_quote_on_blocks,
+    .dropcap2,
+    .dropcap3,
+    .td_top_authors .td-active .td-authors-name a,
+    .td_top_authors .td_mod_wrap:hover .td-authors-name a,
+    .td-post-next-prev-content a:hover,
+    .author-box-wrap .td-author-social a:hover,
+    .td-author-name a:hover,
+    .td-author-url a:hover,
+    .td_mod_related_posts:hover h3 > a,
+    .td-post-template-11 .td-related-title .td-related-left:hover,
+    .td-post-template-11 .td-related-title .td-related-right:hover,
+    .td-post-template-11 .td-related-title .td-cur-simple-item,
+    .td-post-template-11 .td_block_related_posts .td-next-prev-wrap a:hover,
+    .comment-reply-link:hover,
+    .logged-in-as a:hover,
+    #cancel-comment-reply-link:hover,
+    .td-search-query,
+    .td-category-header .td-pulldown-category-filter-link:hover,
+    .td-category-siblings .td-subcat-dropdown a:hover,
+    .td-category-siblings .td-subcat-dropdown a.td-current-sub-category,
+    .widget a:hover,
+    .td_wp_recentcomments a:hover,
+    .archive .widget_archive .current,
+    .archive .widget_archive .current a,
+    .widget_calendar tfoot a:hover,
+    .woocommerce a.added_to_cart:hover,
+    .woocommerce-account .woocommerce-MyAccount-navigation a:hover,
+    #bbpress-forums li.bbp-header .bbp-reply-content span a:hover,
+    #bbpress-forums .bbp-forum-freshness a:hover,
+    #bbpress-forums .bbp-topic-freshness a:hover,
+    #bbpress-forums .bbp-forums-list li a:hover,
+    #bbpress-forums .bbp-forum-title:hover,
+    #bbpress-forums .bbp-topic-permalink:hover,
+    #bbpress-forums .bbp-topic-started-by a:hover,
+    #bbpress-forums .bbp-topic-started-in a:hover,
+    #bbpress-forums .bbp-body .super-sticky li.bbp-topic-title .bbp-topic-permalink,
+    #bbpress-forums .bbp-body .sticky li.bbp-topic-title .bbp-topic-permalink,
+    .widget_display_replies .bbp-author-name,
+    .widget_display_topics .bbp-author-name,
+    .footer-text-wrap .footer-email-wrap a,
+    .td-subfooter-menu li a:hover,
+    .footer-social-wrap a:hover,
+    a.vc_btn-black:hover,
+    .td-smart-list-dropdown-wrap .td-smart-list-button:hover,
+    .td_module_17 .td-read-more a:hover,
+    .td_module_18 .td-read-more a:hover,
+    .td_module_19 .td-post-author-name a:hover,
+    .td-instagram-user a,
+    .td-pulldown-syle-2 .td-subcat-dropdown:hover .td-subcat-more span,
+    .td-pulldown-syle-2 .td-subcat-dropdown:hover .td-subcat-more i,
+    .td-pulldown-syle-3 .td-subcat-dropdown:hover .td-subcat-more span,
+    .td-pulldown-syle-3 .td-subcat-dropdown:hover .td-subcat-more i,
+    .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-display-option:hover,
+    .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-display-option:hover i,
+    .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-link:hover,
+    .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-item .td-cur-simple-item,
+    .td_block_template_2 .td-related-title .td-cur-simple-item,
+    .td_block_template_5 .td-related-title .td-cur-simple-item,
+    .td_block_template_6 .td-related-title .td-cur-simple-item,
+    .td_block_template_7 .td-related-title .td-cur-simple-item,
+    .td_block_template_8 .td-related-title .td-cur-simple-item,
+    .td_block_template_9 .td-related-title .td-cur-simple-item,
+    .td_block_template_10 .td-related-title .td-cur-simple-item,
+    .td_block_template_11 .td-related-title .td-cur-simple-item,
+    .td_block_template_12 .td-related-title .td-cur-simple-item,
+    .td_block_template_13 .td-related-title .td-cur-simple-item,
+    .td_block_template_14 .td-related-title .td-cur-simple-item,
+    .td_block_template_15 .td-related-title .td-cur-simple-item,
+    .td_block_template_16 .td-related-title .td-cur-simple-item,
+    .td_block_template_17 .td-related-title .td-cur-simple-item,
+    .td-theme-wrap .sf-menu ul .td-menu-item > a:hover,
+    .td-theme-wrap .sf-menu ul .sfHover > a,
+    .td-theme-wrap .sf-menu ul .current-menu-ancestor > a,
+    .td-theme-wrap .sf-menu ul .current-category-ancestor > a,
+    .td-theme-wrap .sf-menu ul .current-menu-item > a,
+    .td_outlined_btn,
+     .td_block_categories_tags .td-ct-item:hover {
+        color: #22a0d6;
+    }
+
+    a.vc_btn-black.vc_btn_square_outlined:hover,
+    a.vc_btn-black.vc_btn_outlined:hover,
+    .td-mega-menu-page .wpb_content_element ul li a:hover,
+    .td-theme-wrap .td-aj-search-results .td_module_wrap:hover .entry-title a,
+    .td-theme-wrap .header-search-wrap .result-msg a:hover {
+        color: #22a0d6 !important;
+    }
+
+    .td-next-prev-wrap a:hover,
+    .td-load-more-wrap a:hover,
+    .td-post-small-box a:hover,
+    .page-nav .current,
+    .page-nav:first-child > div,
+    .td_category_template_8 .td-category-header .td-category a.td-current-sub-category,
+    .td_category_template_4 .td-category-siblings .td-category a:hover,
+    #bbpress-forums .bbp-pagination .current,
+    .post .td_quote_box,
+    .page .td_quote_box,
+    a.vc_btn-black:hover,
+    .td_block_template_5 .td-block-title > *,
+    .td_outlined_btn {
+        border-color: #22a0d6;
+    }
+
+    .td_wrapper_video_playlist .td_video_currently_playing:after {
+        border-color: #22a0d6 !important;
+    }
+
+    .header-search-wrap .td-drop-down-search:before {
+        border-color: transparent transparent #22a0d6 transparent;
+    }
+
+    .block-title > span,
+    .block-title > a,
+    .block-title > label,
+    .widgettitle,
+    .widgettitle:after,
+    .td-trending-now-title,
+    .td-trending-now-wrapper:hover .td-trending-now-title,
+    .wpb_tabs li.ui-tabs-active a,
+    .wpb_tabs li:hover a,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab.vc_active > a,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab:hover > a,
+    .td_block_template_1 .td-related-title .td-cur-simple-item,
+    .woocommerce .product .products h2:not(.woocommerce-loop-product__title),
+    .td-subcat-filter .td-subcat-dropdown:hover .td-subcat-more, 
+    .td_3D_btn,
+    .td_shadow_btn,
+    .td_default_btn,
+    .td_round_btn, 
+    .td_outlined_btn:hover {
+    	background-color: #22a0d6;
+    }
+
+    .woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+    	background-color: #22a0d6 !important;
+    }
+
+    .block-title,
+    .td_block_template_1 .td-related-title,
+    .wpb_tabs .wpb_tabs_nav,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container,
+    .woocommerce div.product .woocommerce-tabs ul.tabs:before {
+        border-color: #22a0d6;
+    }
+    .td_block_wrap .td-subcat-item a.td-cur-simple-item {
+	    color: #22a0d6;
+	}
+
+
+    
+    .td-grid-style-4 .entry-title
+    {
+        background-color: rgba(34, 160, 214, 0.7);
+    }
+
+    
+    .td-menu-background:before,
+    .td-search-background:before {
+        background: rgba(49,59,69,0.7);
+        background: -moz-linear-gradient(top, rgba(49,59,69,0.7) 0%, rgba(51,147,184,0.7) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(49,59,69,0.7)), color-stop(100%, rgba(51,147,184,0.7)));
+        background: -webkit-linear-gradient(top, rgba(49,59,69,0.7) 0%, rgba(51,147,184,0.7) 100%);
+        background: -o-linear-gradient(top, rgba(49,59,69,0.7) 0%, rgba(51,147,184,0.7) 100%);
+        background: -ms-linear-gradient(top, rgba(49,59,69,0.7) 0%, rgba(51,147,184,0.7) 100%);
+        background: linear-gradient(to bottom, rgba(49,59,69,0.7) 0%, rgba(51,147,184,0.7) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(49,59,69,0.7)', endColorstr='rgba(51,147,184,0.7)', GradientType=0 );
+    }
+
+    
+    ul.sf-menu > .td-menu-item > a,
+    .td-theme-wrap .td-header-menu-social {
+        font-weight:normal;
+	
+    }
+    
+    .td_module_14 .td-module-title {
+    	font-size:46px;
+	line-height:56px;
+	font-weight:300;
+	
+    }
+
+
+
+/* Style generated by theme for demo: technology */
+
+.td-technology .tds-button2:hover,
+		.td-technology .td_module_14 .td-read-more a:hover {
+			background-color: #22a0d6 !important;
+		}
+		
+		.td-technology .td_module_14 .td-read-more a {
+		    color: #22a0d6;
+		}
+		
+		.td-technology .td_module_14 .td-read-more a {
+		    border-color: #22a0d6;
+		}
+</style><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                    "@type": "WebSite",
+                    "@id": "https://adventuresol.github.io/adventureguru/",
+                    "name": "Home"
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                    "item": {
+                    "@type": "WebPage",
+                    "@id": "https://adventuresol.github.io/adventureguru/category/news/",
+                    "name": "News"
+                }
+            }
+            ,{
+                "@type": "ListItem",
+                "position": 3,
+                    "item": {
+                    "@type": "WebPage",
+                    "@id": "https://adventuresol.github.io/adventureguru/2020/07/10/12-computer-security-mistakes-youre-probably-making/",
+                    "name": "12 Computer Security Mistakes You’re Probably Making"                                
+                }
+            }    
+        ]
+    }
+</script><style>
+    .tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu > .current-category-ancestor > a,
+                .tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu > .current-menu-ancestor > a,
+                .tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu > .current-menu-item > a,
+                .tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu > .sfHover > a,
+                .tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu > li > a:hover,
+                .tdm_block_column_content:hover .tdm-col-content-title-url .tdm-title,
+                .tds-button2 .tdm-btn-text,
+                .tds-button2 i,
+                .tds-button5:hover .tdm-btn-text,
+                .tds-button5:hover i,
+                .tds-button6 .tdm-btn-text,
+                .tds-button6 i,
+                .tdm_block_list .tdm-list-item i,
+                .tdm_block_pricing .tdm-pricing-feature i,
+                .tdm-social-item i {
+                  color: #22a0d6;
+                }
+                .tdm-menu-active-style5 .td-header-menu-wrap .sf-menu > .current-menu-item > a,
+                .tdm-menu-active-style5 .td-header-menu-wrap .sf-menu > .current-menu-ancestor > a,
+                .tdm-menu-active-style5 .td-header-menu-wrap .sf-menu > .current-category-ancestor > a,
+                .tdm-menu-active-style5 .td-header-menu-wrap .sf-menu > li > a:hover,
+                .tdm-menu-active-style5 .td-header-menu-wrap .sf-menu > .sfHover > a,
+                .tds-button1,
+                .tds-button6:after,
+                .tds-title2 .tdm-title-line:after,
+                .tds-title3 .tdm-title-line:after,
+                .tdm_block_pricing.tdm-pricing-featured:before,
+                .tdm_block_pricing.tds_pricing2_block.tdm-pricing-featured .tdm-pricing-header,
+                .tds-progress-bar1 .tdm-progress-bar:after,
+                .tds-progress-bar2 .tdm-progress-bar:after,
+                .tds-social3 .tdm-social-item {
+                  background-color: #22a0d6;
+                }
+                .tdm-menu-active-style4 .tdm-header .sf-menu > .current-menu-item > a,
+                .tdm-menu-active-style4 .tdm-header .sf-menu > .current-menu-ancestor > a,
+                .tdm-menu-active-style4 .tdm-header .sf-menu > .current-category-ancestor > a,
+                .tdm-menu-active-style4 .tdm-header .sf-menu > li > a:hover,
+                .tdm-menu-active-style4 .tdm-header .sf-menu > .sfHover > a,
+                .tds-button2:before,
+                .tds-button6:before,
+                .tds-progress-bar3 .tdm-progress-bar:after {
+                  border-color: #22a0d6;
+                }
+                .tdm-btn-style1 {
+					background-color: #22a0d6;
+				}
+				.tdm-btn-style2:before {
+				    border-color: #22a0d6;
+				}
+				.tdm-btn-style2 {
+				    color: #22a0d6;
+				}
+				.tdm-btn-style3 {
+				    -webkit-box-shadow: 0 2px 16px #22a0d6;
+                    -moz-box-shadow: 0 2px 16px #22a0d6;
+                    box-shadow: 0 2px 16px #22a0d6;
+				}
+				.tdm-btn-style3:hover {
+				    -webkit-box-shadow: 0 4px 26px #22a0d6;
+                    -moz-box-shadow: 0 4px 26px #22a0d6;
+                    box-shadow: 0 4px 26px #22a0d6;
+				}
+</style><style id="tdw-css-placeholder"></style></head><body class="post-template-default single single-post postid-62 single-format-standard tdm-menu-active-style3 12-computer-security-mistakes-youre-probably-making global-block-template-1 td-technology single_template_6 td-animation-stack-type0 td-full-layout" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+
+        <div class="td-scroll-up"><i class="td-icon-menu-up"></i></div>
+    
+    <div class="td-menu-background"></div>
+<div id="td-mobile-nav">
+    <div class="td-mobile-container">
+        
+        <div class="td-menu-socials-wrap">
+            
+            <div class="td-menu-socials">
+                
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="#" title="Facebook">
+                <i class="td-icon-font td-icon-facebook"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="#" title="Twitter">
+                <i class="td-icon-font td-icon-twitter"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="#" title="Youtube">
+                <i class="td-icon-font td-icon-youtube"></i>
+            </a>
+        </span>            </div>
+            
+            <div class="td-mobile-close">
+                <a href="#"><i class="td-icon-close-mobile"></i></a>
+            </div>
+        </div>
+
+        
+        
+        
+        <div class="td-mobile-content">
+            <div class="menu-td-demo-header-menu-container"><ul id="menu-td-demo-header-menu" class="td-mobile-main-menu"><li id="menu-item-49" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-first menu-item-49"><a href="https://adventuresol.github.io/adventureguru/">Home</a></li>
+<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="https://adventuresol.github.io/adventureguru/pricing/">Pricing</a></li>
+<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="https://adventuresol.github.io/adventureguru/">Customers</a></li>
+<li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"><a href="https://adventuresol.github.io/adventureguru/demo-2/">Demo</a></li>
+<li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="https://adventuresol.github.io/adventureguru/news/">News</a></li>
+</ul></div>        </div>
+    </div>
+
+    
+    </div>    <div class="td-search-background"></div>
+<div class="td-search-wrap-mob">
+	<div class="td-drop-down-search" aria-labelledby="td-header-search-button">
+		<form method="get" class="td-search-form" action="https://adventuresol.github.io/adventureguru/">
+			
+			<div class="td-search-close">
+				<a href="#"><i class="td-icon-close-mobile"></i></a>
+			</div>
+			<div role="search" class="td-search-input">
+				<span>Search</span>
+				<input id="td-header-search-mob" type="text" value="" name="s" autocomplete="off"></div>
+		</form>
+		<div id="td-aj-search-mob"></div>
+	</div>
+</div>
+
+    <div id="td-outer-wrap" class="td-theme-wrap">
+    
+        
+            <div class="tdc-header-wrap ">
+
+            
+
+
+<div class="td-header-wrap tdm-header tdm-header-style-2 ">
+    
+    
+    <div class="td-header-menu-wrap-full td-container-wrap td_stretch_container td_stretch_content_1600">
+        <div class="td-header-menu-wrap td-header-gradient td-header-menu-no-search">
+            <div class="td-container td-header-row td-header-main-menu">
+                <div class="tdm-menu-btns-socials">
+            <div class="td-search-wrapper">
+            <div id="td-top-search">
+                
+                <div class="header-search-wrap">
+                    <div class="dropdown header-search">
+                        <a id="td-header-search-button-mob" href="#" role="button" class="dropdown-toggle " data-toggle="dropdown"><i class="td-icon-search"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <div class="td-header-menu-social">
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="#" title="Facebook">
+                <i class="td-icon-font td-icon-facebook"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="#" title="Twitter">
+                <i class="td-icon-font td-icon-twitter"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="#" title="Youtube">
+                <i class="td-icon-font td-icon-youtube"></i>
+            </a>
+        </span></div>
+            <div class="tdm-header-menu-btns">
+            <div class="tdm_block td_block_wrap tdm_block_button td_uid_1_5f094160a5ede_rand tdm-block-button-inline tdm-content-horiz-left td-pb-border-top tdm-menu-btn1 td_block_template_1" data-td-block-uid="td_uid_1_5f094160a5ede">
+<style>
+
+</style><div class="tds-button td-fix-index"><a href="#" class="tds-button1 tdm-btn tdm-btn-md td_uid_2_5f094160a89b6"><span class="tdm-btn-text"> SIGN UP</span></a></div></div>        </div>
+    </div>
+
+<div id="td-header-menu" role="navigation">
+    <div id="td-top-mobile-toggle"><a href="#"><i class="td-icon-font td-icon-mobile"></i></a></div>
+    <div class="td-main-menu-logo td-logo-in-menu">
+        		<a class="td-mobile-logo td-sticky-disable" href="https://adventuresol.github.io/adventureguru/">
+			<img src="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/logo-mobile-1.png" alt=""></a>
+			<a class="td-header-logo td-sticky-disable" href="https://adventuresol.github.io/adventureguru/">
+			<img class="td-retina-data" data-retina="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/logo-header-1.png" src="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/logo-header-1.png" alt=""><span class="td-visual-hidden">adventure guru</span>
+		</a>
+	    </div>
+    <div class="menu-td-demo-header-menu-container"><ul id="menu-td-demo-header-menu-1" class="sf-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-first td-menu-item td-normal-menu menu-item-49"><a href="https://adventuresol.github.io/adventureguru/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu menu-item-50"><a href="https://adventuresol.github.io/adventureguru/pricing/">Pricing</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu menu-item-51"><a href="https://adventuresol.github.io/adventureguru/">Customers</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu menu-item-52"><a href="https://adventuresol.github.io/adventureguru/demo-2/">Demo</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu menu-item-53"><a href="https://adventuresol.github.io/adventureguru/news/">News</a></li>
+</ul></div></div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+            </div>
+
+            
+<article id="post-62" class="td-post-template-6 post-62 post type-post status-publish format-standard has-post-thumbnail category-news td-container-wrap" itemscope itemtype="http://schema.org/Article"><div class="td-full-screen-header-image-wrap">
+
+        <div id="td-full-screen-header-image" class="td-image-gradient-style6">
+            <img class="td-backstretch" src="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/9.jpg"></div>
+
+        <div class="td-container td-post-header">
+
+            <div class="td-post-header-holder">
+                <div class="entry-crumbs"><span><a title="" class="entry-crumb" href="https://adventuresol.github.io/adventureguru/">Home</a></span> <i class="td-icon-right td-bread-sep"></i> <span><a title="View all posts in News" class="entry-crumb" href="https://adventuresol.github.io/adventureguru/category/news/">News</a></span> <i class="td-icon-right td-bread-sep td-bred-no-url-last"></i> <span class="td-bred-no-url-last">12 Computer Security Mistakes You’re Probably Making</span></div>
+                <header class="td-post-title"><ul class="td-category"><li class="entry-category"><a href="https://adventuresol.github.io/adventureguru/category/news/">News</a></li></ul><h1 class="entry-title">12 Computer Security Mistakes You’re Probably Making</h1>
+
+                    
+
+                    <div class="td-module-meta-info">
+                        <div class="td-post-author-name"><div class="td-author-by">By</div> <a href="https://adventuresol.github.io/adventureguru/author/adventure_guru/">adventure_guru</a><div class="td-author-line"> - </div> </div>                        <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2020-07-10T18:03:42+00:00">July 10, 2020</time></span>                        <div class="td-post-views"><i class="td-icon-views"></i><span class="td-nr-views-62">2</span></div>                        <div class="td-post-comments"><a href="https://adventuresol.github.io/adventureguru/2020/07/10/12-computer-security-mistakes-youre-probably-making/#respond"><i class="td-icon-comments"></i>0</a></div>                    </div>
+
+                </header></div>
+        </div>
+
+    </div>
+
+
+    <div class="td-container">
+        <div class="td-pb-row">
+                                <div class="td-pb-span12 td-main-content" role="main">
+                        <div class="td-ss-main-content">
+                            
+    <div class="td-post-sharing-top"><div id="td_social_sharing_article_top" class="td-post-sharing td-ps-bg td-ps-notext td-post-sharing-style1 "><div class="td-post-sharing-visible"><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-facebook" href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A8888%2Fadventureguru%2F2020%2F07%2F10%2F12-computer-security-mistakes-youre-probably-making%2F">
+                                        <div class="td-social-but-icon"><i class="td-icon-facebook"></i></div>
+                                        <div class="td-social-but-text">Facebook</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-twitter" href="https://twitter.com/intent/tweet?text=12+Computer+Security+Mistakes+You%E2%80%99re+Probably+Making&url=http%3A%2F%2Flocalhost%3A8888%2Fadventureguru%2F2020%2F07%2F10%2F12-computer-security-mistakes-youre-probably-making%2F&via=adventure+guru">
+                                        <div class="td-social-but-icon"><i class="td-icon-twitter"></i></div>
+                                        <div class="td-social-but-text">Twitter</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-googleplus" href="https://plus.google.com/share?url=https://adventuresol.github.io/adventureguru/2020/07/10/12-computer-security-mistakes-youre-probably-making/">
+                                        <div class="td-social-but-icon"><i class="td-icon-googleplus"></i></div>
+                                        <div class="td-social-but-text">Google+</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-pinterest" href="https://pinterest.com/pin/create/button/?url=https://adventuresol.github.io/adventureguru/2020/07/10/12-computer-security-mistakes-youre-probably-making/&media=https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/9.jpg&description=12+Computer+Security+Mistakes+You%E2%80%99re+Probably+Making">
+                                        <div class="td-social-but-icon"><i class="td-icon-pinterest"></i></div>
+                                        <div class="td-social-but-text">Pinterest</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-whatsapp" href="whatsapp://send?text=12+Computer+Security+Mistakes+You%E2%80%99re+Probably+Making%20%0A%0A%20https://adventuresol.github.io/adventureguru/2020/07/10/12-computer-security-mistakes-youre-probably-making/">
+                                        <div class="td-social-but-icon"><i class="td-icon-whatsapp"></i></div>
+                                        <div class="td-social-but-text">WhatsApp</div>
+                                    </a></div><div class="td-social-sharing-hidden"><ul class="td-pulldown-filter-list"></ul><a class="td-social-sharing-button td-social-handler td-social-expand-tabs" href="#" data-block-uid="td_social_sharing_article_top">
+                                    <div class="td-social-but-icon"><i class="td-icon-plus td-social-expand-tabs-icon"></i></div>
+                                </a></div></div></div>
+    <div class="td-post-content">
+        <p>The exploration of space stands as one of humanity’s greatest achievements. While history has hailed the men and women who reached the cosmos, and those who helped them get there, much of the infrastructure that sent them skyward lies forgotten and dilapidated. This may look a little unusual, but swishing through the various mini-screens is immensely satisfying.</p>
+<p>A 2017 survey found that employers have a very or somewhat difficult time finding people with the requisite soft skills. But what if employers are looking for soft skills and are not seeing them? The vast majority of mid-size and large employers in the US, UK and Canada utilize Applicant Tracking Systems.</p>
+<figure id="attachment_363" aria-describedby="caption-attachment-363" style="width: 1920px" class="wp-caption alignnone"><a href="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/p1.jpg"><img class=" td-modal-image wp-image-363 size-full" src="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/p1.jpg" alt="" width="1920" height="1184"></a><figcaption id="caption-attachment-363" class="wp-caption-text">Space trips about to start next year</figcaption></figure><p>Roland Miller has spent nearly half his life chronicling these landmarks before they are lost forever long been obsessed with space as a child, he dreamed of being an astronaut. Applicant Tracking Systems (ATS) make it possible for employers to post new positions online and manage the hundreds of applicants who typically respond to each opportunity. No human hiring manager reviews hundreds of applications.</p>
+<blockquote><p>my friends and colleagues have offered up reactions ranging from outright bemusement to adoration.</p></blockquote>
+<p>The image stabilizing works well on all the neon lights that pepper Tokyo, while even people were neatly captured. There’s some noise, but it compares favorably against older Galaxy phones. Daylight meant effortless captures and some really nice shots, if I say so myself.</p>
+<h4><strong>HARDWARE</strong></h4>
+<figure id="attachment_364" aria-describedby="caption-attachment-364" style="width: 300px" class="wp-caption alignright"><a href="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/p2.jpg"><img class=" td-modal-image wp-image-364" src="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/p2.jpg" alt="" width="300" height="416"></a><figcaption id="caption-attachment-364" class="wp-caption-text">Fully controllable from your mobile phone</figcaption></figure><p>Its curves are subjective and divisive; The screen looks great, with the punchy contrast and sharpness that’s been a Samsung flagship mainstay for years. We’ll get back to that edge, but it’s the headline part of a 5.6-inch Quad-HD+ display. But let’s focus on what’s different here: that edge.</p>
+<h4><strong>ONE-HANDED USE</strong></h4>
+<p>Make this secondary menu transparent, allowing me to maintain all that screen space. I’d love to see something similar on the iPhone X Plus continues to clear away. While I’m not a huge selfie taker, you’ll have to ask our Senior Selfie Editor, but I do take a whole lot of photos with my smartphone.</p>
+<h4><strong>SOFTWARE</strong></h4>
+<p>If you’re looking to learn more about the stylus uses, I’d advise a quick read of Brad’s Galaxy Note 4 review, because the setup is identical here. Faced with the need to differentiate hundreds candidates for every online posting, employers have added many new job requirements most of which are technical. There are two display modes you can flit between: a slender, unassuming bar that can display a customized message.</p>
+<figure id="attachment_365" aria-describedby="caption-attachment-365" style="width: 1920px" class="wp-caption alignnone"><a href="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/p3.jpg"><img class=" td-modal-image wp-image-365 size-full" src="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/p3.jpg" alt="" width="1920" height="1280"></a><figcaption id="caption-attachment-365" class="wp-caption-text">Woman programming her demo set</figcaption></figure><blockquote><p>THERE’S A WHILE BEFORE YOU GET THE LITTLE PROVISIONS WE MADE TO EASE USERS IN OUR PRODUCT</p></blockquote>
+<p>The screen is marginally smaller than the Note 4, despite the cranked-up pixel count. Like the Note9, text pops a little more, and pictures you take with the 26MP camera are obviously better replicated on the screen and a more substantial column that attempts to offer extra functionality, notifications or context-dependent menus for certain apps, like the camera. Well, both remain unwieldy to grip, and the Note Edge is wider. However, the edged screen nuzzles into my hand better and those software tweaks mentioned above give it the advantage.</p>
+<p>Does this mean there’s a soft skills shortage or that Millennials are all late, disorganized poor communicators? The punctual, organized and well-spoken Millennials whom employers should want have played by the rules and completed college degrees.</p>
+    </div>
+
+
+    <footer><div class="td-post-source-tags">
+                                </div>
+
+        <div class="td-post-sharing-bottom"><div class="td-post-sharing-classic"><iframe frameborder="0" src="http://www.facebook.com/plugins/like.php?href=https://adventuresol.github.io/adventureguru/2020/07/10/12-computer-security-mistakes-youre-probably-making/&layout=button_count&show_faces=false&width=105&action=like&colorscheme=light&height=21" style="border:none; overflow:hidden; width:105px; height:21px; background-color:transparent;"></iframe></div><div id="td_social_sharing_article_bottom" class="td-post-sharing td-ps-bg td-ps-notext td-post-sharing-style1 "><div class="td-post-sharing-visible"><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-facebook" href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A8888%2Fadventureguru%2F2020%2F07%2F10%2F12-computer-security-mistakes-youre-probably-making%2F">
+                                        <div class="td-social-but-icon"><i class="td-icon-facebook"></i></div>
+                                        <div class="td-social-but-text">Facebook</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-twitter" href="https://twitter.com/intent/tweet?text=12+Computer+Security+Mistakes+You%E2%80%99re+Probably+Making&url=http%3A%2F%2Flocalhost%3A8888%2Fadventureguru%2F2020%2F07%2F10%2F12-computer-security-mistakes-youre-probably-making%2F&via=adventure+guru">
+                                        <div class="td-social-but-icon"><i class="td-icon-twitter"></i></div>
+                                        <div class="td-social-but-text">Twitter</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-googleplus" href="https://plus.google.com/share?url=https://adventuresol.github.io/adventureguru/2020/07/10/12-computer-security-mistakes-youre-probably-making/">
+                                        <div class="td-social-but-icon"><i class="td-icon-googleplus"></i></div>
+                                        <div class="td-social-but-text">Google+</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-pinterest" href="https://pinterest.com/pin/create/button/?url=https://adventuresol.github.io/adventureguru/2020/07/10/12-computer-security-mistakes-youre-probably-making/&media=https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/9.jpg&description=12+Computer+Security+Mistakes+You%E2%80%99re+Probably+Making">
+                                        <div class="td-social-but-icon"><i class="td-icon-pinterest"></i></div>
+                                        <div class="td-social-but-text">Pinterest</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-whatsapp" href="whatsapp://send?text=12+Computer+Security+Mistakes+You%E2%80%99re+Probably+Making%20%0A%0A%20https://adventuresol.github.io/adventureguru/2020/07/10/12-computer-security-mistakes-youre-probably-making/">
+                                        <div class="td-social-but-icon"><i class="td-icon-whatsapp"></i></div>
+                                        <div class="td-social-but-text">WhatsApp</div>
+                                    </a></div><div class="td-social-sharing-hidden"><ul class="td-pulldown-filter-list"></ul><a class="td-social-sharing-button td-social-handler td-social-expand-tabs" href="#" data-block-uid="td_social_sharing_article_bottom">
+                                    <div class="td-social-but-icon"><i class="td-icon-plus td-social-expand-tabs-icon"></i></div>
+                                </a></div></div></div>        <div class="td-block-row td-post-next-prev"><div class="td-block-span6 td-post-prev-post"><div class="td-post-next-prev-content"><span>Previous article</span><a href="https://adventuresol.github.io/adventureguru/2020/07/10/hello-world/">Hello world!</a></div></div><div class="td-next-prev-separator"></div></div>        <div class="author-box-wrap"><a href="https://adventuresol.github.io/adventureguru/author/adventure_guru/"><img alt="" src="http://1.gravatar.com/avatar/ad11a18f218cafbffb3ca2e0c35208e4?s=96&d=mm&r=g" srcset="http://1.gravatar.com/avatar/ad11a18f218cafbffb3ca2e0c35208e4?s=192&d=mm&r=g 2x" class="avatar avatar-96 photo" height="96" width="96"></a><div class="desc"><div class="td-author-name vcard author"><span class="fn"><a href="https://adventuresol.github.io/adventureguru/author/adventure_guru/">adventure_guru</a></span></div><div class="td-author-url"><a href="https://adventuresol.github.io/adventureguru">https://adventuresol.github.io/adventureguru</a></div><div class="td-author-description"></div><div class="td-author-social"></div><div class="clearfix"></div></div></div>	    <span class="td-page-meta" itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="adventure_guru"></span><meta itemprop="datePublished" content="2020-07-10T18:03:42+00:00"><meta itemprop="dateModified" content="2020-07-10T18:03:42+00:00"><meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://adventuresol.github.io/adventureguru/2020/07/10/12-computer-security-mistakes-youre-probably-making/"><span class="td-page-meta" itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><span class="td-page-meta" itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/logo-header-1.png"></span><meta itemprop="name" content="adventure guru"></span><meta itemprop="headline " content="12 Computer Security Mistakes You’re Probably Making"><span class="td-page-meta" itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/9.jpg"><meta itemprop="width" content="1920"><meta itemprop="height" content="1243"></span>    </footer><div class="td_block_wrap td_block_related_posts td-related-full-width td_uid_4_5f094160b0bef_rand td_with_ajax_pagination td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_4_5f094160b0bef"><script>var block_td_uid_4_5f094160b0bef = new tdBlock();
+block_td_uid_4_5f094160b0bef.id = "td_uid_4_5f094160b0bef";
+block_td_uid_4_5f094160b0bef.atts = '{"limit":5,"ajax_pagination":"next_prev","live_filter":"cur_post_same_categories","td_ajax_filter_type":"td_custom_related","class":"td-related-full-width td_uid_4_5f094160b0bef_rand","td_column_number":5,"live_filter_cur_post_id":62,"live_filter_cur_post_author":"1","block_template_id":"","header_color":"","ajax_pagination_infinite_stop":"","offset":"","td_ajax_preloading":"","td_filter_default_txt":"","td_ajax_filter_ids":"","el_class":"","color_preset":"","border_top":"","css":"","tdc_css":"","tdc_css_class":"td_uid_4_5f094160b0bef_rand","tdc_css_class_style":"td_uid_4_5f094160b0bef_rand_style"}';
+block_td_uid_4_5f094160b0bef.td_column_number = "5";
+block_td_uid_4_5f094160b0bef.block_type = "td_block_related_posts";
+block_td_uid_4_5f094160b0bef.post_count = "5";
+block_td_uid_4_5f094160b0bef.found_posts = "9";
+block_td_uid_4_5f094160b0bef.header_color = "";
+block_td_uid_4_5f094160b0bef.ajax_pagination_infinite_stop = "";
+block_td_uid_4_5f094160b0bef.max_num_pages = "2";
+tdBlocksArray.push(block_td_uid_4_5f094160b0bef);
+</script><h4 class="td-related-title td-block-title"><a id="td_uid_5_5f094160b2637" class="td-related-left td-cur-simple-item" data-td_filter_value="" data-td_block_id="td_uid_4_5f094160b0bef" href="#">RELATED ARTICLES</a><a id="td_uid_6_5f094160b263f" class="td-related-right" data-td_filter_value="td_related_more_from_author" data-td_block_id="td_uid_4_5f094160b0bef" href="#">MORE FROM AUTHOR</a></h4><div id="td_uid_4_5f094160b0bef" class="td_block_inner">
+
+	<div class="td-related-row">
+
+	<div class="td-related-span4">
+
+        <div class="td_module_related_posts td-animation-stack td_mod_related_posts">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://adventuresol.github.io/adventureguru/2020/07/10/you-and-your-kids-can-enjoy-this-news-gaming-console/" rel="bookmark" class="td-image-wrap" title="You and Your Kids can Enjoy this News Gaming Console"><img class="entry-thumb" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANoAAACWAQMAAACCSQSPAAAAA1BMVEWurq51dlI4AAAAAXRSTlMmkutdmwAAABpJREFUWMPtwQENAAAAwiD7p7bHBwwAAAAg7RD+AAGXD7BoAAAAAElFTkSuQmCC" alt="" title="You and Your Kids can Enjoy this News Gaming Console" data-type="image_tag" data-img-url="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/1-218x150.jpg" width="218" height="150"></a></div>                            </div>
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://adventuresol.github.io/adventureguru/2020/07/10/you-and-your-kids-can-enjoy-this-news-gaming-console/" rel="bookmark" title="You and Your Kids can Enjoy this News Gaming Console">You and Your Kids can Enjoy this News Gaming Console</a></h3>            </div>
+        </div>
+        
+	</div> 
+
+	<div class="td-related-span4">
+
+        <div class="td_module_related_posts td-animation-stack td_mod_related_posts">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://adventuresol.github.io/adventureguru/2020/07/10/a-breakthough-for-this-year-new-holiday-birds-eye-view-debuting/" rel="bookmark" class="td-image-wrap" title="A Breakthough for This Year: New Holiday Birds-Eye View Debuting"><img class="entry-thumb" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANoAAACWAQMAAACCSQSPAAAAA1BMVEWurq51dlI4AAAAAXRSTlMmkutdmwAAABpJREFUWMPtwQENAAAAwiD7p7bHBwwAAAAg7RD+AAGXD7BoAAAAAElFTkSuQmCC" alt="" title="A Breakthough for This Year: New Holiday Birds-Eye View Debuting" data-type="image_tag" data-img-url="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/2-218x150.jpg" width="218" height="150"></a></div>                            </div>
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://adventuresol.github.io/adventureguru/2020/07/10/a-breakthough-for-this-year-new-holiday-birds-eye-view-debuting/" rel="bookmark" title="A Breakthough for This Year: New Holiday Birds-Eye View Debuting">A Breakthough for This Year: New Holiday Birds-Eye View Debuting</a></h3>            </div>
+        </div>
+        
+	</div> 
+
+	<div class="td-related-span4">
+
+        <div class="td_module_related_posts td-animation-stack td_mod_related_posts">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://adventuresol.github.io/adventureguru/2020/07/10/discover-the-newest-waterproof-and-rugged-cameras-of-2017/" rel="bookmark" class="td-image-wrap" title="Discover the Newest Waterproof and Rugged Cameras of 2017"><img class="entry-thumb" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANoAAACWAQMAAACCSQSPAAAAA1BMVEWurq51dlI4AAAAAXRSTlMmkutdmwAAABpJREFUWMPtwQENAAAAwiD7p7bHBwwAAAAg7RD+AAGXD7BoAAAAAElFTkSuQmCC" alt="" title="Discover the Newest Waterproof and Rugged Cameras of 2017" data-type="image_tag" data-img-url="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/3-218x150.jpg" width="218" height="150"></a></div>                            </div>
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://adventuresol.github.io/adventureguru/2020/07/10/discover-the-newest-waterproof-and-rugged-cameras-of-2017/" rel="bookmark" title="Discover the Newest Waterproof and Rugged Cameras of 2017">Discover the Newest Waterproof and Rugged Cameras of 2017</a></h3>            </div>
+        </div>
+        
+	</div> 
+
+	<div class="td-related-span4">
+
+        <div class="td_module_related_posts td-animation-stack td_mod_related_posts">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://adventuresol.github.io/adventureguru/2020/07/10/apple-xi-will-arrive-this-spring-in-the-premium-segment/" rel="bookmark" class="td-image-wrap" title="Apple XI Will Arrive this Spring in the Premium Segment"><img class="entry-thumb" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANoAAACWAQMAAACCSQSPAAAAA1BMVEWurq51dlI4AAAAAXRSTlMmkutdmwAAABpJREFUWMPtwQENAAAAwiD7p7bHBwwAAAAg7RD+AAGXD7BoAAAAAElFTkSuQmCC" alt="" title="Apple XI Will Arrive this Spring in the Premium Segment" data-type="image_tag" data-img-url="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/4-218x150.jpg" width="218" height="150"></a></div>                            </div>
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://adventuresol.github.io/adventureguru/2020/07/10/apple-xi-will-arrive-this-spring-in-the-premium-segment/" rel="bookmark" title="Apple XI Will Arrive this Spring in the Premium Segment">Apple XI Will Arrive this Spring in the Premium Segment</a></h3>            </div>
+        </div>
+        
+	</div> 
+
+	<div class="td-related-span4">
+
+        <div class="td_module_related_posts td-animation-stack td_mod_related_posts">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://adventuresol.github.io/adventureguru/2020/07/10/the-smart-wireless-earphones-for-djs-are-a-real-breakthrough/" rel="bookmark" class="td-image-wrap" title="The Smart Wireless Earphones for DJ’s Are a Real Breakthrough"><img class="entry-thumb" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANoAAACWAQMAAACCSQSPAAAAA1BMVEWurq51dlI4AAAAAXRSTlMmkutdmwAAABpJREFUWMPtwQENAAAAwiD7p7bHBwwAAAAg7RD+AAGXD7BoAAAAAElFTkSuQmCC" alt="" title="The Smart Wireless Earphones for DJ’s Are a Real Breakthrough" data-type="image_tag" data-img-url="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/5-218x150.jpg" width="218" height="150"></a></div>                            </div>
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://adventuresol.github.io/adventureguru/2020/07/10/the-smart-wireless-earphones-for-djs-are-a-real-breakthrough/" rel="bookmark" title="The Smart Wireless Earphones for DJ’s Are a Real Breakthrough">The Smart Wireless Earphones for DJ’s Are a Real Breakthrough</a></h3>            </div>
+        </div>
+        
+	</div> </div></div><div class="td-next-prev-wrap"><a href="#" class="td-ajax-prev-page ajax-page-disabled" id="prev-page-td_uid_4_5f094160b0bef" data-td_block_id="td_uid_4_5f094160b0bef"><i class="td-icon-font td-icon-menu-left"></i></a><a href="#" class="td-ajax-next-page" id="next-page-td_uid_4_5f094160b0bef" data-td_block_id="td_uid_4_5f094160b0bef"><i class="td-icon-font td-icon-menu-right"></i></a></div></div> 
+	<div class="comments" id="comments">
+        	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">LEAVE A REPLY <small><a rel="nofollow" id="cancel-comment-reply-link" href="/adventureguru/2020/07/10/12-computer-security-mistakes-youre-probably-making/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://adventuresol.github.io/adventureguru/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><div class="clearfix"></div>
+				<div class="comment-form-input-wrap td-form-comment">
+					<textarea placeholder="Comment:" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea><div class="td-warning-comment">Please enter your comment!</div>
+				</div>
+		        <div class="comment-form-input-wrap td-form-author">
+			            <input class="" id="author" name="author" placeholder="Name:*" type="text" value="" size="30" aria-required="true"><div class="td-warning-author">Please enter your name here</div>
+			         </div>
+<div class="comment-form-input-wrap td-form-email">
+			            <input class="" id="email" name="email" placeholder="Email:*" type="text" value="" size="30" aria-required="true"><div class="td-warning-email-error">You have entered an incorrect email address!</div>
+			            <div class="td-warning-email">Please enter your email address here</div>
+			         </div>
+<div class="comment-form-input-wrap td-form-url">
+			            <input class="" id="url" name="url" placeholder="Website:" type="text" value="" size="30"></div>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"><label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"><input type="hidden" name="comment_post_ID" value="62" id="comment_post_ID"><input type="hidden" name="comment_parent" id="comment_parent" value="0"></p></form>	</div>
+	    </div> 
+                        </div>
+                    </div>
+                            </div> 
+    </div> 
+</article><div class="td-footer-page td-footer-container td-container-wrap">
+	<p></p><div id="td_uid_1_5f094160b8804" class="tdc-row stretch_row_1600 td-stretch-content"><div class="vc_row td_uid_7_5f094160b8815_rand td-text-image-module td-multipourpose-footer wpb_row td-pb-row tdc-element-style">
+<style scoped>
+
+/* custom css */
+.td_uid_7_5f094160b8815_rand {
+                    min-height: 0;
+                }
+/* inline tdc_css att */
+
+.td_uid_7_5f094160b8815_rand{
+padding-top:60px !important;
+padding-bottom:60px !important;
+position:relative;
+}
+
+.td_uid_7_5f094160b8815_rand .td_block_wrap{ text-align:left }
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_7_5f094160b8815_rand{
+padding-bottom:0px !important;
+justify-content:center !important;
+text-align:center !important;
+}
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_7_5f094160b8815_rand{
+padding-bottom:0px !important;
+}
+}
+
+</style><div class="td_uid_1_5f094160b8804_rand_style td-element-style"><div class="td-element-style-before"><style>
+.td_uid_1_5f094160b8804_rand_style > .td-element-style-before {
+content:'' !important;
+width:100% !important;
+height:100% !important;
+position:absolute !important;
+top:0 !important;
+left:0 !important;
+display:block !important;
+z-index:0 !important;
+background-image:url("https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/xxx_footer-bg_xxx.jpg") !important;
+background-position:center center !important;
+opacity:0.30 !important;
+background-size:cover !important;
+}
+</style></div><style>
+.td_uid_1_5f094160b8804_rand_style{
+background-color:#000000 !important;
+}
+ </style></div><div class="vc_column td_uid_8_5f094160b8d4f_rand  wpb_column vc_column_container tdc-column td-pb-span6">
+<style scoped>
+
+/* custom css */
+.td_uid_8_5f094160b8d4f_rand {
+                    vertical-align: baseline;
+                }
+/* inline tdc_css att */
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px)
+{
+.td_uid_8_5f094160b8d4f_rand{
+width:40% !important;
+}
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_8_5f094160b8d4f_rand{
+padding-bottom:40px !important;
+padding-left:40px !important;
+width:auto !important;
+}
+}
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_8_5f094160b8d4f_rand{
+margin-bottom:-30px !important;
+}
+}
+
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_column_title td_uid_9_5f094160b90b2_rand tdm-content-horiz-left td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_9_5f094160b90b2">
+<style>
+
+/* inline tdc_css att */
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_9_5f094160b90b2_rand{
+text-align:left !important;
+}
+}
+
+</style><div class="td-block-row"><div class="td-block-span12 tdm-col">
+<style>
+body .td_uid_10_5f094160b9fd5 .tdm-title {
+					color: #22a0d6;
+				}
+</style><div class="tds-title tds-title1 td-fix-index td_uid_10_5f094160b9fd5"><h1 class="tdm-title tdm-title-sm">HEADQUARTERS</h1></div></div></div></div><div class="tdm_block td_block_wrap tdm_block_column_title td_uid_11_5f094160ba8b3_rand tdm-content-horiz-left td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_11_5f094160ba8b3">
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_11_5f094160ba8b3_rand{
+margin-bottom:-10px !important;
+}
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_11_5f094160ba8b3_rand{
+text-align:left !important;
+}
+}
+
+</style><div class="td-block-row"><div class="td-block-span12 tdm-col">
+<style>
+body .td_uid_12_5f094160bb629 .tdm-title {
+					color: #ffffff;
+				}
+</style><div class="tds-title tds-title1 td-fix-index td_uid_12_5f094160bb629"><h1 class="tdm-title tdm-title-bg">Technology Hub</h1></div></div></div></div><div class="tdm_block td_block_wrap tdm_block_column_title td_uid_13_5f094160bbd9d_rand tdm-content-horiz-left td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_13_5f094160bbd9d">
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_13_5f094160bbd9d_rand{
+margin-bottom:10px !important;
+}
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_13_5f094160bbd9d_rand{
+text-align:left !important;
+}
+}
+
+</style><div class="td-block-row"><div class="td-block-span12 tdm-col">
+<style>
+body .td_uid_14_5f094160bcaa6 .tdm-title {
+					color: #ffffff;
+				}
+</style><div class="tds-title tds-title1 td-fix-index td_uid_14_5f094160bcaa6"><h3 class="tdm-title tdm-title-md">The modern cube <br> Glass wing <br>
+NY2268 New York <br>
+United States of America</h3></div></div></div></div><div class="tdm_block td_block_wrap tdm_block_icon_box td_uid_15_5f094160bd488_rand tdm-content-horiz-left tds_icon_box2_wrap td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_15_5f094160bd488">
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_15_5f094160bd488_rand{
+margin-bottom:20px !important;
+}
+
+</style><style>
+.td_uid_16_5f094160bee75 .tdm-col-icon {
+				    padding-right: 13px;
+				}
+				
+				.td_uid_16_5f094160bee75 .tds-title {
+				    margin-top: -10px;
+				}
+				
+				
+				.td_uid_16_5f094160bee75 .tds-title {
+				    margin-bottom: 0px;
+				}
+				
+				
+				.td_uid_16_5f094160bee75 .tdm-descr {
+				    margin-bottom: 0px;
+				}
+</style><div class="tds-icon-box tds-icon-box2 td-fix-index  td_uid_16_5f094160bee75"><div class="tdm-col-icon">
+<style>
+.td_uid_17_5f094160bf03a {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				} 
+				.td_uid_17_5f094160bf03a:before {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				}
+
+				
+				.td_uid_17_5f094160bf03a:before {
+					color: #22a0d6;
+				}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px){
+
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px){
+
+}
+
+/* phone */
+@media (max-width: 767px){
+
+}
+</style><i class="tds-icon tdc-font-typcn tdc-font-typcn-location td_uid_17_5f094160bf03a td-fix-index"></i></div><div class="tdm-col-text">
+<style>
+body .td_uid_18_5f094160bfbd2 .tdm-title {
+					color: #ffffff;
+				}
+</style><div class="tds-title tds-title1 td-fix-index td_uid_18_5f094160bfbd2"><h3 class="tdm-title tdm-title-sm">GET DIRECTIONS</h3></div><p class="tdm-descr td-fix-index"></p></div></div><style>.td_uid_15_5f094160bd488_rand .tds-icon-box .tds-icon {
+				    font-size: 24px;
+				    text-align: center;
+				}
+				
+				
+				.td_uid_15_5f094160bd488_rand .tds-icon-box .tds-icon {
+				    width: 24px;
+				    height: 24px;
+				    line-height: 24px;
+				}</style></div><div class="tdm_block td_block_wrap tdm_block_icon_box td_uid_19_5f094160c1c7e_rand tdm-content-horiz-left tds_icon_box2_wrap td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_19_5f094160c1c7e">
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_19_5f094160c1c7e_rand{
+margin-left:5px !important;
+}
+
+</style><style>
+.td_uid_20_5f094160c30d3 .tdm-col-icon {
+				    padding-right: 20px;
+				}
+				
+				.td_uid_20_5f094160c30d3 .tds-title {
+				    margin-top: -12px;
+				}
+				
+				
+				.td_uid_20_5f094160c30d3 .tds-title {
+				    margin-bottom: 0px;
+				}
+				
+				
+				.td_uid_20_5f094160c30d3 .tdm-descr {
+				    margin-bottom: 0px;
+				}
+</style><div class="tds-icon-box tds-icon-box2 td-fix-index  td_uid_20_5f094160c30d3"><div class="tdm-col-icon">
+<style>
+.td_uid_21_5f094160c30e2 {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				} 
+				.td_uid_21_5f094160c30e2:before {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				}
+
+				
+				.td_uid_21_5f094160c30e2:before {
+					color: #22a0d6;
+				}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px){
+
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px){
+
+}
+
+/* phone */
+@media (max-width: 767px){
+
+}
+</style><i class="tds-icon tdc-font-oi tdc-font-oi-envelope-closed td_uid_21_5f094160c30e2 td-fix-index"></i></div><div class="tdm-col-text">
+<style>
+body .td_uid_22_5f094160c3cd1 .tdm-title {
+					color: #ffffff;
+				}
+</style><div class="tds-title tds-title1 td-fix-index td_uid_22_5f094160c3cd1"><h3 class="tdm-title tdm-title-sm">info@technology.com</h3></div><p class="tdm-descr td-fix-index"></p></div></div><style>.td_uid_19_5f094160c1c7e_rand .tds-icon-box .tds-icon {
+				    font-size: 17px;
+				    text-align: center;
+				}
+				
+				
+				.td_uid_19_5f094160c1c7e_rand .tds-icon-box .tds-icon {
+				    width: 17px;
+				    height: 17px;
+				    line-height: 17px;
+				}</style></div></div></div><div class="vc_column td_uid_23_5f094160c6be7_rand  wpb_column vc_column_container tdc-column td-pb-span6">
+<style scoped>
+
+/* custom css */
+.td_uid_23_5f094160c6be7_rand {
+                    vertical-align: baseline;
+                }
+/* inline tdc_css att */
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px)
+{
+.td_uid_23_5f094160c6be7_rand{
+width:60% !important;
+}
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_23_5f094160c6be7_rand{
+width:auto !important;
+}
+}
+
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_inline_image td_uid_24_5f094160c7148_rand tdm-content-horiz-left td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_24_5f094160c7148">
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_24_5f094160c7148_rand{
+position:relative;
+}
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_24_5f094160c7148_rand{
+margin-top:80px !important;
+margin-right:-20px !important;
+margin-left:-20px !important;
+}
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_24_5f094160c7148_rand{
+margin-right:-14px !important;
+margin-left:-14px !important;
+}
+}
+
+</style><div class="td_uid_24_5f094160c7148_rand_style td-element-style">
+<div class="td-element-style-before"><style>
+.td_uid_24_5f094160c7148_rand_style > .td-element-style-before {
+content:'' !important;
+width:100% !important;
+height:100% !important;
+position:absolute !important;
+top:0 !important;
+left:0 !important;
+display:block !important;
+z-index:0 !important;
+background-repeat:no-repeat !important;
+background-position:center center !important;
+}
+</style></div><style> </style></div><div class="tdm-inline-image-wrap"><img class="tdm-image td-fix-index" src="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/footer-img.jpg" title="footer-img"></div></div></div></div></div></div><div id="td_uid_4_5f094160c86b2" class="tdc-row stretch_row_1600 td-stretch-content"><div class="vc_row td_uid_25_5f094160c86bd_rand td-multipourpose-footer wpb_row td-pb-row tdc-element-style">
+<style scoped>
+
+/* custom css */
+.td_uid_25_5f094160c86bd_rand {
+                    min-height: 0;
+                }
+/* inline tdc_css att */
+
+.td_uid_25_5f094160c86bd_rand{
+margin-bottom:- !important;
+padding-top:10px !important;
+padding-bottom:10px !important;
+position:relative;
+}
+
+.td_uid_25_5f094160c86bd_rand .td_block_wrap{ text-align:left }
+
+</style><div class="td_uid_4_5f094160c86b2_rand_style td-element-style"><style>
+.td_uid_4_5f094160c86b2_rand_style{
+background-color:#1e73be !important;
+}
+ </style></div><div class="vc_column td_uid_26_5f094160c8a6b_rand  wpb_column vc_column_container tdc-column td-pb-span6">
+<style scoped>
+
+/* custom css */
+.td_uid_26_5f094160c8a6b_rand {
+                    vertical-align: baseline;
+                }
+/* inline tdc_css att */
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_26_5f094160c8a6b_rand{
+width:100% !important;
+justify-content:center !important;
+text-align:center !important;
+}
+}
+
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_inline_text td_uid_27_5f094160c8db6_rand tdm-inline-block tdm-content-horiz-left td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_27_5f094160c8db6">
+<style>
+/* custom css */
+.td_uid_27_5f094160c8db6_rand .tdm-descr {
+                    color: #ffffff;
+                }
+</style><p class="tdm-descr">© Copyright 2017 tagDiv | All rights reserved  </p></div></div></div><div class="vc_column td_uid_28_5f094160c9b1e_rand  wpb_column vc_column_container tdc-column td-pb-span6">
+<style scoped>
+
+/* custom css */
+.td_uid_28_5f094160c9b1e_rand {
+                    vertical-align: baseline;
+                }
+/* inline tdc_css att */
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_28_5f094160c9b1e_rand{
+width:100% !important;
+}
+}
+
+</style><div class="wpb_wrapper"><div class="td_block_wrap td_block_list_menu td_uid_29_5f094160c9ebe_rand td-pb-border-top td_block_template_1 widget" data-td-block-uid="td_uid_29_5f094160c9ebe">
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_29_5f094160c9ebe_rand{
+justify-content:flex-end !important;
+text-align:right !important;
+}
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_29_5f094160c9ebe_rand{
+justify-content:center !important;
+text-align:center !important;
+}
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_29_5f094160c9ebe_rand{
+justify-content:center !important;
+text-align:center !important;
+}
+}
+
+</style><div class="td-block-title-wrap"></div><div id="td_uid_29_5f094160c9ebe" class="td_block_inner td-fix-index"><div class="menu-td-demo-header-menu-container"><ul id="menu-td-demo-header-menu-2" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-49"><a href="https://adventuresol.github.io/adventureguru/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="https://adventuresol.github.io/adventureguru/pricing/">Pricing</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="https://adventuresol.github.io/adventureguru/">Customers</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"><a href="https://adventuresol.github.io/adventureguru/demo-2/">Demo</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="https://adventuresol.github.io/adventureguru/news/">News</a></li>
+</ul></div></div></div> </div></div></div></div>
+	</div>
+
+
+
+</div>
+
+
+
+
+    
+
+    <script type="text/javascript" src="https://adventuresol.github.io/adventureguru/wp-content/plugins/td-composer/legacy/common/wp_booster/js_dev/tdModalPostImages.js"></script><script type="text/javascript" src="https://adventuresol.github.io/adventureguru/wp-includes/js/underscore.min.js"></script><script type="text/javascript" src="https://adventuresol.github.io/adventureguru/wp-content/plugins/td-cloud-library/assets/js/js_posts_autoload.min.js"></script><script type="text/javascript" src="https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/js/tagdiv_theme.min.js"></script><script type="text/javascript" src="https://adventuresol.github.io/adventureguru/wp-content/plugins/td-cloud-library/assets/js/js_files_for_front.min.js"></script><script>
+    
+jQuery(window).ready(function() {
+(function(){
+var td_backstr_item = new tdBackstr.item();
+td_backstr_item.wrapper_image_jquery_obj = jQuery( "#td-full-screen-header-image" );
+td_backstr_item.image_jquery_obj = td_backstr_item.wrapper_image_jquery_obj.find( 'img:first' );
+tdBackstr.add_item( td_backstr_item );
+})();
+});
+
+	
+
+		(function(){
+			var html_jquery_obj = jQuery('html');
+
+			if (html_jquery_obj.length && (html_jquery_obj.is('.ie8') || html_jquery_obj.is('.ie9'))) {
+
+				var path = 'https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/style.css';
+
+				jQuery.get(path, function(data) {
+
+					var str_split_separator = '#td_css_split_separator';
+					var arr_splits = data.split(str_split_separator);
+					var arr_length = arr_splits.length;
+
+					if (arr_length > 1) {
+
+						var dir_path = 'https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper';
+						var splited_css = '';
+
+						for (var i = 0; i < arr_length; i++) {
+							if (i > 0) {
+								arr_splits[i] = str_split_separator + ' ' + arr_splits[i];
+							}
+							//jQuery('head').append('<style>' + arr_splits[i] + '');
+
+							var formated_str = arr_splits[i].replace(/\surl\(\'(?!data\:)/gi, function regex_function(str) {
+								return ' url(\'' + dir_path + '/' + str.replace(/url\(\'/gi, '').replace(/^\s+|\s+$/gm,'');
+							});
+
+							splited_css += "<style>" + formated_str + "";
+						}
+
+						var td_theme_css = jQuery('link#td-theme-css');
+
+						if (td_theme_css.length) {
+							td_theme_css.after(splited_css);
+						}
+					}
+				});
+			}
+		})();
+
+	
+	
+</script></body></html>
