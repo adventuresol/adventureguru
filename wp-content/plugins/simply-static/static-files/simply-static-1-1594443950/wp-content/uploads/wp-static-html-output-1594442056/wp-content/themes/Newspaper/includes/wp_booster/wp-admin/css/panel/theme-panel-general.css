@@ -1,0 +1,6 @@
+.td-theme-panel-body #wpcontent {background-color: #3b7fa8 !important;background: url("https://adventuresol.github.io/adventureguru/wp-content/uploads/wp-static-html-output-1594442056/wp-content/themes/Newspaper/includes/wp_booster/wp-admin/css/images/panel/bg/1.png");background-repeat: no-repeat;background-position: left top;}
+.td-theme-panel-body #wpfooter {color: rgba(255,255,255,.8);}
+.td-theme-panel-body #wpfooter a {color: #fff;}
+.td-theme-panel-body ul#adminmenu a.wp-has-current-submenu:after, .td-theme-panel-body ul#adminmenu > li.current > a.current:after {border-right-color: #30749b;}
+.newspaper_page_td_theme_panel #wpcontent {background-repeat: repeat;}
+.update-theme p:before {color: #f56e28;content: "";display: inline-block;font: 400 20px/1 dashicons;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;vertical-align: top;}

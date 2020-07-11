@@ -1,0 +1,3889 @@
+<!DOCTYPE html>
+<html lang="en-US"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>adventure guru – Page 2 – Just another WordPress site</title><link rel="dns-prefetch" href="//fonts.googleapis.com"><link rel="dns-prefetch" href="//s.w.org"><link rel="stylesheet" id="wp-block-library-css" href="https://adventuresol.github.io/adventureguru/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all"><link rel="stylesheet" id="td-plugin-multi-purpose-css" href="https://adventuresol.github.io/adventureguru/wp-content/plugins/td-composer/td-multi-purpose/style.css" type="text/css" media="all"><link rel="stylesheet" id="td-multipurpose-css" href="https://adventuresol.github.io/adventureguru/wp-content/plugins/td-composer/assets/fonts/td-multipurpose/td-multipurpose.css" type="text/css" media="all"><link rel="stylesheet" id="font_awesome-css" href="https://adventuresol.github.io/adventureguru/wp-content/plugins/td-composer/assets/fonts/font-awesome/font-awesome.css" type="text/css" media="all"><link rel="stylesheet" id="typicons-css" href="https://adventuresol.github.io/adventureguru/wp-content/plugins/td-composer/assets/fonts/typicons/typicons.css" type="text/css" media="all"><link rel="stylesheet" id="open_iconic-css" href="https://adventuresol.github.io/adventureguru/wp-content/plugins/td-composer/assets/fonts/open-iconic/open-iconic.css" type="text/css" media="all"><link rel="stylesheet" id="google-fonts-style-css" href="http://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C300%7CRoboto%3A300%2C400%2C400italic%2C500%2C500italic%2C700%2C900&ver=9.7.1" type="text/css" media="all"><link rel="stylesheet" id="td-theme-css" href="https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/style.css" type="text/css" media="all"><style id="td-theme-inline-css" type="text/css">
+    
+        @media (max-width: 767px) {
+            .td-header-desktop-wrap {
+                display: none;
+            }
+        }
+        @media (min-width: 767px) {
+            .td-header-mobile-wrap {
+                display: none;
+            }
+        }
+    
+	
+</style><link rel="stylesheet" id="td-legacy-framework-front-style-css" href="https://adventuresol.github.io/adventureguru/wp-content/plugins/td-composer/legacy/Newspaper/assets/css/td_legacy_main.css" type="text/css" media="all"><link rel="stylesheet" id="td-theme-demo-style-css" href="https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/includes/demos/technology/demo_style.css" type="text/css" media="all"><link rel="stylesheet" id="tdb_front_style-css" href="https://adventuresol.github.io/adventureguru/wp-content/plugins/td-cloud-library/assets/css/tdb_less_front.css" type="text/css" media="all"><script type="text/javascript" src="https://adventuresol.github.io/adventureguru/wp-includes/js/jquery/jquery.js"></script><script type="text/javascript" src="https://adventuresol.github.io/adventureguru/wp-includes/js/jquery/jquery-migrate.min.js"></script><script>
+        window.tdb_globals = {"wpRestNonce":"5fc87bf494","wpRestUrl":"https:\/\/adventuresol.github.io\/adventureguru\/wp-json\/","permalinkStructure":"\/%year%\/%monthnum%\/%day%\/%postname%\/","isAjax":false,"isAdminBarShowing":false,"autoloadScrollPercent":50};
+    </script><script>
+				window.tdwGlobal = {"adminUrl":"https:\/\/adventuresol.github.io\/adventureguru\/wp-admin\/","wpRestNonce":"5fc87bf494","wpRestUrl":"https:\/\/adventuresol.github.io\/adventureguru\/wp-json\/","permalinkStructure":"\/%year%\/%monthnum%\/%day%\/%postname%\/"};
+			</script><script>
+    
+    
+
+	    var tdBlocksArray = []; //here we store all the items for the current page
+
+	    //td_block class - each ajax block uses a object of this class for requests
+	    function tdBlock() {
+		    this.id = '';
+		    this.block_type = 1; //block type id (1-234 etc)
+		    this.atts = '';
+		    this.td_column_number = '';
+		    this.td_current_page = 1; //
+		    this.post_count = 0; //from wp
+		    this.found_posts = 0; //from wp
+		    this.max_num_pages = 0; //from wp
+		    this.td_filter_value = ''; //current live filter value
+		    this.is_ajax_running = false;
+		    this.td_user_action = ''; // load more or infinite loader (used by the animation)
+		    this.header_color = '';
+		    this.ajax_pagination_infinite_stop = ''; //show load more at page x
+	    }
+
+
+        // td_js_generator - mini detector
+        (function(){
+            var htmlTag = document.getElementsByTagName("html")[0];
+
+	        if ( navigator.userAgent.indexOf("MSIE 10.0") > -1 ) {
+                htmlTag.className += ' ie10';
+            }
+
+            if ( !!navigator.userAgent.match(/Trident.*rv\:11\./) ) {
+                htmlTag.className += ' ie11';
+            }
+
+	        if ( navigator.userAgent.indexOf("Edge") > -1 ) {
+                htmlTag.className += ' ieEdge';
+            }
+
+            if ( /(iPad|iPhone|iPod)/g.test(navigator.userAgent) ) {
+                htmlTag.className += ' td-md-is-ios';
+            }
+
+            var user_agent = navigator.userAgent.toLowerCase();
+            if ( user_agent.indexOf("android") > -1 ) {
+                htmlTag.className += ' td-md-is-android';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Mac OS X')  ) {
+                htmlTag.className += ' td-md-is-os-x';
+            }
+
+            if ( /chrom(e|ium)/.test(navigator.userAgent.toLowerCase()) ) {
+               htmlTag.className += ' td-md-is-chrome';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Firefox') ) {
+                htmlTag.className += ' td-md-is-firefox';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Safari') && -1 === navigator.userAgent.indexOf('Chrome') ) {
+                htmlTag.className += ' td-md-is-safari';
+            }
+
+            if( -1 !== navigator.userAgent.indexOf('IEMobile') ){
+                htmlTag.className += ' td-md-is-iemobile';
+            }
+
+        })();
+
+
+
+
+        var tdLocalCache = {};
+
+        ( function () {
+            "use strict";
+
+            tdLocalCache = {
+                data: {},
+                remove: function (resource_id) {
+                    delete tdLocalCache.data[resource_id];
+                },
+                exist: function (resource_id) {
+                    return tdLocalCache.data.hasOwnProperty(resource_id) && tdLocalCache.data[resource_id] !== null;
+                },
+                get: function (resource_id) {
+                    return tdLocalCache.data[resource_id];
+                },
+                set: function (resource_id, cachedData) {
+                    tdLocalCache.remove(resource_id);
+                    tdLocalCache.data[resource_id] = cachedData;
+                }
+            };
+        })();
+
+    
+    
+var td_viewport_interval_list=[{"limitBottom":767,"sidebarWidth":228},{"limitBottom":1018,"sidebarWidth":300},{"limitBottom":1140,"sidebarWidth":324}];
+var td_animation_stack_effect="type0";
+var tds_animation_stack=true;
+var td_animation_stack_specific_selectors=".entry-thumb, img";
+var td_animation_stack_general_selectors=".td-animation-stack img, .td-animation-stack .entry-thumb, .post img";
+var tdc_is_installed="yes";
+var td_ajax_url="https:\/\/adventuresol.github.io\/adventureguru\/wp-admin\/admin-ajax.php?td_theme_name=Newspaper&v=9.7.1";
+var td_get_template_directory_uri="https:\/\/adventuresol.github.io\/adventureguru\/wp-content\/themes\/Newspaper";
+var tds_snap_menu="smart_snap_always";
+var tds_logo_on_sticky="";
+var tds_header_style="tdm_header_style_2";
+var td_please_wait="Please wait...";
+var td_email_user_pass_incorrect="User or password incorrect!";
+var td_email_user_incorrect="Email or username incorrect!";
+var td_email_incorrect="Email incorrect!";
+var tds_more_articles_on_post_enable="";
+var tds_more_articles_on_post_time_to_wait="";
+var tds_more_articles_on_post_pages_distance_from_top=0;
+var tds_theme_color_site_wide="#22a0d6";
+var tds_smart_sidebar="";
+var tdThemeName="Newspaper";
+var td_magnific_popup_translation_tPrev="Previous (Left arrow key)";
+var td_magnific_popup_translation_tNext="Next (Right arrow key)";
+var td_magnific_popup_translation_tCounter="%curr% of %total%";
+var td_magnific_popup_translation_ajax_tError="The content from %url% could not be loaded.";
+var td_magnific_popup_translation_image_tError="The image #%curr% could not be loaded.";
+var tdDateNamesI18n={"month_names":["January","February","March","April","May","June","July","August","September","October","November","December"],"month_names_short":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"day_names":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"day_names_short":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]};
+var td_ad_background_click_link="";
+var td_ad_background_click_target="";
+</script><style>
+    
+.td-header-wrap .black-menu .sf-menu > .current-menu-item > a,
+    .td-header-wrap .black-menu .sf-menu > .current-menu-ancestor > a,
+    .td-header-wrap .black-menu .sf-menu > .current-category-ancestor > a,
+    .td-header-wrap .black-menu .sf-menu > li > a:hover,
+    .td-header-wrap .black-menu .sf-menu > .sfHover > a,
+    .td-header-style-12 .td-header-menu-wrap-full,
+    .sf-menu > .current-menu-item > a:after,
+    .sf-menu > .current-menu-ancestor > a:after,
+    .sf-menu > .current-category-ancestor > a:after,
+    .sf-menu > li:hover > a:after,
+    .sf-menu > .sfHover > a:after,
+    .td-header-style-12 .td-affix,
+    .header-search-wrap .td-drop-down-search:after,
+    .header-search-wrap .td-drop-down-search .btn:hover,
+    input[type=submit]:hover,
+    .td-read-more a,
+    .td-post-category:hover,
+    .td-grid-style-1.td-hover-1 .td-big-grid-post:hover .td-post-category,
+    .td-grid-style-5.td-hover-1 .td-big-grid-post:hover .td-post-category,
+    .td_top_authors .td-active .td-author-post-count,
+    .td_top_authors .td-active .td-author-comments-count,
+    .td_top_authors .td_mod_wrap:hover .td-author-post-count,
+    .td_top_authors .td_mod_wrap:hover .td-author-comments-count,
+    .td-404-sub-sub-title a:hover,
+    .td-search-form-widget .wpb_button:hover,
+    .td-rating-bar-wrap div,
+    .td_category_template_3 .td-current-sub-category,
+    .dropcap,
+    .td_wrapper_video_playlist .td_video_controls_playlist_wrapper,
+    .wpb_default,
+    .wpb_default:hover,
+    .td-left-smart-list:hover,
+    .td-right-smart-list:hover,
+    .woocommerce-checkout .woocommerce input.button:hover,
+    .woocommerce-page .woocommerce a.button:hover,
+    .woocommerce-account div.woocommerce .button:hover,
+    #bbpress-forums button:hover,
+    .bbp_widget_login .button:hover,
+    .td-footer-wrapper .td-post-category,
+    .td-footer-wrapper .widget_product_search input[type="submit"]:hover,
+    .woocommerce .product a.button:hover,
+    .woocommerce .product #respond input#submit:hover,
+    .woocommerce .checkout input#place_order:hover,
+    .woocommerce .woocommerce.widget .button:hover,
+    .single-product .product .summary .cart .button:hover,
+    .woocommerce-cart .woocommerce table.cart .button:hover,
+    .woocommerce-cart .woocommerce .shipping-calculator-form .button:hover,
+    .td-next-prev-wrap a:hover,
+    .td-load-more-wrap a:hover,
+    .td-post-small-box a:hover,
+    .page-nav .current,
+    .page-nav:first-child > div,
+    .td_category_template_8 .td-category-header .td-category a.td-current-sub-category,
+    .td_category_template_4 .td-category-siblings .td-category a:hover,
+    #bbpress-forums .bbp-pagination .current,
+    #bbpress-forums #bbp-single-user-details #bbp-user-navigation li.current a,
+    .td-theme-slider:hover .slide-meta-cat a,
+    a.vc_btn-black:hover,
+    .td-trending-now-wrapper:hover .td-trending-now-title,
+    .td-scroll-up,
+    .td-smart-list-button:hover,
+    .td-weather-information:before,
+    .td-weather-week:before,
+    .td_block_exchange .td-exchange-header:before,
+    .td_block_big_grid_9.td-grid-style-1 .td-post-category,
+    .td_block_big_grid_9.td-grid-style-5 .td-post-category,
+    .td-grid-style-6.td-hover-1 .td-module-thumb:after,
+    .td-pulldown-syle-2 .td-subcat-dropdown ul:after,
+    .td_block_template_9 .td-block-title:after,
+    .td_block_template_15 .td-block-title:before,
+    div.wpforms-container .wpforms-form div.wpforms-submit-container button[type=submit] {
+        background-color: #22a0d6;
+    }
+
+    .td_block_template_4 .td-related-title .td-cur-simple-item:before {
+        border-color: #22a0d6 transparent transparent transparent !important;
+    }
+
+    .woocommerce .woocommerce-message .button:hover,
+    .woocommerce .woocommerce-error .button:hover,
+    .woocommerce .woocommerce-info .button:hover {
+        background-color: #22a0d6 !important;
+    }
+    
+    
+    .td_block_template_4 .td-related-title .td-cur-simple-item,
+    .td_block_template_3 .td-related-title .td-cur-simple-item,
+    .td_block_template_9 .td-related-title:after {
+        background-color: #22a0d6;
+    }
+
+    .woocommerce .product .onsale,
+    .woocommerce.widget .ui-slider .ui-slider-handle {
+        background: none #22a0d6;
+    }
+
+    .woocommerce.widget.widget_layered_nav_filters ul li a {
+        background: none repeat scroll 0 0 #22a0d6 !important;
+    }
+
+    a,
+    cite a:hover,
+    .td_mega_menu_sub_cats .cur-sub-cat,
+    .td-mega-span h3 a:hover,
+    .td_mod_mega_menu:hover .entry-title a,
+    .header-search-wrap .result-msg a:hover,
+    .td-header-top-menu .td-drop-down-search .td_module_wrap:hover .entry-title a,
+    .td-header-top-menu .td-icon-search:hover,
+    .td-header-wrap .result-msg a:hover,
+    .top-header-menu li a:hover,
+    .top-header-menu .current-menu-item > a,
+    .top-header-menu .current-menu-ancestor > a,
+    .top-header-menu .current-category-ancestor > a,
+    .td-social-icon-wrap > a:hover,
+    .td-header-sp-top-widget .td-social-icon-wrap a:hover,
+    .td-page-content blockquote p,
+    .td-post-content blockquote p,
+    .mce-content-body blockquote p,
+    .comment-content blockquote p,
+    .wpb_text_column blockquote p,
+    .td_block_text_with_title blockquote p,
+    .td_module_wrap:hover .entry-title a,
+    .td-subcat-filter .td-subcat-list a:hover,
+    .td-subcat-filter .td-subcat-dropdown a:hover,
+    .td_quote_on_blocks,
+    .dropcap2,
+    .dropcap3,
+    .td_top_authors .td-active .td-authors-name a,
+    .td_top_authors .td_mod_wrap:hover .td-authors-name a,
+    .td-post-next-prev-content a:hover,
+    .author-box-wrap .td-author-social a:hover,
+    .td-author-name a:hover,
+    .td-author-url a:hover,
+    .td_mod_related_posts:hover h3 > a,
+    .td-post-template-11 .td-related-title .td-related-left:hover,
+    .td-post-template-11 .td-related-title .td-related-right:hover,
+    .td-post-template-11 .td-related-title .td-cur-simple-item,
+    .td-post-template-11 .td_block_related_posts .td-next-prev-wrap a:hover,
+    .comment-reply-link:hover,
+    .logged-in-as a:hover,
+    #cancel-comment-reply-link:hover,
+    .td-search-query,
+    .td-category-header .td-pulldown-category-filter-link:hover,
+    .td-category-siblings .td-subcat-dropdown a:hover,
+    .td-category-siblings .td-subcat-dropdown a.td-current-sub-category,
+    .widget a:hover,
+    .td_wp_recentcomments a:hover,
+    .archive .widget_archive .current,
+    .archive .widget_archive .current a,
+    .widget_calendar tfoot a:hover,
+    .woocommerce a.added_to_cart:hover,
+    .woocommerce-account .woocommerce-MyAccount-navigation a:hover,
+    #bbpress-forums li.bbp-header .bbp-reply-content span a:hover,
+    #bbpress-forums .bbp-forum-freshness a:hover,
+    #bbpress-forums .bbp-topic-freshness a:hover,
+    #bbpress-forums .bbp-forums-list li a:hover,
+    #bbpress-forums .bbp-forum-title:hover,
+    #bbpress-forums .bbp-topic-permalink:hover,
+    #bbpress-forums .bbp-topic-started-by a:hover,
+    #bbpress-forums .bbp-topic-started-in a:hover,
+    #bbpress-forums .bbp-body .super-sticky li.bbp-topic-title .bbp-topic-permalink,
+    #bbpress-forums .bbp-body .sticky li.bbp-topic-title .bbp-topic-permalink,
+    .widget_display_replies .bbp-author-name,
+    .widget_display_topics .bbp-author-name,
+    .footer-text-wrap .footer-email-wrap a,
+    .td-subfooter-menu li a:hover,
+    .footer-social-wrap a:hover,
+    a.vc_btn-black:hover,
+    .td-smart-list-dropdown-wrap .td-smart-list-button:hover,
+    .td_module_17 .td-read-more a:hover,
+    .td_module_18 .td-read-more a:hover,
+    .td_module_19 .td-post-author-name a:hover,
+    .td-instagram-user a,
+    .td-pulldown-syle-2 .td-subcat-dropdown:hover .td-subcat-more span,
+    .td-pulldown-syle-2 .td-subcat-dropdown:hover .td-subcat-more i,
+    .td-pulldown-syle-3 .td-subcat-dropdown:hover .td-subcat-more span,
+    .td-pulldown-syle-3 .td-subcat-dropdown:hover .td-subcat-more i,
+    .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-display-option:hover,
+    .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-display-option:hover i,
+    .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-link:hover,
+    .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-item .td-cur-simple-item,
+    .td_block_template_2 .td-related-title .td-cur-simple-item,
+    .td_block_template_5 .td-related-title .td-cur-simple-item,
+    .td_block_template_6 .td-related-title .td-cur-simple-item,
+    .td_block_template_7 .td-related-title .td-cur-simple-item,
+    .td_block_template_8 .td-related-title .td-cur-simple-item,
+    .td_block_template_9 .td-related-title .td-cur-simple-item,
+    .td_block_template_10 .td-related-title .td-cur-simple-item,
+    .td_block_template_11 .td-related-title .td-cur-simple-item,
+    .td_block_template_12 .td-related-title .td-cur-simple-item,
+    .td_block_template_13 .td-related-title .td-cur-simple-item,
+    .td_block_template_14 .td-related-title .td-cur-simple-item,
+    .td_block_template_15 .td-related-title .td-cur-simple-item,
+    .td_block_template_16 .td-related-title .td-cur-simple-item,
+    .td_block_template_17 .td-related-title .td-cur-simple-item,
+    .td-theme-wrap .sf-menu ul .td-menu-item > a:hover,
+    .td-theme-wrap .sf-menu ul .sfHover > a,
+    .td-theme-wrap .sf-menu ul .current-menu-ancestor > a,
+    .td-theme-wrap .sf-menu ul .current-category-ancestor > a,
+    .td-theme-wrap .sf-menu ul .current-menu-item > a,
+    .td_outlined_btn,
+     .td_block_categories_tags .td-ct-item:hover {
+        color: #22a0d6;
+    }
+
+    a.vc_btn-black.vc_btn_square_outlined:hover,
+    a.vc_btn-black.vc_btn_outlined:hover,
+    .td-mega-menu-page .wpb_content_element ul li a:hover,
+    .td-theme-wrap .td-aj-search-results .td_module_wrap:hover .entry-title a,
+    .td-theme-wrap .header-search-wrap .result-msg a:hover {
+        color: #22a0d6 !important;
+    }
+
+    .td-next-prev-wrap a:hover,
+    .td-load-more-wrap a:hover,
+    .td-post-small-box a:hover,
+    .page-nav .current,
+    .page-nav:first-child > div,
+    .td_category_template_8 .td-category-header .td-category a.td-current-sub-category,
+    .td_category_template_4 .td-category-siblings .td-category a:hover,
+    #bbpress-forums .bbp-pagination .current,
+    .post .td_quote_box,
+    .page .td_quote_box,
+    a.vc_btn-black:hover,
+    .td_block_template_5 .td-block-title > *,
+    .td_outlined_btn {
+        border-color: #22a0d6;
+    }
+
+    .td_wrapper_video_playlist .td_video_currently_playing:after {
+        border-color: #22a0d6 !important;
+    }
+
+    .header-search-wrap .td-drop-down-search:before {
+        border-color: transparent transparent #22a0d6 transparent;
+    }
+
+    .block-title > span,
+    .block-title > a,
+    .block-title > label,
+    .widgettitle,
+    .widgettitle:after,
+    .td-trending-now-title,
+    .td-trending-now-wrapper:hover .td-trending-now-title,
+    .wpb_tabs li.ui-tabs-active a,
+    .wpb_tabs li:hover a,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab.vc_active > a,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab:hover > a,
+    .td_block_template_1 .td-related-title .td-cur-simple-item,
+    .woocommerce .product .products h2:not(.woocommerce-loop-product__title),
+    .td-subcat-filter .td-subcat-dropdown:hover .td-subcat-more, 
+    .td_3D_btn,
+    .td_shadow_btn,
+    .td_default_btn,
+    .td_round_btn, 
+    .td_outlined_btn:hover {
+    	background-color: #22a0d6;
+    }
+
+    .woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+    	background-color: #22a0d6 !important;
+    }
+
+    .block-title,
+    .td_block_template_1 .td-related-title,
+    .wpb_tabs .wpb_tabs_nav,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container,
+    .woocommerce div.product .woocommerce-tabs ul.tabs:before {
+        border-color: #22a0d6;
+    }
+    .td_block_wrap .td-subcat-item a.td-cur-simple-item {
+	    color: #22a0d6;
+	}
+
+
+    
+    .td-grid-style-4 .entry-title
+    {
+        background-color: rgba(34, 160, 214, 0.7);
+    }
+
+    
+    .td-menu-background:before,
+    .td-search-background:before {
+        background: rgba(49,59,69,0.7);
+        background: -moz-linear-gradient(top, rgba(49,59,69,0.7) 0%, rgba(51,147,184,0.7) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(49,59,69,0.7)), color-stop(100%, rgba(51,147,184,0.7)));
+        background: -webkit-linear-gradient(top, rgba(49,59,69,0.7) 0%, rgba(51,147,184,0.7) 100%);
+        background: -o-linear-gradient(top, rgba(49,59,69,0.7) 0%, rgba(51,147,184,0.7) 100%);
+        background: -ms-linear-gradient(top, rgba(49,59,69,0.7) 0%, rgba(51,147,184,0.7) 100%);
+        background: linear-gradient(to bottom, rgba(49,59,69,0.7) 0%, rgba(51,147,184,0.7) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(49,59,69,0.7)', endColorstr='rgba(51,147,184,0.7)', GradientType=0 );
+    }
+
+    
+    ul.sf-menu > .td-menu-item > a,
+    .td-theme-wrap .td-header-menu-social {
+        font-weight:normal;
+	
+    }
+    
+    .td_module_14 .td-module-title {
+    	font-size:46px;
+	line-height:56px;
+	font-weight:300;
+	
+    }
+
+
+
+/* Style generated by theme for demo: technology */
+
+.td-technology .tds-button2:hover,
+		.td-technology .td_module_14 .td-read-more a:hover {
+			background-color: #22a0d6 !important;
+		}
+		
+		.td-technology .td_module_14 .td-read-more a {
+		    color: #22a0d6;
+		}
+		
+		.td-technology .td_module_14 .td-read-more a {
+		    border-color: #22a0d6;
+		}
+</style><style>
+    .tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu > .current-category-ancestor > a,
+                .tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu > .current-menu-ancestor > a,
+                .tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu > .current-menu-item > a,
+                .tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu > .sfHover > a,
+                .tdm-menu-active-style3 .tdm-header.td-header-wrap .sf-menu > li > a:hover,
+                .tdm_block_column_content:hover .tdm-col-content-title-url .tdm-title,
+                .tds-button2 .tdm-btn-text,
+                .tds-button2 i,
+                .tds-button5:hover .tdm-btn-text,
+                .tds-button5:hover i,
+                .tds-button6 .tdm-btn-text,
+                .tds-button6 i,
+                .tdm_block_list .tdm-list-item i,
+                .tdm_block_pricing .tdm-pricing-feature i,
+                .tdm-social-item i {
+                  color: #22a0d6;
+                }
+                .tdm-menu-active-style5 .td-header-menu-wrap .sf-menu > .current-menu-item > a,
+                .tdm-menu-active-style5 .td-header-menu-wrap .sf-menu > .current-menu-ancestor > a,
+                .tdm-menu-active-style5 .td-header-menu-wrap .sf-menu > .current-category-ancestor > a,
+                .tdm-menu-active-style5 .td-header-menu-wrap .sf-menu > li > a:hover,
+                .tdm-menu-active-style5 .td-header-menu-wrap .sf-menu > .sfHover > a,
+                .tds-button1,
+                .tds-button6:after,
+                .tds-title2 .tdm-title-line:after,
+                .tds-title3 .tdm-title-line:after,
+                .tdm_block_pricing.tdm-pricing-featured:before,
+                .tdm_block_pricing.tds_pricing2_block.tdm-pricing-featured .tdm-pricing-header,
+                .tds-progress-bar1 .tdm-progress-bar:after,
+                .tds-progress-bar2 .tdm-progress-bar:after,
+                .tds-social3 .tdm-social-item {
+                  background-color: #22a0d6;
+                }
+                .tdm-menu-active-style4 .tdm-header .sf-menu > .current-menu-item > a,
+                .tdm-menu-active-style4 .tdm-header .sf-menu > .current-menu-ancestor > a,
+                .tdm-menu-active-style4 .tdm-header .sf-menu > .current-category-ancestor > a,
+                .tdm-menu-active-style4 .tdm-header .sf-menu > li > a:hover,
+                .tdm-menu-active-style4 .tdm-header .sf-menu > .sfHover > a,
+                .tds-button2:before,
+                .tds-button6:before,
+                .tds-progress-bar3 .tdm-progress-bar:after {
+                  border-color: #22a0d6;
+                }
+                .tdm-btn-style1 {
+					background-color: #22a0d6;
+				}
+				.tdm-btn-style2:before {
+				    border-color: #22a0d6;
+				}
+				.tdm-btn-style2 {
+				    color: #22a0d6;
+				}
+				.tdm-btn-style3 {
+				    -webkit-box-shadow: 0 2px 16px #22a0d6;
+                    -moz-box-shadow: 0 2px 16px #22a0d6;
+                    box-shadow: 0 2px 16px #22a0d6;
+				}
+				.tdm-btn-style3:hover {
+				    -webkit-box-shadow: 0 4px 26px #22a0d6;
+                    -moz-box-shadow: 0 4px 26px #22a0d6;
+                    box-shadow: 0 4px 26px #22a0d6;
+				}
+</style><style id="tdw-css-placeholder"></style></head><body class="home paged page-template-default page page-id-43 paged-2 page-paged-2 tdm-menu-active-style3 global-block-template-1 td-technology td-animation-stack-type0 td-full-layout" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+
+        <div class="td-scroll-up"><i class="td-icon-menu-up"></i></div>
+    
+    <div class="td-menu-background"></div>
+<div id="td-mobile-nav">
+    <div class="td-mobile-container">
+        
+        <div class="td-menu-socials-wrap">
+            
+            <div class="td-menu-socials">
+                
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="#" title="Facebook">
+                <i class="td-icon-font td-icon-facebook"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="#" title="Twitter">
+                <i class="td-icon-font td-icon-twitter"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="#" title="Youtube">
+                <i class="td-icon-font td-icon-youtube"></i>
+            </a>
+        </span>            </div>
+            
+            <div class="td-mobile-close">
+                <a href="#"><i class="td-icon-close-mobile"></i></a>
+            </div>
+        </div>
+
+        
+        
+        
+        <div class="td-mobile-content">
+            <div class="menu-td-demo-header-menu-container"><ul id="menu-td-demo-header-menu" class="td-mobile-main-menu"><li id="menu-item-49" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-43 current_page_item menu-item-first menu-item-49"><a href="https://adventuresol.github.io/adventureguru/">Home</a></li>
+<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="https://adventuresol.github.io/adventureguru/pricing/">Pricing</a></li>
+<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="https://adventuresol.github.io/adventureguru/">Customers</a></li>
+<li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"><a href="https://adventuresol.github.io/adventureguru/demo-2/">Demo</a></li>
+<li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="https://adventuresol.github.io/adventureguru/news/">News</a></li>
+</ul></div>        </div>
+    </div>
+
+    
+    </div>    <div class="td-search-background"></div>
+<div class="td-search-wrap-mob">
+	<div class="td-drop-down-search" aria-labelledby="td-header-search-button">
+		<form method="get" class="td-search-form" action="https://adventuresol.github.io/adventureguru/">
+			
+			<div class="td-search-close">
+				<a href="#"><i class="td-icon-close-mobile"></i></a>
+			</div>
+			<div role="search" class="td-search-input">
+				<span>Search</span>
+				<input id="td-header-search-mob" type="text" value="" name="s" autocomplete="off"></div>
+		</form>
+		<div id="td-aj-search-mob"></div>
+	</div>
+</div>
+
+    <div id="td-outer-wrap" class="td-theme-wrap">
+    
+        
+            <div class="tdc-header-wrap ">
+
+            
+
+
+<div class="td-header-wrap tdm-header tdm-header-style-2 ">
+    
+    
+    <div class="td-header-menu-wrap-full td-container-wrap td_stretch_container td_stretch_content_1600">
+        <div class="td-header-menu-wrap td-header-gradient td-header-menu-no-search">
+            <div class="td-container td-header-row td-header-main-menu">
+                <div class="tdm-menu-btns-socials">
+            <div class="td-search-wrapper">
+            <div id="td-top-search">
+                
+                <div class="header-search-wrap">
+                    <div class="dropdown header-search">
+                        <a id="td-header-search-button-mob" href="#" role="button" class="dropdown-toggle " data-toggle="dropdown"><i class="td-icon-search"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <div class="td-header-menu-social">
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="#" title="Facebook">
+                <i class="td-icon-font td-icon-facebook"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="#" title="Twitter">
+                <i class="td-icon-font td-icon-twitter"></i>
+            </a>
+        </span>
+        <span class="td-social-icon-wrap">
+            <a target="_blank" href="#" title="Youtube">
+                <i class="td-icon-font td-icon-youtube"></i>
+            </a>
+        </span></div>
+            <div class="tdm-header-menu-btns">
+            <div class="tdm_block td_block_wrap tdm_block_button td_uid_1_5f09418e86a66_rand tdm-block-button-inline tdm-content-horiz-left td-pb-border-top tdm-menu-btn1 td_block_template_1" data-td-block-uid="td_uid_1_5f09418e86a66">
+<style>
+
+</style><div class="tds-button td-fix-index"><a href="#" class="tds-button1 tdm-btn tdm-btn-md td_uid_2_5f09418e88fe6"><span class="tdm-btn-text"> SIGN UP</span></a></div></div>        </div>
+    </div>
+
+<div id="td-header-menu" role="navigation">
+    <div id="td-top-mobile-toggle"><a href="#"><i class="td-icon-font td-icon-mobile"></i></a></div>
+    <div class="td-main-menu-logo td-logo-in-menu">
+        		<a class="td-mobile-logo td-sticky-disable" href="https://adventuresol.github.io/adventureguru/">
+			<img src="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/logo-mobile-1.png" alt=""></a>
+	<h1 class="td-logo">		<a class="td-header-logo td-sticky-disable" href="https://adventuresol.github.io/adventureguru/">
+			<img class="td-retina-data" data-retina="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/logo-header-1.png" src="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/logo-header-1.png" alt=""><span class="td-visual-hidden">adventure guru</span>
+		</a>
+	</h1>    </div>
+    <div class="menu-td-demo-header-menu-container"><ul id="menu-td-demo-header-menu-1" class="sf-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-43 current_page_item menu-item-first td-menu-item td-normal-menu menu-item-49"><a href="https://adventuresol.github.io/adventureguru/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu menu-item-50"><a href="https://adventuresol.github.io/adventureguru/pricing/">Pricing</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu menu-item-51"><a href="https://adventuresol.github.io/adventureguru/">Customers</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu menu-item-52"><a href="https://adventuresol.github.io/adventureguru/demo-2/">Demo</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu menu-item-53"><a href="https://adventuresol.github.io/adventureguru/news/">News</a></li>
+</ul></div></div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+            </div>
+
+            
+        
+            <div class="td-main-content-wrap td-main-page-wrap td-container-wrap">
+                <div class="tdc-content-wrap">
+                    <div id="td_uid_1_5f09418e8c1ea" class="tdc-row stretch_row_1600 td-stretch-content"><div class="vc_row td_uid_3_5f09418e8c1f9_rand td-header-content wpb_row td-pb-row">
+<style scoped>
+
+/* custom css */
+.td_uid_3_5f09418e8c1f9_rand {
+                    min-height: 0;
+                }
+/* inline tdc_css att */
+
+.td_uid_3_5f09418e8c1f9_rand{
+margin-top:60px !important;
+}
+
+.td_uid_3_5f09418e8c1f9_rand .td_block_wrap{ text-align:left }
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_3_5f09418e8c1f9_rand{
+margin-top:30px !important;
+}
+}
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_3_5f09418e8c1f9_rand{
+margin-top:20px !important;
+}
+}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px)
+{
+.td_uid_3_5f09418e8c1f9_rand{
+margin-top:50px !important;
+}
+}
+
+</style><div class="vc_column td_uid_4_5f09418e8c683_rand  wpb_column vc_column_container tdc-column td-pb-span12">
+<style scoped>
+
+/* custom css */
+.td_uid_4_5f09418e8c683_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_column_title td_uid_5_5f09418e8c9f7_rand tdm-content-horiz-center td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_5_5f09418e8c9f7"><div class="td-block-row"><div class="td-block-span12 tdm-col">
+<style>
+.td_uid_6_5f09418e8d71c .tdm-title {
+					color: #444444;
+				}
+				
+				.td_uid_6_5f09418e8d71c .tdm-title-line  {
+					width: 50px;
+				}
+				
+				.td_uid_6_5f09418e8d71c .tdm-title-line:after  {
+					height: 0px;
+				}
+				
+				.td_uid_6_5f09418e8d71c .tdm-title-line  {
+					height: 20px;
+				}
+				
+				.td_uid_6_5f09418e8d71c .tdm-title-line:after   {
+					bottom: 0%;
+				}
+				
+				
+				.td_uid_6_5f09418e8d71c .tdm-title-sub  {
+					margin-bottom: 12px;
+				}
+				
+				body .td_uid_6_5f09418e8d71c .tdm-title-sub {
+					color: #22a0d6;
+				}
+</style><div class="tds-title tds-title3  td-fix-index td_uid_6_5f09418e8d71c"><h1 class="tdm-title tdm-title-md">A remarkable connection with technology</h1><div class="tdm-title-line"></div><div class="tdm-title-sub">Voice, Touch & Gesture controlled environment</div></div></div></div></div></div></div></div></div><div id="td_uid_3_5f09418e8e464" class="tdc-row stretch_row_content_no_space td-stretch-content"><div class="vc_row td_uid_7_5f09418e8e46f_rand td-header-image wpb_row td-pb-row tdc-element-style">
+<style scoped>
+
+/* custom css */
+.td_uid_7_5f09418e8e46f_rand {
+                    min-height: 0;
+                }
+/* inline tdc_css att */
+
+.td_uid_7_5f09418e8e46f_rand{
+margin-top:20px !important;
+padding-top:330px !important;
+padding-bottom:330px !important;
+position:relative;
+}
+
+.td_uid_7_5f09418e8e46f_rand .td_block_wrap{ text-align:left }
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_7_5f09418e8e46f_rand{
+margin-top:0px !important;
+}
+}
+
+</style><div class="td_uid_3_5f09418e8e464_rand_style td-element-style"><div class="td-element-style-before"><style>
+.td_uid_3_5f09418e8e464_rand_style > .td-element-style-before {
+content:'' !important;
+width:100% !important;
+height:100% !important;
+position:absolute !important;
+top:0 !important;
+left:0 !important;
+display:block !important;
+z-index:0 !important;
+background-image:url("https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/xxx_hero_xxx.png") !important;
+background-repeat:no-repeat !important;
+background-position:center center !important;
+}
+</style></div></div><div class="vc_column td_uid_8_5f09418e8e8cf_rand  wpb_column vc_column_container tdc-column td-pb-span12">
+<style scoped>
+
+/* custom css */
+.td_uid_8_5f09418e8e8cf_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="td_block_wrap td_block_text_with_title td_uid_9_5f09418e8ed0b_rand td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_9_5f09418e8ed0b"><div class="td-block-title-wrap"></div><div class="td_mod_wrap td-fix-index"><p> </p>
+</div></div></div></div></div></div><div id="td_uid_5_5f09418e91403" class="tdc-row"><div class="vc_row td_uid_10_5f09418e9140e_rand  wpb_row td-pb-row tdc-row-content-vert-center">
+<style scoped>
+
+/* custom css */
+.td_uid_10_5f09418e9140e_rand {
+                    min-height: 0;
+                }
+
+                
+                .td_uid_10_5f09418e9140e_rand.tdc-row-content-vert-center,
+                .td_uid_10_5f09418e9140e_rand.tdc-row-content-vert-center .tdc-columns {
+                    display: flex;
+                    align-items: center;
+                    flex: 1;
+                }
+                .td_uid_10_5f09418e9140e_rand.tdc-row-content-vert-bottom,
+                .td_uid_10_5f09418e9140e_rand.tdc-row-content-vert-bottom .tdc-columns {
+                    display: flex;
+                    align-items: flex-end;
+                    flex: 1;
+                }
+                @media (max-width: 767px) {
+	                .td_uid_10_5f09418e9140e_rand,
+	                .td_uid_10_5f09418e9140e_rand .tdc-columns {
+	                	flex-direction: column;
+	                }
+                }
+                .td_uid_10_5f09418e9140e_rand.tdc-row-content-vert-center .td_block_wrap {
+                	vertical-align: middle;
+                }
+                .td_uid_10_5f09418e9140e_rand.tdc-row-content-vert-bottom .td_block_wrap {
+                	vertical-align: bottom;
+                }
+/* inline tdc_css att */
+
+.td_uid_10_5f09418e9140e_rand{
+margin-top:-80px !important;
+justify-content:center !important;
+text-align:center !important;
+}
+
+.td_uid_10_5f09418e9140e_rand .td_block_wrap{ text-align:left }
+
+</style><div class="vc_column td_uid_11_5f09418e91863_rand  wpb_column vc_column_container tdc-column td-pb-span12">
+<style scoped>
+
+/* custom css */
+.td_uid_11_5f09418e91863_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_icon td_uid_12_5f09418e91c19_rand tdm-content-horiz-center td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_12_5f09418e91c19" data-scroll-to-class="td-header-scroll" data-scroll-offset="-100">
+<style>
+/* custom css */
+.td_uid_12_5f09418e91c19_rand i {
+				    font-size: 40px;
+				    text-align: center;
+				}
+				
+				
+				.td_uid_12_5f09418e91c19_rand i {
+				    width: 40px;
+				    height: 40px;
+				    line-height: 40px;
+				}
+				
+				
+				.td_uid_12_5f09418e91c19_rand {
+				    display: inline-block;
+				}
+</style><style>
+.td_uid_13_5f09418e927b4 {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				} 
+				.td_uid_13_5f09418e927b4:before {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				}
+
+				
+				.td_uid_13_5f09418e927b4:before {
+					color: #22a0d6;
+				}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px){
+
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px){
+
+}
+
+/* phone */
+@media (max-width: 767px){
+
+}
+</style><i class="tds-icon tdc-font-tdmp tdc-font-tdmp-arrow-small-down td_uid_13_5f09418e927b4 td-fix-index"></i></div></div></div></div></div><div id="td_uid_7_5f09418e92f07" class="tdc-row stretch_row_1600 td-stretch-content"><div class="vc_row td_uid_14_5f09418e92f12_rand td-left-title td-header-scroll wpb_row td-pb-row">
+<style scoped>
+
+/* custom css */
+.td_uid_14_5f09418e92f12_rand {
+                    min-height: 0;
+                }
+/* inline tdc_css att */
+
+.td_uid_14_5f09418e92f12_rand{
+margin-top:10px !important;
+}
+
+.td_uid_14_5f09418e92f12_rand .td_block_wrap{ text-align:left }
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_14_5f09418e92f12_rand{
+margin-top:-20px !important;
+}
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_14_5f09418e92f12_rand{
+margin-top:0px !important;
+}
+}
+
+</style><div class="vc_column td_uid_15_5f09418e93357_rand  wpb_column vc_column_container tdc-column td-pb-span12">
+<style scoped>
+
+/* custom css */
+.td_uid_15_5f09418e93357_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="td_block_wrap td_block_title td_uid_16_5f09418e936ae_rand td-pb-border-top td_block_template_13" data-td-block-uid="td_uid_16_5f09418e936ae">
+<style>
+.td_uid_16_5f09418e936ae_rand .td-block-title > a,
+            .td_uid_16_5f09418e936ae_rand .td-block-title > span {
+                color: #22a0d6 !important;
+            }
+
+            
+            .td_uid_16_5f09418e936ae_rand .td-block-subtitle {
+                color: #f7f7f7 !important;
+            }
+/* inline tdc_css att */
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_16_5f09418e936ae_rand{
+justify-content:center !important;
+text-align:center !important;
+}
+}
+
+</style><h1 class="td-block-title"><span>ABOUT</span><div class="td-block-subtitle">OVERVIEW</div></h1><div class="td_mod_wrap"></div></div></div></div></div></div><div id="td_uid_9_5f09418e93eb0" class="tdc-row stretch_row_1600 td-stretch-content"><div class="vc_row td_uid_17_5f09418e93ebb_rand td-text-image-module wpb_row td-pb-row">
+<style scoped>
+
+/* custom css */
+.td_uid_17_5f09418e93ebb_rand {
+                    min-height: 0;
+                }
+/* inline tdc_css att */
+
+.td_uid_17_5f09418e93ebb_rand{
+margin-bottom:120px !important;
+}
+
+.td_uid_17_5f09418e93ebb_rand .td_block_wrap{ text-align:left }
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_17_5f09418e93ebb_rand{
+margin-bottom:60px !important;
+}
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_17_5f09418e93ebb_rand{
+margin-top:-20px !important;
+margin-bottom:80px !important;
+}
+}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px)
+{
+.td_uid_17_5f09418e93ebb_rand{
+margin-bottom:100px !important;
+}
+}
+
+</style><div class="vc_column td_uid_18_5f09418e9432a_rand  wpb_column vc_column_container tdc-column td-pb-span6">
+<style scoped>
+
+/* custom css */
+.td_uid_18_5f09418e9432a_rand {
+                    vertical-align: baseline;
+                }
+/* inline tdc_css att */
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_18_5f09418e9432a_rand{
+margin-bottom:40px !important;
+width:100% !important;
+}
+}
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_18_5f09418e9432a_rand{
+margin-bottom:30px !important;
+}
+}
+
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_column_title td_uid_19_5f09418e945ad_rand tdm-content-horiz-left td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_19_5f09418e945ad"><div class="td-block-row"><div class="td-block-span12 tdm-col">
+<style>
+body .td_uid_20_5f09418e9518e .tdm-title {
+					color: #444444;
+				}
+</style><div class="tds-title tds-title1 td-fix-index td_uid_20_5f09418e9518e"><h3 class="tdm-title tdm-title-bg">Can you see the future?</h3></div></div></div></div><div class="tdm_block td_block_wrap tdm_block_inline_text td_uid_21_5f09418e95987_rand tdm-inline-block tdm-content-horiz-left td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_21_5f09418e95987">
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_21_5f09418e95987_rand{
+margin-bottom:30px !important;
+}
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_21_5f09418e95987_rand{
+margin-bottom:20px !important;
+}
+}
+
+</style><style>
+/* custom css */
+.td_uid_21_5f09418e95987_rand .tdm-descr {
+                    color: #aaaaaa;
+                }
+</style><p class="tdm-descr">I can’t envision a future of highways stuck in cars. I envision a  future where you hop in a thing, go in the air, and fly in a straight line. The air is so free!<br><br>
+We are actually about to ride in a flying car before arriving to talk about some of the next steps in technology onstage. So, there’s work to be done there, but it does certainly seem that all eyes are on flying cars. The most efficient paths from one point to the next!</p></div><div class="tdm_block td_block_wrap tdm_block_button td_uid_22_5f09418e96768_rand tdm-content-horiz-left td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_22_5f09418e96768">
+<style>
+body .td_uid_23_5f09418e976c4 i:last-child {
+					margin-left: 8px;
+				}
+				
+				body .td_uid_23_5f09418e976c4:hover .tdm-btn-text,
+				body .td_uid_23_5f09418e976c4:hover i {
+					color: #ffffff;
+				}
+				
+				body .td_uid_23_5f09418e976c4:hover .tdm-btn-text,
+				body .td_uid_23_5f09418e976c4:hover i {
+					-webkit-text-fill-color: unset;
+					background: transparent;
+					transition: none;
+				}
+
+				
+				body .td_uid_23_5f09418e976c4:hover i {
+					color: #ffffff;
+				}
+				
+				body .td_uid_23_5f09418e976c4:hover i {
+					-webkit-text-fill-color: unset;
+					background: transparent;
+					transition: none;
+				}
+
+
+				
+				body .td_uid_23_5f09418e976c4:before {
+					border-color: #22a0d6;
+				}
+				
+				body .td_uid_23_5f09418e976c4:hover:before {
+					border-color: #22a0d6;
+				}
+
+				
+				.td_uid_23_5f09418e976c4:before {
+					border-width: 2px;
+				}
+				
+				.td_uid_23_5f09418e976c4:before {
+					border-style: solid;
+				}
+				
+				.td_uid_23_5f09418e976c4,
+				.td_uid_23_5f09418e976c4:before {
+					border-radius: 50px;
+				}
+</style><div class="tds-button td-fix-index"><a href="#" class="tds-button2 tdm-btn tdm-btn-md td_uid_23_5f09418e976c4"><span class="tdm-btn-text">Read more</span><i class="tdc-font-fa tdc-font-fa-angle-right"></i></a></div></div></div></div><div class="vc_column td_uid_24_5f09418e9829f_rand  wpb_column vc_column_container tdc-column td-pb-span6">
+<style scoped>
+
+/* custom css */
+.td_uid_24_5f09418e9829f_rand {
+                    vertical-align: baseline;
+                }
+/* inline tdc_css att */
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_24_5f09418e9829f_rand{
+width:100% !important;
+}
+}
+
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_inline_image td_uid_25_5f09418e986a4_rand tdm-inline-block tdm-content-horiz-left td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_25_5f09418e986a4">
+<style>
+
+/* inline tdc_css att */
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_25_5f09418e986a4_rand{
+margin-right:-20px !important;
+margin-left:-20px !important;
+}
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_25_5f09418e986a4_rand{
+margin-right:-15px !important;
+margin-left:-15px !important;
+}
+}
+
+</style><div class="tdm-inline-image-wrap"><img class="tdm-image td-fix-index" src="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/header.jpg" title="header"></div></div></div></div></div></div><div id="td_uid_12_5f09418e999c3" class="tdc-row"><div class="vc_row td_uid_26_5f09418e999ce_rand td-center-title wpb_row td-pb-row">
+<style scoped>
+
+/* custom css */
+.td_uid_26_5f09418e999ce_rand {
+                    min-height: 0;
+                }
+/* inline tdc_css att */
+
+.td_uid_26_5f09418e999ce_rand{
+justify-content:center !important;
+text-align:center !important;
+}
+
+.td_uid_26_5f09418e999ce_rand .td_block_wrap{ text-align:left }
+
+</style><div class="vc_column td_uid_27_5f09418e99dfe_rand  wpb_column vc_column_container tdc-column td-pb-span12">
+<style scoped>
+
+/* custom css */
+.td_uid_27_5f09418e99dfe_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="td_block_wrap td_block_title td_uid_28_5f09418e9a02c_rand td-pb-border-top td_block_template_13" data-td-block-uid="td_uid_28_5f09418e9a02c">
+<style>
+.td_uid_28_5f09418e9a02c_rand .td-block-title > a,
+            .td_uid_28_5f09418e9a02c_rand .td-block-title > span {
+                color: #22a0d6 !important;
+            }
+
+            
+            .td_uid_28_5f09418e9a02c_rand .td-block-subtitle {
+                color: #f7f7f7 !important;
+            }
+</style><h1 class="td-block-title"><span>TOP FEATURES</span><div class="td-block-subtitle">COMPLEXITY</div></h1><div class="td_mod_wrap"></div></div><div class="tdm_block td_block_wrap tdm_block_icon td_uid_29_5f09418e9a5f9_rand tdm-content-horiz-center td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_29_5f09418e9a5f9" data-scroll-to-class="td-top-features" data-scroll-offset="-80">
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_29_5f09418e9a5f9_rand{
+margin-top:-10px !important;
+margin-bottom:30px !important;
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_29_5f09418e9a5f9_rand{
+margin-bottom:20px !important;
+}
+}
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_29_5f09418e9a5f9_rand{
+margin-bottom:10px !important;
+}
+}
+
+</style><style>
+/* custom css */
+.td_uid_29_5f09418e9a5f9_rand i {
+				    font-size: 40px;
+				    text-align: center;
+				}
+				
+				
+				.td_uid_29_5f09418e9a5f9_rand i {
+				    width: 40px;
+				    height: 40px;
+				    line-height: 40px;
+				}
+				
+				
+				.td_uid_29_5f09418e9a5f9_rand {
+				    display: inline-block;
+				}
+</style><style>
+.td_uid_30_5f09418e9aee7 {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				} 
+				.td_uid_30_5f09418e9aee7:before {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				}
+
+				
+				.td_uid_30_5f09418e9aee7:before {
+					color: #22a0d6;
+				}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px){
+
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px){
+
+}
+
+/* phone */
+@media (max-width: 767px){
+
+}
+</style><i class="tds-icon tdc-font-tdmp tdc-font-tdmp-arrow-small-down td_uid_30_5f09418e9aee7 td-fix-index"></i></div></div></div></div></div><div id="td_uid_14_5f09418e9b642" class="tdc-row stretch_row_1600 td-stretch-content"><div class="vc_row td_uid_31_5f09418e9b64c_rand td-top-features wpb_row td-pb-row tdc-element-style tdc-row-content-vert-bottom">
+<style scoped>
+
+/* custom css */
+.td_uid_31_5f09418e9b64c_rand {
+                    min-height: 0;
+                }
+
+                
+                .td_uid_31_5f09418e9b64c_rand.tdc-row-content-vert-center,
+                .td_uid_31_5f09418e9b64c_rand.tdc-row-content-vert-center .tdc-columns {
+                    display: flex;
+                    align-items: center;
+                    flex: 1;
+                }
+                .td_uid_31_5f09418e9b64c_rand.tdc-row-content-vert-bottom,
+                .td_uid_31_5f09418e9b64c_rand.tdc-row-content-vert-bottom .tdc-columns {
+                    display: flex;
+                    align-items: flex-end;
+                    flex: 1;
+                }
+                @media (max-width: 767px) {
+	                .td_uid_31_5f09418e9b64c_rand,
+	                .td_uid_31_5f09418e9b64c_rand .tdc-columns {
+	                	flex-direction: column;
+	                }
+                }
+                .td_uid_31_5f09418e9b64c_rand.tdc-row-content-vert-center .td_block_wrap {
+                	vertical-align: middle;
+                }
+                .td_uid_31_5f09418e9b64c_rand.tdc-row-content-vert-bottom .td_block_wrap {
+                	vertical-align: bottom;
+                }
+/* inline tdc_css att */
+
+.td_uid_31_5f09418e9b64c_rand{
+margin-bottom:128px !important;
+padding-top:110px !important;
+padding-bottom:72px !important;
+position:relative;
+}
+
+.td_uid_31_5f09418e9b64c_rand .td_block_wrap{ text-align:left }
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_31_5f09418e9b64c_rand{
+margin-bottom:60px !important;
+padding-top:60px !important;
+padding-bottom:40px !important;
+}
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_31_5f09418e9b64c_rand{
+margin-bottom:80px !important;
+padding-top:60px !important;
+padding-bottom:20px !important;
+}
+}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px)
+{
+.td_uid_31_5f09418e9b64c_rand{
+margin-bottom:120px !important;
+}
+}
+
+</style><div class="td_uid_14_5f09418e9b642_rand_style td-element-style"><div class="td-element-style-before"><style>
+.td_uid_14_5f09418e9b642_rand_style > .td-element-style-before {
+content:'' !important;
+width:100% !important;
+height:100% !important;
+position:absolute !important;
+top:0 !important;
+left:0 !important;
+display:block !important;
+z-index:0 !important;
+background-image:url("https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/xxx_features_xxx.jpg") !important;
+background-position:center center !important;
+opacity:0.1 !important;
+background-size:cover !important;
+}
+</style></div><style>
+.td_uid_14_5f09418e9b642_rand_style{
+background-color:#04223d !important;
+}
+ </style></div><div class="vc_column td_uid_32_5f09418e9bb14_rand  wpb_column vc_column_container tdc-column td-pb-span3">
+<style scoped>
+
+/* custom css */
+.td_uid_32_5f09418e9bb14_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_icon_box td_uid_33_5f09418e9bef9_rand tdm-content-horiz-center tds_icon_box1_wrap td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_33_5f09418e9bef9">
+<style>
+
+/* inline tdc_css att */
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_33_5f09418e9bef9_rand{
+justify-content:center !important;
+text-align:center !important;
+}
+}
+
+</style><style>
+.td_uid_34_5f09418e9d134 .tds-title {
+				    margin-top: 3px;
+				}
+				
+				
+				.td_uid_34_5f09418e9d134 .tds-title {
+				    margin-bottom: 7px;
+				}
+				
+				
+				.td_uid_34_5f09418e9d134 .tdm-descr {
+				    margin-bottom: 30px;				  
+				}
+				
+				
+				.td_uid_34_5f09418e9d134 .tdm-descr {
+				    color: rgba(255,255,255,0.5);			  
+				}
+</style><div class="tds-icon-box tds-icon-box1 td-fix-index td_uid_34_5f09418e9d134">
+<style>
+.td_uid_35_5f09418e9dd51 {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				} 
+				.td_uid_35_5f09418e9dd51:before {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				}
+
+				
+				.td_uid_35_5f09418e9dd51:before {
+					color: #22a0d6;
+				}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px){
+
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px){
+
+}
+
+/* phone */
+@media (max-width: 767px){
+
+}
+</style><i class="tds-icon tdc-font-tdmp tdc-font-tdmp-cloud td_uid_35_5f09418e9dd51 td-fix-index"></i>
+<style>
+body .td_uid_36_5f09418e9e7fc .tdm-title {
+					color: #ffffff;
+				}
+</style><div class="tds-title tds-title1 td-fix-index td_uid_36_5f09418e9e7fc"><h3 class="tdm-title tdm-title-sm">Infinite connectivity</h3></div><p class="tdm-descr td-fix-index">Your fingers take time to engage in full contact with a touchscreen. In some cases, even 30 seconds or more after placing a dry finger on the glass.</p></div><style>.td_uid_33_5f09418e9bef9_rand .tds-icon-box .tds-icon {
+				    font-size: 64px;
+				    text-align: center;
+				}
+				
+				
+				.td_uid_33_5f09418e9bef9_rand .tds-icon-box .tds-icon {
+				    width: 64px;
+				    height: 64px;
+				    line-height: 64px;
+				}</style></div></div></div><div class="vc_column td_uid_37_5f09418e9fc3e_rand  wpb_column vc_column_container tdc-column td-pb-span3">
+<style scoped>
+
+/* custom css */
+.td_uid_37_5f09418e9fc3e_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_icon_box td_uid_38_5f09418e9fe23_rand tdm-content-horiz-center tds_icon_box1_wrap td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_38_5f09418e9fe23">
+<style>
+
+/* inline tdc_css att */
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_38_5f09418e9fe23_rand{
+justify-content:center !important;
+text-align:center !important;
+}
+}
+
+</style><style>
+.td_uid_39_5f09418ea0e7c .tds-title {
+				    margin-top: 5px;
+				}
+				
+				
+				.td_uid_39_5f09418ea0e7c .tds-title {
+				    margin-bottom: 7px;
+				}
+				
+				
+				.td_uid_39_5f09418ea0e7c .tdm-descr {
+				    margin-bottom: 30px;				  
+				}
+				
+				
+				.td_uid_39_5f09418ea0e7c .tdm-descr {
+				    color: rgba(255,255,255,0.5);			  
+				}
+</style><div class="tds-icon-box tds-icon-box1 td-fix-index td_uid_39_5f09418ea0e7c">
+<style>
+.td_uid_40_5f09418ea1aa4 {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				} 
+				.td_uid_40_5f09418ea1aa4:before {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				}
+
+				
+				.td_uid_40_5f09418ea1aa4:before {
+					color: #22a0d6;
+				}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px){
+
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px){
+
+}
+
+/* phone */
+@media (max-width: 767px){
+
+}
+</style><i class="tds-icon tdc-font-tdmp tdc-font-tdmp-tablet td_uid_40_5f09418ea1aa4 td-fix-index"></i>
+<style>
+body .td_uid_41_5f09418ea254c .tdm-title {
+					color: #ffffff;
+				}
+</style><div class="tds-title tds-title1 td-fix-index td_uid_41_5f09418ea254c"><h3 class="tdm-title tdm-title-sm">Device compatibility</h3></div><p class="tdm-descr td-fix-index">Next-generation touchscreens are already being designed to use ultrasonic vibrations that give the illusion that smooth glass has texture. </p></div><style>.td_uid_38_5f09418e9fe23_rand .tds-icon-box .tds-icon {
+				    font-size: 64px;
+				    text-align: center;
+				}
+				
+				
+				.td_uid_38_5f09418e9fe23_rand .tds-icon-box .tds-icon {
+				    width: 64px;
+				    height: 64px;
+				    line-height: 64px;
+				}</style></div></div></div><div class="vc_column td_uid_42_5f09418ea391b_rand  wpb_column vc_column_container tdc-column td-pb-span3">
+<style scoped>
+
+/* custom css */
+.td_uid_42_5f09418ea391b_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_icon_box td_uid_43_5f09418ea3af7_rand tdm-content-horiz-center tds_icon_box1_wrap td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_43_5f09418ea3af7">
+<style>
+
+/* inline tdc_css att */
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_43_5f09418ea3af7_rand{
+justify-content:center !important;
+text-align:center !important;
+}
+}
+
+</style><style>
+.td_uid_44_5f09418ea4ae1 .tds-title {
+				    margin-top: 8px;
+				}
+				
+				
+				.td_uid_44_5f09418ea4ae1 .tds-title {
+				    margin-bottom: 7px;
+				}
+				
+				
+				.td_uid_44_5f09418ea4ae1 .tdm-descr {
+				    margin-bottom: 30px;				  
+				}
+				
+				
+				.td_uid_44_5f09418ea4ae1 .tdm-descr {
+				    color: rgba(255,255,255,0.5);			  
+				}
+</style><div class="tds-icon-box tds-icon-box1 td-fix-index td_uid_44_5f09418ea4ae1">
+<style>
+.td_uid_45_5f09418ea56eb {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				} 
+				.td_uid_45_5f09418ea56eb:before {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				}
+
+				
+				.td_uid_45_5f09418ea56eb:before {
+					color: #22a0d6;
+				}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px){
+
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px){
+
+}
+
+/* phone */
+@media (max-width: 767px){
+
+}
+</style><i class="tds-icon tdc-font-tdmp tdc-font-tdmp-paper-plane td_uid_45_5f09418ea56eb td-fix-index"></i>
+<style>
+body .td_uid_46_5f09418ea6199 .tdm-title {
+					color: #ffffff;
+				}
+</style><div class="tds-title tds-title1 td-fix-index td_uid_46_5f09418ea6199"><h3 class="tdm-title tdm-title-sm">Efficient workflow</h3></div><p class="tdm-descr td-fix-index">Whatever your plan is, our product makes it simple to combine, interact, rearrange and customize the pages and all the elements as you desire.</p></div><style>.td_uid_43_5f09418ea3af7_rand .tds-icon-box .tds-icon {
+				    font-size: 52px;
+				    text-align: center;
+				}
+				
+				
+				.td_uid_43_5f09418ea3af7_rand .tds-icon-box .tds-icon {
+				    width: 52px;
+				    height: 52px;
+				    line-height: 52px;
+				}</style></div></div></div><div class="vc_column td_uid_47_5f09418ea7556_rand  wpb_column vc_column_container tdc-column td-pb-span3">
+<style scoped>
+
+/* custom css */
+.td_uid_47_5f09418ea7556_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_icon_box td_uid_48_5f09418ea7731_rand tdm-content-horiz-center tds_icon_box1_wrap td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_48_5f09418ea7731">
+<style>
+
+/* inline tdc_css att */
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_48_5f09418ea7731_rand{
+justify-content:center !important;
+text-align:center !important;
+}
+}
+
+</style><style>
+.td_uid_49_5f09418ea874a .tds-title {
+				    margin-top: 8px;
+				}
+				
+				
+				.td_uid_49_5f09418ea874a .tds-title {
+				    margin-bottom: 7px;
+				}
+				
+				
+				.td_uid_49_5f09418ea874a .tdm-descr {
+				    margin-bottom: 30px;				  
+				}
+				
+				
+				.td_uid_49_5f09418ea874a .tdm-descr {
+				    color: rgba(255,255,255,0.5);			  
+				}
+</style><div class="tds-icon-box tds-icon-box1 td-fix-index td_uid_49_5f09418ea874a">
+<style>
+.td_uid_50_5f09418ea936d {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				} 
+				.td_uid_50_5f09418ea936d:before {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				}
+
+				
+				.td_uid_50_5f09418ea936d:before {
+					color: #22a0d6;
+				}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px){
+
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px){
+
+}
+
+/* phone */
+@media (max-width: 767px){
+
+}
+</style><i class="tds-icon tdc-font-tdmp tdc-font-tdmp-megaphone td_uid_50_5f09418ea936d td-fix-index"></i>
+<style>
+body .td_uid_51_5f09418ea9e18 .tdm-title {
+					color: #ffffff;
+				}
+</style><div class="tds-title tds-title1 td-fix-index td_uid_51_5f09418ea9e18"><h3 class="tdm-title tdm-title-sm">Fast reporting</h3></div><p class="tdm-descr td-fix-index">The keratin in the outer layer of our skin is inflexible when dry. This means that when you first push a finger against the screen of a smartphone.</p></div><style>.td_uid_48_5f09418ea7731_rand .tds-icon-box .tds-icon {
+				    font-size: 54px;
+				    text-align: center;
+				}
+				
+				
+				.td_uid_48_5f09418ea7731_rand .tds-icon-box .tds-icon {
+				    width: 54px;
+				    height: 54px;
+				    line-height: 54px;
+				}</style></div></div></div></div></div><div id="td_uid_19_5f09418eab1f2" class="tdc-row stretch_row_1600 td-stretch-content"><div class="vc_row td_uid_52_5f09418eab1fe_rand td-left-title wpb_row td-pb-row">
+<style scoped>
+
+/* custom css */
+.td_uid_52_5f09418eab1fe_rand {
+                    min-height: 0;
+                }
+</style><div class="vc_column td_uid_53_5f09418eab626_rand  wpb_column vc_column_container tdc-column td-pb-span6">
+<style scoped>
+
+/* custom css */
+.td_uid_53_5f09418eab626_rand {
+                    vertical-align: baseline;
+                }
+/* inline tdc_css att */
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px)
+{
+.td_uid_53_5f09418eab626_rand{
+width:80% !important;
+}
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_53_5f09418eab626_rand{
+width:70% !important;
+}
+}
+
+</style><div class="wpb_wrapper"><div class="td_block_wrap td_block_title td_uid_54_5f09418eab8b7_rand td-pb-border-top td_block_template_13" data-td-block-uid="td_uid_54_5f09418eab8b7">
+<style>
+.td_uid_54_5f09418eab8b7_rand .td-block-title > a,
+            .td_uid_54_5f09418eab8b7_rand .td-block-title > span {
+                color: #22a0d6 !important;
+            }
+
+            
+            .td_uid_54_5f09418eab8b7_rand .td-block-subtitle {
+                color: #f7f7f7 !important;
+            }
+/* inline tdc_css att */
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_54_5f09418eab8b7_rand{
+justify-content:center !important;
+text-align:center !important;
+}
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_54_5f09418eab8b7_rand{
+margin-bottom:30px !important;
+}
+}
+
+</style><h1 class="td-block-title"><span>SEE IT IN ACTION</span><div class="td-block-subtitle">EXPERIENCE</div></h1><div class="td_mod_wrap"></div></div><div class="tdm_block td_block_wrap tdm_block_column_title td_uid_55_5f09418eabf17_rand tdm-content-horiz-left td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_55_5f09418eabf17">
+<style>
+
+/* inline tdc_css att */
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_55_5f09418eabf17_rand{
+justify-content:center !important;
+text-align:center !important;
+}
+}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px)
+{
+.td_uid_55_5f09418eabf17_rand{
+width:80% !important;
+}
+}
+
+</style><div class="td-block-row"><div class="td-block-span12 tdm-col">
+<style>
+body .td_uid_56_5f09418eac971 .tdm-title {
+					color: #444444;
+				}
+</style><div class="tds-title tds-title1 td-fix-index td_uid_56_5f09418eac971"><h1 class="tdm-title tdm-title-bg">We are continuously building on our futuristic reputation</h1></div></div></div></div></div></div><div class="vc_column td_uid_57_5f09418ead026_rand  wpb_column vc_column_container tdc-column td-pb-span6">
+<style scoped>
+
+/* custom css */
+.td_uid_57_5f09418ead026_rand {
+                    vertical-align: baseline;
+                }
+/* inline tdc_css att */
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_57_5f09418ead026_rand{
+width:30% !important;
+}
+}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px)
+{
+.td_uid_57_5f09418ead026_rand{
+width:20% !important;
+}
+}
+
+</style><div class="wpb_wrapper"></div></div></div></div><div id="td_uid_22_5f09418ead184" class="tdc-row stretch_row_content td-stretch-content"><div class="vc_row td_uid_58_5f09418ead18e_rand  wpb_row td-pb-row tdc-element-style">
+<style scoped>
+
+/* custom css */
+.td_uid_58_5f09418ead18e_rand {
+                    min-height: 0;
+                }
+/* inline tdc_css att */
+
+.td_uid_58_5f09418ead18e_rand{
+margin-top:-120px !important;
+padding-top:400px !important;
+padding-bottom:400px !important;
+justify-content:center !important;
+text-align:center !important;
+position:relative;
+}
+
+.td_uid_58_5f09418ead18e_rand .td_block_wrap{ text-align:left }
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_58_5f09418ead18e_rand{
+margin-top:-200px !important;
+justify-content:center !important;
+text-align:center !important;
+}
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_58_5f09418ead18e_rand{
+margin-top:-150px !important;
+}
+}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px)
+{
+.td_uid_58_5f09418ead18e_rand{
+margin-top:-120px !important;
+}
+}
+
+</style><div class="td_uid_22_5f09418ead184_rand_style td-element-style"><div class="td-element-style-before"><style>
+.td_uid_22_5f09418ead184_rand_style > .td-element-style-before {
+content:'' !important;
+width:100% !important;
+height:100% !important;
+position:absolute !important;
+top:0 !important;
+left:0 !important;
+display:block !important;
+z-index:0 !important;
+background-image:url("https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/xxx_video_xxx.png") !important;
+background-repeat:no-repeat !important;
+background-position:center bottom !important;
+}
+</style></div></div><div class="vc_column td_uid_59_5f09418ead575_rand  wpb_column vc_column_container tdc-column td-pb-span12">
+<style scoped>
+
+/* custom css */
+.td_uid_59_5f09418ead575_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_icon td_uid_60_5f09418ead71f_rand tdm-content-horiz-center td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_60_5f09418ead71f" data-mfp-src="https://www.youtube.com/watch?v=aEoVcYQ8caM">
+<style>
+/* custom css */
+.td_uid_60_5f09418ead71f_rand i {
+				    font-size: 40px;
+				    text-align: center;
+				}
+				
+				
+				.td_uid_60_5f09418ead71f_rand i {
+				    width: 76px;
+				    height: 76px;
+				    line-height: 76px;
+				}
+				
+				
+				.td_uid_60_5f09418ead71f_rand {
+				    display: inline-block;
+				}
+</style><style>
+.td_uid_61_5f09418eadf92 {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				} 
+				.td_uid_61_5f09418eadf92:before {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				}
+
+				
+				.td_uid_61_5f09418eadf92:before {
+					color: #22a0d6;
+				}
+				
+				body .td_uid_60_5f09418ead71f_rand:hover .td_uid_61_5f09418eadf92:before {
+					-webkit-text-fill-color: unset;
+					background: transparent;
+					transition: none;
+				}
+
+				
+				.td_uid_61_5f09418eadf92 {
+					background-color: rgba(255,255,255,0.6);
+				}
+				
+				.td_uid_61_5f09418eadf92:after {
+					background-color: rgba(255,255,255,0.7);
+				}
+				.td_uid_60_5f09418ead71f_rand:hover .td_uid_61_5f09418eadf92:after {
+					opacity: 1;
+				}
+				
+				.td_uid_60_5f09418ead71f_rand:hover .td_uid_61_5f09418eadf92:before {
+				    color: #22a0d6;
+				}
+
+				
+				
+				.td_uid_61_5f09418eadf92,
+				.td_uid_61_5f09418eadf92:after {
+				    border-radius: 50px;
+				}
+				
+				.td_uid_60_5f09418ead71f_rand:hover .td_uid_61_5f09418eadf92,
+				.td_uid_60_5f09418ead71f_rand:hover .td_uid_61_5f09418eadf92:after {
+				    border-radius: 50px;
+				}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px){
+
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px){
+
+}
+
+/* phone */
+@media (max-width: 767px){
+
+}
+</style><i class="tds-icon tdc-font-tdmp tdc-font-tdmp-play-singe2 td_uid_61_5f09418eadf92 td-fix-index"></i></div></div></div></div></div><div id="td_uid_24_5f09418eae762" class="tdc-row stretch_row_1600 td-stretch-content"><div class="vc_row td_uid_62_5f09418eae76c_rand td-text-image-module wpb_row td-pb-row tdc-element-style">
+<style scoped>
+
+/* custom css */
+.td_uid_62_5f09418eae76c_rand {
+                    min-height: 0;
+                }
+/* inline tdc_css att */
+
+.td_uid_62_5f09418eae76c_rand{
+padding-top:60px !important;
+padding-bottom:60px !important;
+position:relative;
+}
+
+.td_uid_62_5f09418eae76c_rand .td_block_wrap{ text-align:left }
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_62_5f09418eae76c_rand{
+padding-bottom:0px !important;
+justify-content:center !important;
+text-align:center !important;
+}
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_62_5f09418eae76c_rand{
+padding-bottom:0px !important;
+}
+}
+
+</style><div class="td_uid_24_5f09418eae762_rand_style td-element-style"><style>
+.td_uid_24_5f09418eae762_rand_style{
+background-color:#262c38 !important;
+}
+ </style></div><div class="vc_column td_uid_63_5f09418eaec09_rand  wpb_column vc_column_container tdc-column td-pb-span6">
+<style scoped>
+
+/* custom css */
+.td_uid_63_5f09418eaec09_rand {
+                    vertical-align: baseline;
+                }
+/* inline tdc_css att */
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_63_5f09418eaec09_rand{
+margin-bottom:30px !important;
+width:auto !important;
+}
+}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px)
+{
+.td_uid_63_5f09418eaec09_rand{
+width:40% !important;
+}
+}
+
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_column_title td_uid_64_5f09418eaeea7_rand tdm-content-horiz-left td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_64_5f09418eaeea7">
+<style>
+
+/* inline tdc_css att */
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_64_5f09418eaeea7_rand{
+text-align:left !important;
+}
+}
+
+</style><div class="td-block-row"><div class="td-block-span12 tdm-col">
+<style>
+body .td_uid_65_5f09418eaf879 .tdm-title {
+					color: #22a0d6;
+				}
+</style><div class="tds-title tds-title1 td-fix-index td_uid_65_5f09418eaf879"><h1 class="tdm-title tdm-title-sm">WHAT CAN BE DONE?</h1></div></div></div></div><div class="tdm_block td_block_wrap tdm_block_column_title td_uid_66_5f09418eaff69_rand tdm-content-horiz-left td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_66_5f09418eaff69">
+<style>
+
+/* inline tdc_css att */
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_66_5f09418eaff69_rand{
+text-align:left !important;
+}
+}
+
+</style><div class="td-block-row"><div class="td-block-span12 tdm-col">
+<style>
+body .td_uid_67_5f09418eb08bc .tdm-title {
+					color: #ffffff;
+				}
+</style><div class="tds-title tds-title1 td-fix-index td_uid_67_5f09418eb08bc"><h1 class="tdm-title tdm-title-bg">Applications</h1></div></div></div></div><div class="tdm_block td_block_wrap tdm_block_inline_text td_uid_68_5f09418eb0f74_rand tdm-inline-block tdm-content-horiz-left td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_68_5f09418eb0f74">
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_68_5f09418eb0f74_rand{
+padding-right:100px !important;
+}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px)
+{
+.td_uid_68_5f09418eb0f74_rand{
+padding-right:0px !important;
+}
+}
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_68_5f09418eb0f74_rand{
+padding-right:10px !important;
+padding-left:10px !important;
+text-align:left !important;
+}
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_68_5f09418eb0f74_rand{
+padding-right:0px !important;
+}
+}
+
+</style><style>
+/* custom css */
+.td_uid_68_5f09418eb0f74_rand .tdm-descr {
+                    color: rgba(255,255,255,0.78);
+                }
+</style><p class="tdm-descr">Each template in our ever growing studio library can be added and moved around within any page effortlessly with one click. Combine them, rearrange them and customize them further as much as you desire. Welcome to the future of building with WordPress.</p></div><div class="vc_row_inner td_uid_69_5f09418eb1c93_rand td-text-adjustment vc_row vc_inner wpb_row td-pb-row">
+<style scoped>
+
+/* custom css */
+.td_uid_69_5f09418eb1c93_rand {
+                    position: relative !important;
+                    top: 0;
+                    transform: none;
+                    -webkit-transform: none;
+                }
+/* inline tdc_css att */
+
+.td_uid_69_5f09418eb1c93_rand{
+margin-top:40px !important;
+}
+
+.td_uid_69_5f09418eb1c93_rand .td_block_wrap{ text-align:left }
+
+</style><div class="vc_column_inner td_uid_70_5f09418eb1fc8_rand  wpb_column vc_column_container tdc-inner-column td-pb-span12">
+<style scoped>
+
+/* custom css */
+.td_uid_70_5f09418eb1fc8_rand {
+                    vertical-align: baseline;
+                }
+/* inline tdc_css att */
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_70_5f09418eb1fc8_rand{
+margin-bottom:40px !important;
+}
+}
+
+</style><div class="vc_column-inner"><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_icon_box td_uid_71_5f09418eb21e3_rand tdm-content-horiz-left tds_icon_box2_wrap td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_71_5f09418eb21e3">
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_71_5f09418eb21e3_rand{
+margin-bottom:30px !important;
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_71_5f09418eb21e3_rand{
+margin-bottom:20px !important;
+}
+}
+
+</style><style>
+.td_uid_72_5f09418eb34ba .tdm-col-icon {
+				    padding-right: 20px;
+				}
+				
+				.td_uid_72_5f09418eb34ba .tds-title {
+				    margin-top: 10px;
+				}
+				
+				
+				.td_uid_72_5f09418eb34ba .tds-title {
+				    margin-bottom: 0px;
+				}
+				
+				
+				.td_uid_72_5f09418eb34ba .tdm-descr {
+				    margin-bottom: 0px;
+				}
+</style><div class="tds-icon-box tds-icon-box2 td-fix-index  td_uid_72_5f09418eb34ba"><div class="tdm-col-icon">
+<style>
+.td_uid_73_5f09418eb34ca {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				} 
+				.td_uid_73_5f09418eb34ca:before {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				}
+
+				
+				.td_uid_73_5f09418eb34ca:before {
+					color: #ffffff;
+				}
+				
+				body .td_uid_71_5f09418eb21e3_rand:hover .td_uid_73_5f09418eb34ca:before {
+					-webkit-text-fill-color: unset;
+					background: transparent;
+					transition: none;
+				}
+
+				
+				.td_uid_71_5f09418eb21e3_rand:hover .td_uid_73_5f09418eb34ca:before {
+				    color: #22a0d6;
+				}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px){
+
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px){
+
+}
+
+/* phone */
+@media (max-width: 767px){
+
+}
+</style><i class="tds-icon tdc-font-tdmp tdc-font-tdmp-home td_uid_73_5f09418eb34ca td-fix-index"></i></div><div class="tdm-col-text">
+<style>
+body .td_uid_74_5f09418eb400a .tdm-title {
+					color: #ffffff;
+				}
+				
+				body .td_uid_71_5f09418eb21e3_rand:hover .td_uid_74_5f09418eb400a .tdm-title {
+					color: #22a0d6;
+				}
+				.td_uid_71_5f09418eb21e3_rand:hover .td_uid_74_5f09418eb400a .tdm-title {
+					cursor: default;
+				}
+				
+				body .td_uid_71_5f09418eb21e3_rand:hover .td_uid_74_5f09418eb400a .tdm-title {
+					-webkit-text-fill-color: unset;
+					background: transparent;
+					transition: none;
+				}
+</style><div class="tds-title tds-title1 td-fix-index td_uid_74_5f09418eb400a"><h3 class="tdm-title tdm-title-sm">SMART HOME</h3></div><p class="tdm-descr td-fix-index"></p></div><a href="#" class="icon_box_url_wrap"> </a></div><style>.td_uid_71_5f09418eb21e3_rand .tds-icon-box .tds-icon {
+				    font-size: 53px;
+				    text-align: center;
+				}
+				
+				
+				.td_uid_71_5f09418eb21e3_rand .tds-icon-box .tds-icon {
+				    width: 53px;
+				    height: 53px;
+				    line-height: 53px;
+				}</style></div><div class="tdm_block td_block_wrap tdm_block_icon_box td_uid_75_5f09418eb6096_rand tdm-content-horiz-left tds_icon_box2_wrap td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_75_5f09418eb6096">
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_75_5f09418eb6096_rand{
+margin-bottom:30px !important;
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_75_5f09418eb6096_rand{
+margin-bottom:20px !important;
+}
+}
+
+</style><style>
+.td_uid_76_5f09418eb70d5 .tdm-col-icon {
+				    padding-right: 20px;
+				}
+				
+				.td_uid_76_5f09418eb70d5 .tds-title {
+				    margin-top: 10px;
+				}
+				
+				
+				.td_uid_76_5f09418eb70d5 .tds-title {
+				    margin-bottom: 0px;
+				}
+				
+				
+				.td_uid_76_5f09418eb70d5 .tdm-descr {
+				    margin-bottom: 0px;
+				}
+</style><div class="tds-icon-box tds-icon-box2 td-fix-index  td_uid_76_5f09418eb70d5"><div class="tdm-col-icon">
+<style>
+.td_uid_77_5f09418eb70e0 {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				} 
+				.td_uid_77_5f09418eb70e0:before {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				}
+
+				
+				.td_uid_77_5f09418eb70e0:before {
+					color: #ffffff;
+				}
+				
+				body .td_uid_75_5f09418eb6096_rand:hover .td_uid_77_5f09418eb70e0:before {
+					-webkit-text-fill-color: unset;
+					background: transparent;
+					transition: none;
+				}
+
+				
+				.td_uid_75_5f09418eb6096_rand:hover .td_uid_77_5f09418eb70e0:before {
+				    color: #22a0d6;
+				}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px){
+
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px){
+
+}
+
+/* phone */
+@media (max-width: 767px){
+
+}
+</style><i class="tds-icon tdc-font-tdmp tdc-font-tdmp-car td_uid_77_5f09418eb70e0 td-fix-index"></i></div><div class="tdm-col-text">
+<style>
+body .td_uid_78_5f09418eb7b8a .tdm-title {
+					color: #ffffff;
+				}
+				
+				body .td_uid_75_5f09418eb6096_rand:hover .td_uid_78_5f09418eb7b8a .tdm-title {
+					color: #22a0d6;
+				}
+				.td_uid_75_5f09418eb6096_rand:hover .td_uid_78_5f09418eb7b8a .tdm-title {
+					cursor: default;
+				}
+				
+				body .td_uid_75_5f09418eb6096_rand:hover .td_uid_78_5f09418eb7b8a .tdm-title {
+					-webkit-text-fill-color: unset;
+					background: transparent;
+					transition: none;
+				}
+</style><div class="tds-title tds-title1 td-fix-index td_uid_78_5f09418eb7b8a"><h3 class="tdm-title tdm-title-sm">AUTOMOTIVE</h3></div><p class="tdm-descr td-fix-index"></p></div><a href="#" class="icon_box_url_wrap"> </a></div><style>.td_uid_75_5f09418eb6096_rand .tds-icon-box .tds-icon {
+				    font-size: 52px;
+				    text-align: center;
+				}
+				
+				
+				.td_uid_75_5f09418eb6096_rand .tds-icon-box .tds-icon {
+				    width: 52px;
+				    height: 52px;
+				    line-height: 52px;
+				}</style></div><div class="tdm_block td_block_wrap tdm_block_icon_box td_uid_79_5f09418eb9b1a_rand tdm-content-horiz-left tds_icon_box2_wrap td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_79_5f09418eb9b1a">
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_79_5f09418eb9b1a_rand{
+margin-bottom:30px !important;
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_79_5f09418eb9b1a_rand{
+margin-bottom:20px !important;
+}
+}
+
+</style><style>
+.td_uid_80_5f09418ebaad3 .tdm-col-icon {
+				    padding-right: 20px;
+				}
+				
+				.td_uid_80_5f09418ebaad3 .tds-title {
+				    margin-top: 10px;
+				}
+				
+				
+				.td_uid_80_5f09418ebaad3 .tds-title {
+				    margin-bottom: 0px;
+				}
+				
+				
+				.td_uid_80_5f09418ebaad3 .tdm-descr {
+				    margin-bottom: 0px;
+				}
+</style><div class="tds-icon-box tds-icon-box2 td-fix-index  td_uid_80_5f09418ebaad3"><div class="tdm-col-icon">
+<style>
+.td_uid_81_5f09418ebaadd {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				} 
+				.td_uid_81_5f09418ebaadd:before {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				}
+
+				
+				.td_uid_81_5f09418ebaadd:before {
+					color: #ffffff;
+				}
+				
+				body .td_uid_79_5f09418eb9b1a_rand:hover .td_uid_81_5f09418ebaadd:before {
+					-webkit-text-fill-color: unset;
+					background: transparent;
+					transition: none;
+				}
+
+				
+				.td_uid_79_5f09418eb9b1a_rand:hover .td_uid_81_5f09418ebaadd:before {
+				    color: #22a0d6;
+				}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px){
+
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px){
+
+}
+
+/* phone */
+@media (max-width: 767px){
+
+}
+</style><i class="tds-icon tdc-font-tdmp tdc-font-tdmp-tv td_uid_81_5f09418ebaadd td-fix-index"></i></div><div class="tdm-col-text">
+<style>
+body .td_uid_82_5f09418ebb5b6 .tdm-title {
+					color: #ffffff;
+				}
+				
+				body .td_uid_79_5f09418eb9b1a_rand:hover .td_uid_82_5f09418ebb5b6 .tdm-title {
+					color: #22a0d6;
+				}
+				.td_uid_79_5f09418eb9b1a_rand:hover .td_uid_82_5f09418ebb5b6 .tdm-title {
+					cursor: default;
+				}
+				
+				body .td_uid_79_5f09418eb9b1a_rand:hover .td_uid_82_5f09418ebb5b6 .tdm-title {
+					-webkit-text-fill-color: unset;
+					background: transparent;
+					transition: none;
+				}
+</style><div class="tds-title tds-title1 td-fix-index td_uid_82_5f09418ebb5b6"><h3 class="tdm-title tdm-title-sm">MULTIMEDIA</h3></div><p class="tdm-descr td-fix-index"></p></div><a href="#" class="icon_box_url_wrap"> </a></div><style>.td_uid_79_5f09418eb9b1a_rand .tds-icon-box .tds-icon {
+				    font-size: 52px;
+				    text-align: center;
+				}
+				
+				
+				.td_uid_79_5f09418eb9b1a_rand .tds-icon-box .tds-icon {
+				    width: 52px;
+				    height: 52px;
+				    line-height: 52px;
+				}</style></div><div class="tdm_block td_block_wrap tdm_block_icon_box td_uid_83_5f09418ebd567_rand tdm-content-horiz-left tds_icon_box2_wrap td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_83_5f09418ebd567">
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_83_5f09418ebd567_rand{
+margin-bottom:0px !important;
+margin-left:-3px !important;
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_83_5f09418ebd567_rand{
+margin-bottom:20px !important;
+}
+}
+
+</style><style>
+.td_uid_84_5f09418ebe557 .tdm-col-icon {
+				    padding-right: 20px;
+				}
+				
+				.td_uid_84_5f09418ebe557 .tds-title {
+				    margin-top: 10px;
+				}
+				
+				
+				.td_uid_84_5f09418ebe557 .tds-title {
+				    margin-bottom: 0px;
+				}
+				
+				
+				.td_uid_84_5f09418ebe557 .tdm-descr {
+				    margin-bottom: 0px;
+				}
+</style><div class="tds-icon-box tds-icon-box2 td-fix-index  td_uid_84_5f09418ebe557"><div class="tdm-col-icon">
+<style>
+.td_uid_85_5f09418ebe561 {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				} 
+				.td_uid_85_5f09418ebe561:before {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				}
+
+				
+				.td_uid_85_5f09418ebe561:before {
+					color: #ffffff;
+				}
+				
+				body .td_uid_83_5f09418ebd567_rand:hover .td_uid_85_5f09418ebe561:before {
+					-webkit-text-fill-color: unset;
+					background: transparent;
+					transition: none;
+				}
+
+				
+				.td_uid_83_5f09418ebd567_rand:hover .td_uid_85_5f09418ebe561:before {
+				    color: #22a0d6;
+				}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px){
+
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px){
+
+}
+
+/* phone */
+@media (max-width: 767px){
+
+}
+</style><i class="tds-icon tdc-font-tdmp tdc-font-tdmp-sattelite td_uid_85_5f09418ebe561 td-fix-index"></i></div><div class="tdm-col-text">
+<style>
+body .td_uid_86_5f09418ebf002 .tdm-title {
+					color: #ffffff;
+				}
+				
+				body .td_uid_83_5f09418ebd567_rand:hover .td_uid_86_5f09418ebf002 .tdm-title {
+					color: #22a0d6;
+				}
+				.td_uid_83_5f09418ebd567_rand:hover .td_uid_86_5f09418ebf002 .tdm-title {
+					cursor: default;
+				}
+				
+				body .td_uid_83_5f09418ebd567_rand:hover .td_uid_86_5f09418ebf002 .tdm-title {
+					-webkit-text-fill-color: unset;
+					background: transparent;
+					transition: none;
+				}
+</style><div class="tds-title tds-title1 td-fix-index td_uid_86_5f09418ebf002"><h3 class="tdm-title tdm-title-sm">CONNECTIVITY</h3></div><p class="tdm-descr td-fix-index"></p></div><a href="#" class="icon_box_url_wrap"> </a></div><style>.td_uid_83_5f09418ebd567_rand .tds-icon-box .tds-icon {
+				    font-size: 56px;
+				    text-align: center;
+				}
+				
+				
+				.td_uid_83_5f09418ebd567_rand .tds-icon-box .tds-icon {
+				    width: 56px;
+				    height: 56px;
+				    line-height: 56px;
+				}</style></div></div></div></div></div></div></div><div class="vc_column td_uid_87_5f09418ec1015_rand  wpb_column vc_column_container tdc-column td-pb-span6">
+<style scoped>
+
+/* custom css */
+.td_uid_87_5f09418ec1015_rand {
+                    vertical-align: baseline;
+                }
+/* inline tdc_css att */
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_87_5f09418ec1015_rand{
+width:auto !important;
+}
+}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px)
+{
+.td_uid_87_5f09418ec1015_rand{
+width:60% !important;
+}
+}
+
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_inline_image td_uid_88_5f09418ec1233_rand tdm-content-horiz-left td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_88_5f09418ec1233">
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_88_5f09418ec1233_rand{
+position:relative;
+}
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_88_5f09418ec1233_rand{
+margin-right:-20px !important;
+margin-left:-20px !important;
+}
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_88_5f09418ec1233_rand{
+margin-right:-14px !important;
+margin-left:-14px !important;
+}
+}
+
+</style><div class="td_uid_88_5f09418ec1233_rand_style td-element-style">
+<div class="td-element-style-before"><style>
+.td_uid_88_5f09418ec1233_rand_style > .td-element-style-before {
+content:'' !important;
+width:100% !important;
+height:100% !important;
+position:absolute !important;
+top:0 !important;
+left:0 !important;
+display:block !important;
+z-index:0 !important;
+background-repeat:no-repeat !important;
+background-position:center center !important;
+}
+</style></div><style> </style></div><div class="tdm-inline-image-wrap"><img class="tdm-image td-fix-index" src="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/applications.jpg" title="applications"></div></div></div></div></div></div><div id="td_uid_29_5f09418ec24f9" class="tdc-row stretch_row_content td-stretch-content"><div class="vc_row td_uid_89_5f09418ec2504_rand td-logo-wrap wpb_row td-pb-row tdc-element-style">
+<style scoped>
+
+/* custom css */
+.td_uid_89_5f09418ec2504_rand {
+                    min-height: 0;
+                }
+/* inline tdc_css att */
+
+.td_uid_89_5f09418ec2504_rand{
+margin-bottom:130px !important;
+padding-top:10px !important;
+padding-bottom:10px !important;
+justify-content:center !important;
+text-align:center !important;
+position:relative;
+}
+
+.td_uid_89_5f09418ec2504_rand .td_block_wrap{ text-align:left }
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_89_5f09418ec2504_rand{
+margin-bottom:60px !important;
+padding-top:15px !important;
+}
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_89_5f09418ec2504_rand{
+margin-bottom:80px !important;
+}
+}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px)
+{
+.td_uid_89_5f09418ec2504_rand{
+margin-bottom:120px !important;
+}
+}
+
+</style><div class="td_uid_29_5f09418ec24f9_rand_style td-element-style"><style>
+.td_uid_29_5f09418ec24f9_rand_style{
+background-color:#f7f7f7 !important;
+}
+ </style></div><div class="vc_column td_uid_90_5f09418ec29cf_rand  wpb_column vc_column_container tdc-column td-pb-span12">
+<style scoped>
+
+/* custom css */
+.td_uid_90_5f09418ec29cf_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_client td_uid_91_5f09418ec2e12_rand tdm-inline-block tdm-content-horiz-center td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_91_5f09418ec2e12">
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_91_5f09418ec2e12_rand{
+margin-bottom:0px !important;
+padding-right:50px !important;
+padding-left:50px !important;
+position:relative;
+}
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_91_5f09418ec2e12_rand{
+padding-right:20px !important;
+padding-left:20px !important;
+}
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_91_5f09418ec2e12_rand{
+padding-right:20px !important;
+padding-left:20px !important;
+}
+}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px)
+{
+.td_uid_91_5f09418ec2e12_rand{
+padding-right:20px !important;
+padding-left:20px !important;
+}
+}
+
+</style><style>
+/* custom css */
+.td_uid_91_5f09418ec2e12_rand .tdm-client-image {
+				    opacity: 1;
+				}
+				
+				.td_uid_91_5f09418ec2e12_rand:hover .tdm-client-image {
+				    opacity: 1;
+				}
+				
+				
+				.td_uid_91_5f09418ec2e12_rand {
+				    width: 14.28%;
+				}
+</style><div class="td_uid_91_5f09418ec2e12_rand_style td-element-style">
+<div class="td-element-style-before"><style>
+.td_uid_91_5f09418ec2e12_rand_style > .td-element-style-before {
+content:'' !important;
+width:100% !important;
+height:100% !important;
+position:absolute !important;
+top:0 !important;
+left:0 !important;
+display:block !important;
+z-index:0 !important;
+background-position:center center !important;
+background-size:cover !important;
+}
+</style></div><style> </style></div><img class="tdm-client-image td-fix-index" src="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/youtube.png"></div><div class="tdm_block td_block_wrap tdm_block_client td_uid_92_5f09418ec3f54_rand tdm-inline-block tdm-content-horiz-center td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_92_5f09418ec3f54">
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_92_5f09418ec3f54_rand{
+margin-bottom:0px !important;
+padding-right:50px !important;
+padding-left:50px !important;
+position:relative;
+}
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_92_5f09418ec3f54_rand{
+padding-right:20px !important;
+padding-left:20px !important;
+}
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_92_5f09418ec3f54_rand{
+padding-right:20px !important;
+padding-left:20px !important;
+}
+}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px)
+{
+.td_uid_92_5f09418ec3f54_rand{
+padding-right:20px !important;
+padding-left:20px !important;
+}
+}
+
+</style><style>
+/* custom css */
+.td_uid_92_5f09418ec3f54_rand .tdm-client-image {
+				    opacity: 1;
+				}
+				
+				.td_uid_92_5f09418ec3f54_rand:hover .tdm-client-image {
+				    opacity: 1;
+				}
+				
+				
+				.td_uid_92_5f09418ec3f54_rand {
+				    width: 14.28%;
+				}
+</style><div class="td_uid_92_5f09418ec3f54_rand_style td-element-style">
+<div class="td-element-style-before"><style>
+.td_uid_92_5f09418ec3f54_rand_style > .td-element-style-before {
+content:'' !important;
+width:100% !important;
+height:100% !important;
+position:absolute !important;
+top:0 !important;
+left:0 !important;
+display:block !important;
+z-index:0 !important;
+background-position:center center !important;
+background-size:cover !important;
+}
+</style></div><style> </style></div><img class="tdm-client-image td-fix-index" src="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/samsung.png"></div><div class="tdm_block td_block_wrap tdm_block_client td_uid_93_5f09418ec4fd3_rand tdm-inline-block tdm-content-horiz-center td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_93_5f09418ec4fd3">
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_93_5f09418ec4fd3_rand{
+margin-bottom:0px !important;
+padding-right:50px !important;
+padding-left:50px !important;
+position:relative;
+}
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_93_5f09418ec4fd3_rand{
+padding-right:20px !important;
+padding-left:20px !important;
+}
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_93_5f09418ec4fd3_rand{
+padding-right:20px !important;
+padding-left:20px !important;
+}
+}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px)
+{
+.td_uid_93_5f09418ec4fd3_rand{
+padding-right:20px !important;
+padding-left:20px !important;
+}
+}
+
+</style><style>
+/* custom css */
+.td_uid_93_5f09418ec4fd3_rand .tdm-client-image {
+				    opacity: 1;
+				}
+				
+				.td_uid_93_5f09418ec4fd3_rand:hover .tdm-client-image {
+				    opacity: 1;
+				}
+				
+				
+				.td_uid_93_5f09418ec4fd3_rand {
+				    width: 14.28%;
+				}
+</style><div class="td_uid_93_5f09418ec4fd3_rand_style td-element-style">
+<div class="td-element-style-before"><style>
+.td_uid_93_5f09418ec4fd3_rand_style > .td-element-style-before {
+content:'' !important;
+width:100% !important;
+height:100% !important;
+position:absolute !important;
+top:0 !important;
+left:0 !important;
+display:block !important;
+z-index:0 !important;
+background-position:center center !important;
+background-size:cover !important;
+}
+</style></div><style> </style></div><img class="tdm-client-image td-fix-index" src="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/dell.png"></div><div class="tdm_block td_block_wrap tdm_block_client td_uid_94_5f09418ec602b_rand tdm-inline-block tdm-content-horiz-center td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_94_5f09418ec602b">
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_94_5f09418ec602b_rand{
+margin-bottom:0px !important;
+padding-right:50px !important;
+padding-left:50px !important;
+position:relative;
+}
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_94_5f09418ec602b_rand{
+padding-right:20px !important;
+padding-left:20px !important;
+}
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_94_5f09418ec602b_rand{
+padding-right:20px !important;
+padding-left:20px !important;
+}
+}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px)
+{
+.td_uid_94_5f09418ec602b_rand{
+padding-right:20px !important;
+padding-left:20px !important;
+}
+}
+
+</style><style>
+/* custom css */
+.td_uid_94_5f09418ec602b_rand .tdm-client-image {
+				    opacity: 1;
+				}
+				
+				.td_uid_94_5f09418ec602b_rand:hover .tdm-client-image {
+				    opacity: 1;
+				}
+				
+				
+				.td_uid_94_5f09418ec602b_rand {
+				    width: 14.28%;
+				}
+</style><div class="td_uid_94_5f09418ec602b_rand_style td-element-style">
+<div class="td-element-style-before"><style>
+.td_uid_94_5f09418ec602b_rand_style > .td-element-style-before {
+content:'' !important;
+width:100% !important;
+height:100% !important;
+position:absolute !important;
+top:0 !important;
+left:0 !important;
+display:block !important;
+z-index:0 !important;
+background-position:center center !important;
+background-size:cover !important;
+}
+</style></div><style> </style></div><img class="tdm-client-image td-fix-index" src="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/skype.png"></div><div class="tdm_block td_block_wrap tdm_block_client td_uid_95_5f09418ec6ff5_rand tdm-inline-block tdm-content-horiz-center td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_95_5f09418ec6ff5">
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_95_5f09418ec6ff5_rand{
+margin-bottom:0px !important;
+padding-right:50px !important;
+padding-left:50px !important;
+position:relative;
+}
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_95_5f09418ec6ff5_rand{
+padding-right:20px !important;
+padding-left:20px !important;
+}
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_95_5f09418ec6ff5_rand{
+padding-right:20px !important;
+padding-left:20px !important;
+}
+}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px)
+{
+.td_uid_95_5f09418ec6ff5_rand{
+padding-right:20px !important;
+padding-left:20px !important;
+}
+}
+
+</style><style>
+/* custom css */
+.td_uid_95_5f09418ec6ff5_rand .tdm-client-image {
+				    opacity: 1;
+				}
+				
+				.td_uid_95_5f09418ec6ff5_rand:hover .tdm-client-image {
+				    opacity: 1;
+				}
+				
+				
+				.td_uid_95_5f09418ec6ff5_rand {
+				    width: 14.28%;
+				}
+</style><div class="td_uid_95_5f09418ec6ff5_rand_style td-element-style">
+<div class="td-element-style-before"><style>
+.td_uid_95_5f09418ec6ff5_rand_style > .td-element-style-before {
+content:'' !important;
+width:100% !important;
+height:100% !important;
+position:absolute !important;
+top:0 !important;
+left:0 !important;
+display:block !important;
+z-index:0 !important;
+background-position:center center !important;
+background-size:cover !important;
+}
+</style></div><style> </style></div><img class="tdm-client-image td-fix-index" src="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/google.png"></div><div class="tdm_block td_block_wrap tdm_block_client td_uid_96_5f09418ec80a3_rand tdm-inline-block tdm-content-horiz-center td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_96_5f09418ec80a3">
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_96_5f09418ec80a3_rand{
+margin-bottom:0px !important;
+padding-right:50px !important;
+padding-left:50px !important;
+position:relative;
+}
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_96_5f09418ec80a3_rand{
+padding-right:20px !important;
+padding-left:20px !important;
+}
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_96_5f09418ec80a3_rand{
+padding-right:20px !important;
+padding-left:20px !important;
+}
+}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px)
+{
+.td_uid_96_5f09418ec80a3_rand{
+padding-right:20px !important;
+padding-left:20px !important;
+}
+}
+
+</style><style>
+/* custom css */
+.td_uid_96_5f09418ec80a3_rand .tdm-client-image {
+				    opacity: 1;
+				}
+				
+				.td_uid_96_5f09418ec80a3_rand:hover .tdm-client-image {
+				    opacity: 1;
+				}
+				
+				
+				.td_uid_96_5f09418ec80a3_rand {
+				    width: 14.28%;
+				}
+</style><div class="td_uid_96_5f09418ec80a3_rand_style td-element-style">
+<div class="td-element-style-before"><style>
+.td_uid_96_5f09418ec80a3_rand_style > .td-element-style-before {
+content:'' !important;
+width:100% !important;
+height:100% !important;
+position:absolute !important;
+top:0 !important;
+left:0 !important;
+display:block !important;
+z-index:0 !important;
+background-position:center center !important;
+background-size:cover !important;
+}
+</style></div><style> </style></div><img class="tdm-client-image td-fix-index" src="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/microsoft.png"></div><div class="tdm_block td_block_wrap tdm_block_client td_uid_97_5f09418ec90a4_rand tdm-inline-block tdm-content-horiz-center td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_97_5f09418ec90a4">
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_97_5f09418ec90a4_rand{
+margin-bottom:0px !important;
+padding-right:50px !important;
+padding-left:50px !important;
+position:relative;
+}
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_97_5f09418ec90a4_rand{
+padding-right:20px !important;
+padding-left:20px !important;
+}
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_97_5f09418ec90a4_rand{
+padding-right:20px !important;
+padding-left:20px !important;
+}
+}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px)
+{
+.td_uid_97_5f09418ec90a4_rand{
+padding-right:20px !important;
+padding-left:20px !important;
+}
+}
+
+</style><style>
+/* custom css */
+.td_uid_97_5f09418ec90a4_rand .tdm-client-image {
+				    opacity: 1;
+				}
+				
+				.td_uid_97_5f09418ec90a4_rand:hover .tdm-client-image {
+				    opacity: 1;
+				}
+				
+				
+				.td_uid_97_5f09418ec90a4_rand {
+				    width: 14.28%;
+				}
+</style><div class="td_uid_97_5f09418ec90a4_rand_style td-element-style">
+<div class="td-element-style-before"><style>
+.td_uid_97_5f09418ec90a4_rand_style > .td-element-style-before {
+content:'' !important;
+width:100% !important;
+height:100% !important;
+position:absolute !important;
+top:0 !important;
+left:0 !important;
+display:block !important;
+z-index:0 !important;
+background-position:center center !important;
+background-size:cover !important;
+}
+</style></div><style> </style></div><img class="tdm-client-image td-fix-index" src="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/acer.png"></div></div></div></div></div><div id="td_uid_31_5f09418eca0a8" class="tdc-row"><div class="vc_row td_uid_98_5f09418eca0b4_rand td-center-title wpb_row td-pb-row">
+<style scoped>
+
+/* custom css */
+.td_uid_98_5f09418eca0b4_rand {
+                    min-height: 0;
+                }
+/* inline tdc_css att */
+
+.td_uid_98_5f09418eca0b4_rand{
+margin-bottom:- !important;
+}
+
+.td_uid_98_5f09418eca0b4_rand .td_block_wrap{ text-align:left }
+
+</style><div class="vc_column td_uid_99_5f09418eca466_rand  wpb_column vc_column_container tdc-column td-pb-span12">
+<style scoped>
+
+/* custom css */
+.td_uid_99_5f09418eca466_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="td_block_wrap td_block_title td_uid_100_5f09418eca5ff_rand td-pb-border-top td_block_template_13" data-td-block-uid="td_uid_100_5f09418eca5ff">
+<style>
+.td_uid_100_5f09418eca5ff_rand .td-block-title > a,
+            .td_uid_100_5f09418eca5ff_rand .td-block-title > span {
+                color: #22a0d6 !important;
+            }
+</style><h1 class="td-block-title"><span>OUR PRODUCT</span><div class="td-block-subtitle">Discover</div></h1><div class="td_mod_wrap"></div></div></div></div></div></div><div id="td_uid_33_5f09418ecabb7" class="tdc-row stretch_row_1200 td-stretch-content"><div class="vc_row td_uid_101_5f09418ecabc1_rand  wpb_row td-pb-row">
+<style scoped>
+
+/* custom css */
+.td_uid_101_5f09418ecabc1_rand {
+                    min-height: 0;
+                }
+/* inline tdc_css att */
+
+.td_uid_101_5f09418ecabc1_rand{
+margin-bottom:130px !important;
+}
+
+.td_uid_101_5f09418ecabc1_rand .td_block_wrap{ text-align:left }
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_101_5f09418ecabc1_rand{
+margin-bottom:80px !important;
+padding-right:10px !important;
+padding-left:10px !important;
+}
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_101_5f09418ecabc1_rand{
+margin-bottom:100px !important;
+}
+}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px)
+{
+.td_uid_101_5f09418ecabc1_rand{
+margin-bottom:120px !important;
+}
+}
+
+</style><div class="vc_column td_uid_102_5f09418ecafcb_rand  wpb_column vc_column_container tdc-column td-pb-span12">
+<style scoped>
+
+/* custom css */
+.td_uid_102_5f09418ecafcb_rand {
+                    vertical-align: baseline;
+                }
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_column_title td_uid_103_5f09418ecb249_rand tdm-content-horiz-center td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_103_5f09418ecb249">
+<style>
+
+/* inline tdc_css att */
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_103_5f09418ecb249_rand{
+justify-content:center !important;
+text-align:center !important;
+}
+}
+
+</style><div class="td-block-row"><div class="td-block-span12 tdm-col">
+<style>
+body .td_uid_104_5f09418ecbc97 .tdm-title {
+					color: #444444;
+				}
+</style><div class="tds-title tds-title1 td-fix-index td_uid_104_5f09418ecbc97"><h1 class="tdm-title tdm-title-bg">Amazing modular technology</h1></div></div></div></div><div class="tdm_block td_block_wrap tdm_block_inline_text td_uid_105_5f09418ecc3ac_rand tdm-inline-block tdm-content-horiz-center td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_105_5f09418ecc3ac">
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_105_5f09418ecc3ac_rand{
+margin-bottom:80px !important;
+padding-right:60px !important;
+padding-left:60px !important;
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_105_5f09418ecc3ac_rand{
+margin-bottom:50px !important;
+}
+}
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_105_5f09418ecc3ac_rand{
+margin-bottom:40px !important;
+padding-right:0px !important;
+padding-left:0px !important;
+}
+}
+
+</style><style>
+/* custom css */
+.td_uid_105_5f09418ecc3ac_rand .tdm-descr {
+                    color: #aaa;
+                }
+</style><p class="tdm-descr">We're all drawn to happiness. A study at Harvard tells us that emotion is contagious. You'll notice that the Before (pre-Digital Age) pictures in Facebook's slides all display neutral faces. But the cover slide that introduces Facebook and the after slides have smiling faces on them. This is important. The placement of those graphics is an intentional persuasion technique.
+<br><br>
+Studies by psychologists show that we register smiles faster than any other expression.  And when participants in a study were asked to recall expressions, they consistently remembered happy faces over neutral ones.</p></div><div class="tdm_block td_block_wrap tdm_block_inline_image td_uid_106_5f09418ecd19d_rand tdm-content-horiz-center td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_106_5f09418ecd19d">
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_106_5f09418ecd19d_rand{
+margin-bottom:40px !important;
+}
+
+</style><div class="tdm-inline-image-wrap"><img class="tdm-image td-fix-index" src="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/product.jpg" title="product"></div></div><div class="tdm_block td_block_wrap tdm_block_button td_uid_107_5f09418ece337_rand tdm-content-horiz-center td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_107_5f09418ece337">
+<style>
+body .td_uid_108_5f09418ecef2d .tdm-btn-text,
+				body .td_uid_108_5f09418ecef2d i {
+					color: #22a0d6;
+				}
+				
+				body .td_uid_108_5f09418ecef2d:hover .tdm-btn-text,
+				body .td_uid_108_5f09418ecef2d:hover i {
+					color: #ffffff;
+				}
+				
+				body .td_uid_108_5f09418ecef2d:hover .tdm-btn-text,
+				body .td_uid_108_5f09418ecef2d:hover i {
+					-webkit-text-fill-color: unset;
+					background: transparent;
+					transition: none;
+				}
+
+				
+				body .td_uid_108_5f09418ecef2d:before {
+					border-color: #22a0d6;
+				}
+				
+				body .td_uid_108_5f09418ecef2d:hover:before {
+					border-color: #22a0d6;
+				}
+
+				
+				.td_uid_108_5f09418ecef2d:before {
+					border-width: 3px;
+				}
+				
+				.td_uid_108_5f09418ecef2d:before {
+					border-style: solid;
+				}
+				
+				.td_uid_108_5f09418ecef2d,
+				.td_uid_108_5f09418ecef2d:before {
+					border-radius: 50px;
+				}
+</style><div class="tds-button td-fix-index"><a href="#" class="tds-button2 tdm-btn tdm-btn-xlg td_uid_108_5f09418ecef2d"><span class="tdm-btn-text">SIGN UP FOR YOUR FREE KIT</span></a></div></div></div></div></div></div>                </div>
+                            </div> 
+
+
+            
+
+
+
+	<div class="td-footer-page td-footer-container td-container-wrap">
+	<div id="td_uid_35_5f09418ed0f55" class="tdc-row stretch_row_1600 td-stretch-content"><div class="vc_row td_uid_109_5f09418ed0f63_rand td-text-image-module td-multipourpose-footer wpb_row td-pb-row tdc-element-style">
+<style scoped>
+
+/* custom css */
+.td_uid_109_5f09418ed0f63_rand {
+                    min-height: 0;
+                }
+/* inline tdc_css att */
+
+.td_uid_109_5f09418ed0f63_rand{
+padding-top:60px !important;
+padding-bottom:60px !important;
+position:relative;
+}
+
+.td_uid_109_5f09418ed0f63_rand .td_block_wrap{ text-align:left }
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_109_5f09418ed0f63_rand{
+padding-bottom:0px !important;
+justify-content:center !important;
+text-align:center !important;
+}
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_109_5f09418ed0f63_rand{
+padding-bottom:0px !important;
+}
+}
+
+</style><div class="td_uid_35_5f09418ed0f55_rand_style td-element-style"><div class="td-element-style-before"><style>
+.td_uid_35_5f09418ed0f55_rand_style > .td-element-style-before {
+content:'' !important;
+width:100% !important;
+height:100% !important;
+position:absolute !important;
+top:0 !important;
+left:0 !important;
+display:block !important;
+z-index:0 !important;
+background-image:url("https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/xxx_footer-bg_xxx.jpg") !important;
+background-position:center center !important;
+opacity:0.30 !important;
+background-size:cover !important;
+}
+</style></div><style>
+.td_uid_35_5f09418ed0f55_rand_style{
+background-color:#000000 !important;
+}
+ </style></div><div class="vc_column td_uid_110_5f09418ed1376_rand  wpb_column vc_column_container tdc-column td-pb-span6">
+<style scoped>
+
+/* custom css */
+.td_uid_110_5f09418ed1376_rand {
+                    vertical-align: baseline;
+                }
+/* inline tdc_css att */
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px)
+{
+.td_uid_110_5f09418ed1376_rand{
+width:40% !important;
+}
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_110_5f09418ed1376_rand{
+padding-bottom:40px !important;
+padding-left:40px !important;
+width:auto !important;
+}
+}
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_110_5f09418ed1376_rand{
+margin-bottom:-30px !important;
+}
+}
+
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_column_title td_uid_111_5f09418ed1588_rand tdm-content-horiz-left td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_111_5f09418ed1588">
+<style>
+
+/* inline tdc_css att */
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_111_5f09418ed1588_rand{
+text-align:left !important;
+}
+}
+
+</style><div class="td-block-row"><div class="td-block-span12 tdm-col">
+<style>
+body .td_uid_112_5f09418ed2042 .tdm-title {
+					color: #22a0d6;
+				}
+</style><div class="tds-title tds-title1 td-fix-index td_uid_112_5f09418ed2042"><h1 class="tdm-title tdm-title-sm">HEADQUARTERS</h1></div></div></div></div><div class="tdm_block td_block_wrap tdm_block_column_title td_uid_113_5f09418ed2718_rand tdm-content-horiz-left td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_113_5f09418ed2718">
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_113_5f09418ed2718_rand{
+margin-bottom:-10px !important;
+}
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_113_5f09418ed2718_rand{
+text-align:left !important;
+}
+}
+
+</style><div class="td-block-row"><div class="td-block-span12 tdm-col">
+<style>
+body .td_uid_114_5f09418ed3094 .tdm-title {
+					color: #ffffff;
+				}
+</style><div class="tds-title tds-title1 td-fix-index td_uid_114_5f09418ed3094"><h1 class="tdm-title tdm-title-bg">Technology Hub</h1></div></div></div></div><div class="tdm_block td_block_wrap tdm_block_column_title td_uid_115_5f09418ed374b_rand tdm-content-horiz-left td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_115_5f09418ed374b">
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_115_5f09418ed374b_rand{
+margin-bottom:10px !important;
+}
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_115_5f09418ed374b_rand{
+text-align:left !important;
+}
+}
+
+</style><div class="td-block-row"><div class="td-block-span12 tdm-col">
+<style>
+body .td_uid_116_5f09418ed4141 .tdm-title {
+					color: #ffffff;
+				}
+</style><div class="tds-title tds-title1 td-fix-index td_uid_116_5f09418ed4141"><h3 class="tdm-title tdm-title-md">The modern cube <br> Glass wing <br>
+NY2268 New York <br>
+United States of America</h3></div></div></div></div><div class="tdm_block td_block_wrap tdm_block_icon_box td_uid_117_5f09418ed4859_rand tdm-content-horiz-left tds_icon_box2_wrap td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_117_5f09418ed4859">
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_117_5f09418ed4859_rand{
+margin-bottom:20px !important;
+}
+
+</style><style>
+.td_uid_118_5f09418ed57ee .tdm-col-icon {
+				    padding-right: 13px;
+				}
+				
+				.td_uid_118_5f09418ed57ee .tds-title {
+				    margin-top: -10px;
+				}
+				
+				
+				.td_uid_118_5f09418ed57ee .tds-title {
+				    margin-bottom: 0px;
+				}
+				
+				
+				.td_uid_118_5f09418ed57ee .tdm-descr {
+				    margin-bottom: 0px;
+				}
+</style><div class="tds-icon-box tds-icon-box2 td-fix-index  td_uid_118_5f09418ed57ee"><div class="tdm-col-icon">
+<style>
+.td_uid_119_5f09418ed57fc {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				} 
+				.td_uid_119_5f09418ed57fc:before {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				}
+
+				
+				.td_uid_119_5f09418ed57fc:before {
+					color: #22a0d6;
+				}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px){
+
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px){
+
+}
+
+/* phone */
+@media (max-width: 767px){
+
+}
+</style><i class="tds-icon tdc-font-typcn tdc-font-typcn-location td_uid_119_5f09418ed57fc td-fix-index"></i></div><div class="tdm-col-text">
+<style>
+body .td_uid_120_5f09418ed62a0 .tdm-title {
+					color: #ffffff;
+				}
+</style><div class="tds-title tds-title1 td-fix-index td_uid_120_5f09418ed62a0"><h3 class="tdm-title tdm-title-sm">GET DIRECTIONS</h3></div><p class="tdm-descr td-fix-index"></p></div></div><style>.td_uid_117_5f09418ed4859_rand .tds-icon-box .tds-icon {
+				    font-size: 24px;
+				    text-align: center;
+				}
+				
+				
+				.td_uid_117_5f09418ed4859_rand .tds-icon-box .tds-icon {
+				    width: 24px;
+				    height: 24px;
+				    line-height: 24px;
+				}</style></div><div class="tdm_block td_block_wrap tdm_block_icon_box td_uid_121_5f09418ed8261_rand tdm-content-horiz-left tds_icon_box2_wrap td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_121_5f09418ed8261">
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_121_5f09418ed8261_rand{
+margin-left:5px !important;
+}
+
+</style><style>
+.td_uid_122_5f09418ed9217 .tdm-col-icon {
+				    padding-right: 20px;
+				}
+				
+				.td_uid_122_5f09418ed9217 .tds-title {
+				    margin-top: -12px;
+				}
+				
+				
+				.td_uid_122_5f09418ed9217 .tds-title {
+				    margin-bottom: 0px;
+				}
+				
+				
+				.td_uid_122_5f09418ed9217 .tdm-descr {
+				    margin-bottom: 0px;
+				}
+</style><div class="tds-icon-box tds-icon-box2 td-fix-index  td_uid_122_5f09418ed9217"><div class="tdm-col-icon">
+<style>
+.td_uid_123_5f09418ed9221 {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				} 
+				.td_uid_123_5f09418ed9221:before {
+				    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+				}
+
+				
+				.td_uid_123_5f09418ed9221:before {
+					color: #22a0d6;
+				}
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px){
+
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px){
+
+}
+
+/* phone */
+@media (max-width: 767px){
+
+}
+</style><i class="tds-icon tdc-font-oi tdc-font-oi-envelope-closed td_uid_123_5f09418ed9221 td-fix-index"></i></div><div class="tdm-col-text">
+<style>
+body .td_uid_124_5f09418ed9cb0 .tdm-title {
+					color: #ffffff;
+				}
+</style><div class="tds-title tds-title1 td-fix-index td_uid_124_5f09418ed9cb0"><h3 class="tdm-title tdm-title-sm">info@technology.com</h3></div><p class="tdm-descr td-fix-index"></p></div></div><style>.td_uid_121_5f09418ed8261_rand .tds-icon-box .tds-icon {
+				    font-size: 17px;
+				    text-align: center;
+				}
+				
+				
+				.td_uid_121_5f09418ed8261_rand .tds-icon-box .tds-icon {
+				    width: 17px;
+				    height: 17px;
+				    line-height: 17px;
+				}</style></div></div></div><div class="vc_column td_uid_125_5f09418edbc30_rand  wpb_column vc_column_container tdc-column td-pb-span6">
+<style scoped>
+
+/* custom css */
+.td_uid_125_5f09418edbc30_rand {
+                    vertical-align: baseline;
+                }
+/* inline tdc_css att */
+
+/* landscape */
+@media (min-width: 1019px) and (max-width: 1140px)
+{
+.td_uid_125_5f09418edbc30_rand{
+width:60% !important;
+}
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_125_5f09418edbc30_rand{
+width:auto !important;
+}
+}
+
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_inline_image td_uid_126_5f09418edbe5d_rand tdm-content-horiz-left td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_126_5f09418edbe5d">
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_126_5f09418edbe5d_rand{
+position:relative;
+}
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_126_5f09418edbe5d_rand{
+margin-top:80px !important;
+margin-right:-20px !important;
+margin-left:-20px !important;
+}
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_126_5f09418edbe5d_rand{
+margin-right:-14px !important;
+margin-left:-14px !important;
+}
+}
+
+</style><div class="td_uid_126_5f09418edbe5d_rand_style td-element-style">
+<div class="td-element-style-before"><style>
+.td_uid_126_5f09418edbe5d_rand_style > .td-element-style-before {
+content:'' !important;
+width:100% !important;
+height:100% !important;
+position:absolute !important;
+top:0 !important;
+left:0 !important;
+display:block !important;
+z-index:0 !important;
+background-repeat:no-repeat !important;
+background-position:center center !important;
+}
+</style></div><style> </style></div><div class="tdm-inline-image-wrap"><img class="tdm-image td-fix-index" src="https://adventuresol.github.io/adventureguru/wp-content/uploads/2020/07/footer-img.jpg" title="footer-img"></div></div></div></div></div></div><div id="td_uid_38_5f09418edd2fb" class="tdc-row stretch_row_1600 td-stretch-content"><div class="vc_row td_uid_127_5f09418edd308_rand td-multipourpose-footer wpb_row td-pb-row tdc-element-style">
+<style scoped>
+
+/* custom css */
+.td_uid_127_5f09418edd308_rand {
+                    min-height: 0;
+                }
+/* inline tdc_css att */
+
+.td_uid_127_5f09418edd308_rand{
+margin-bottom:- !important;
+padding-top:10px !important;
+padding-bottom:10px !important;
+position:relative;
+}
+
+.td_uid_127_5f09418edd308_rand .td_block_wrap{ text-align:left }
+
+</style><div class="td_uid_38_5f09418edd2fb_rand_style td-element-style"><style>
+.td_uid_38_5f09418edd2fb_rand_style{
+background-color:#1e73be !important;
+}
+ </style></div><div class="vc_column td_uid_128_5f09418edd708_rand  wpb_column vc_column_container tdc-column td-pb-span6">
+<style scoped>
+
+/* custom css */
+.td_uid_128_5f09418edd708_rand {
+                    vertical-align: baseline;
+                }
+/* inline tdc_css att */
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_128_5f09418edd708_rand{
+width:100% !important;
+justify-content:center !important;
+text-align:center !important;
+}
+}
+
+</style><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_inline_text td_uid_129_5f09418eddbc4_rand tdm-inline-block tdm-content-horiz-left td-pb-border-top td_block_template_1" data-td-block-uid="td_uid_129_5f09418eddbc4">
+<style>
+/* custom css */
+.td_uid_129_5f09418eddbc4_rand .tdm-descr {
+                    color: #ffffff;
+                }
+</style><p class="tdm-descr">© Copyright 2017 tagDiv | All rights reserved  </p></div></div></div><div class="vc_column td_uid_130_5f09418edea98_rand  wpb_column vc_column_container tdc-column td-pb-span6">
+<style scoped>
+
+/* custom css */
+.td_uid_130_5f09418edea98_rand {
+                    vertical-align: baseline;
+                }
+/* inline tdc_css att */
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_130_5f09418edea98_rand{
+width:100% !important;
+}
+}
+
+</style><div class="wpb_wrapper"><div class="td_block_wrap td_block_list_menu td_uid_131_5f09418edee97_rand td-pb-border-top td_block_template_1 widget" data-td-block-uid="td_uid_131_5f09418edee97">
+<style>
+
+/* inline tdc_css att */
+
+.td_uid_131_5f09418edee97_rand{
+justify-content:flex-end !important;
+text-align:right !important;
+}
+
+/* phone */
+@media (max-width: 767px)
+{
+.td_uid_131_5f09418edee97_rand{
+justify-content:center !important;
+text-align:center !important;
+}
+}
+
+/* portrait */
+@media (min-width: 768px) and (max-width: 1018px)
+{
+.td_uid_131_5f09418edee97_rand{
+justify-content:center !important;
+text-align:center !important;
+}
+}
+
+</style><div class="td-block-title-wrap"></div><div id="td_uid_131_5f09418edee97" class="td_block_inner td-fix-index"><div class="menu-td-demo-header-menu-container"><ul id="menu-td-demo-header-menu-2" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-43 current_page_item menu-item-49"><a href="https://adventuresol.github.io/adventureguru/" aria-current="page">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="https://adventuresol.github.io/adventureguru/pricing/">Pricing</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="https://adventuresol.github.io/adventureguru/">Customers</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"><a href="https://adventuresol.github.io/adventureguru/demo-2/">Demo</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="https://adventuresol.github.io/adventureguru/news/">News</a></li>
+</ul></div></div></div> </div></div></div></div>	</div>
+
+
+
+</div>
+
+
+
+
+    
+
+    <script type="text/javascript" src="https://adventuresol.github.io/adventureguru/wp-content/plugins/td-composer/legacy/common/wp_booster/js_dev/tdModalPostImages.js"></script><script type="text/javascript" src="https://adventuresol.github.io/adventureguru/wp-includes/js/underscore.min.js"></script><script type="text/javascript" src="https://adventuresol.github.io/adventureguru/wp-content/plugins/td-cloud-library/assets/js/js_posts_autoload.min.js"></script><script type="text/javascript" src="https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/js/tagdiv_theme.min.js"></script><script type="text/javascript" src="https://adventuresol.github.io/adventureguru/wp-content/plugins/td-cloud-library/assets/js/js_files_for_front.min.js"></script><script>
+    
+
+	
+
+		(function(){
+			var html_jquery_obj = jQuery('html');
+
+			if (html_jquery_obj.length && (html_jquery_obj.is('.ie8') || html_jquery_obj.is('.ie9'))) {
+
+				var path = 'https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper/style.css';
+
+				jQuery.get(path, function(data) {
+
+					var str_split_separator = '#td_css_split_separator';
+					var arr_splits = data.split(str_split_separator);
+					var arr_length = arr_splits.length;
+
+					if (arr_length > 1) {
+
+						var dir_path = 'https://adventuresol.github.io/adventureguru/wp-content/themes/Newspaper';
+						var splited_css = '';
+
+						for (var i = 0; i < arr_length; i++) {
+							if (i > 0) {
+								arr_splits[i] = str_split_separator + ' ' + arr_splits[i];
+							}
+							//jQuery('head').append('<style>' + arr_splits[i] + '');
+
+							var formated_str = arr_splits[i].replace(/\surl\(\'(?!data\:)/gi, function regex_function(str) {
+								return ' url(\'' + dir_path + '/' + str.replace(/url\(\'/gi, '').replace(/^\s+|\s+$/gm,'');
+							});
+
+							splited_css += "<style>" + formated_str + "";
+						}
+
+						var td_theme_css = jQuery('link#td-theme-css');
+
+						if (td_theme_css.length) {
+							td_theme_css.after(splited_css);
+						}
+					}
+				});
+			}
+		})();
+
+	
+	
+</script></body></html>
